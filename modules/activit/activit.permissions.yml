@@ -1,0 +1,4 @@
+administer activit configuration:
+  title: 'Administer activit configuration'
+  description: 'Optional description.'
+  restrict access: true

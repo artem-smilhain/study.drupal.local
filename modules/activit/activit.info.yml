@@ -1,0 +1,5 @@
+name: ActivIT
+type: module
+description: ActivIt | Study
+package: Custom
+core_version_requirement: ^9 || ^10

@@ -1,0 +1,23 @@
+# activit.example:
+#  path: '/activit/example'
+#  defaults:
+#    _title: 'Example'
+#    _controller: '\Drupal\activit\Controller\ActivitController::build'
+#  requirements:
+#    _permission: 'access content'
+
+activit.hello: #добавить новый модуль
+  path: '/hello'
+  defaults:
+    _title: 'Hello! It works!'
+    _controller: '\Drupal\activit\Controller\ActivitController::build'
+  requirements:
+    _permission: 'access content'
+
+activit.form: #ajax калькулятор
+  path: '/calculator'
+  defaults:
+    _title: 'Calculator'
+    _form: '\Drupal\activit\Form\SimpleForm'
+  requirements:
+    _permission: 'access content'
