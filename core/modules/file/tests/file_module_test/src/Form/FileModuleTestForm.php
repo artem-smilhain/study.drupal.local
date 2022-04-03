@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form controller for file_module_test module.
+ * Calculator controller for file_module_test module.
  *
  * @internal
  */

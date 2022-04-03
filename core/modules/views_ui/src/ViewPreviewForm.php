@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 
 /**
- * Form controller for the Views preview form.
+ * Calculator controller for the Views preview form.
  *
  * @internal
  */
@@ -98,7 +98,7 @@ class ViewPreviewForm extends ViewFormBase {
   }
 
   /**
-   * Form submission handler for the Preview button.
+   * Calculator submission handler for the Preview button.
    */
   public function submitPreview($form, FormStateInterface $form_state) {
     $form_state->set('show_preview', TRUE);

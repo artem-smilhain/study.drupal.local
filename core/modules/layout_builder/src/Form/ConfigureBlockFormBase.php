@@ -27,7 +27,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Provides a base form for configuring a block.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 abstract class ConfigureBlockFormBase extends FormBase implements BaseFormIdInterface {
 
@@ -183,7 +183,7 @@ abstract class ConfigureBlockFormBase extends FormBase implements BaseFormIdInte
       $form['actions']['submit']['#ajax']['callback'] = '::ajaxSubmit';
       // @todo static::ajaxSubmit() requires data-drupal-selector to be the same
       //   between the various Ajax requests. A bug in
-      //   \Drupal\Core\Form\FormBuilder prevents that from happening unless
+      //   \Drupal\Core\Calculator\FormBuilder prevents that from happening unless
       //   $form['#id'] is also the same. Normally, #id is set to a unique HTML
       //   ID via Html::getUniqueId(), but here we bypass that in order to work
       //   around the data-drupal-selector bug. This is okay so long as we

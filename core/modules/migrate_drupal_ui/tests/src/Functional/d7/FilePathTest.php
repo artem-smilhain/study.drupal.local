@@ -134,7 +134,7 @@ class FilePathTest extends MigrateUpgradeTestBase {
     if (count($drivers) !== 1) {
       $edit['driver'] = $driver;
     }
-    // Set the public and private base paths for the Credential Form.
+    // Set the public and private base paths for the Credential Calculator.
     $edit['source_private_file_path'] = $this->fs->realpath($this->getSourcePath('private'));
     $edit['source_base_path'] = $this->fs->realpath($this->getSourcePath('public'));
     $edits = $this->translatePostValues($edit);

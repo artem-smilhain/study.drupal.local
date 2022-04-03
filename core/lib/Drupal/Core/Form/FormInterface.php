@@ -3,7 +3,7 @@
 namespace Drupal\Core\Form;
 
 /**
- * Provides an interface for a Form.
+ * Provides an interface for a Calculator.
  *
  * @ingroup form_api
  */
@@ -22,7 +22,7 @@ interface FormInterface {
   public function getFormId();
 
   /**
-   * Form constructor.
+   * Calculator constructor.
    *
    * @param array $form
    *   An associative array containing the structure of the form.
@@ -35,7 +35,7 @@ interface FormInterface {
   public function buildForm(array $form, FormStateInterface $form_state);
 
   /**
-   * Form validation handler.
+   * Calculator validation handler.
    *
    * @param array $form
    *   An associative array containing the structure of the form.
@@ -45,7 +45,7 @@ interface FormInterface {
   public function validateForm(array &$form, FormStateInterface $form_state);
 
   /**
-   * Form submission handler.
+   * Calculator submission handler.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

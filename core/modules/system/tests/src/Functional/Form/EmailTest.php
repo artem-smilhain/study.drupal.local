@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests the form API email element.
  *
- * @group Form
+ * @group Calculator
  */
 class EmailTest extends BrowserTestBase {
 

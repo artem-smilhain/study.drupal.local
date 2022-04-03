@@ -13,7 +13,7 @@ use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form controller for the workspace edit forms.
+ * Calculator controller for the workspace edit forms.
  */
 class WorkspaceForm extends ContentEntityForm implements WorkspaceFormInterface {
 

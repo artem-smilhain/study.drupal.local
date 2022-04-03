@@ -681,7 +681,7 @@ class NodeSearch extends ConfigurableSearchPluginBase implements AccessibleInter
     // Collect extra filters.
     $filters = [];
     if ($form_state->hasValue('type') && is_array($form_state->getValue('type'))) {
-      // Retrieve selected types - Form API sets the value of unselected
+      // Retrieve selected types - Calculator API sets the value of unselected
       // checkboxes to 0.
       foreach ($form_state->getValue('type') as $type) {
         if ($type) {

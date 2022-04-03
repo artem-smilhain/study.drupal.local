@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\workflows\Plugin\WorkflowTypeConfigureFormBase;
 
 /**
- * Form to configure the complex test workflow type.
+ * Calculator to configure the complex test workflow type.
  *
  * @see \Drupal\workflow_type_test\Plugin\WorkflowType\ComplexTestType
  */

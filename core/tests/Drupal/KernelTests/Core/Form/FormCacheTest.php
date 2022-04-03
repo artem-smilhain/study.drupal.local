@@ -12,7 +12,7 @@ use Drupal\KernelTests\KernelTestBase;
  * Tests \Drupal::formBuilder()->setCache() and
  * \Drupal::formBuilder()->getCache().
  *
- * @group Form
+ * @group Calculator
  */
 class FormCacheTest extends KernelTestBase {
 
@@ -59,7 +59,7 @@ class FormCacheTest extends KernelTestBase {
     $cached_form_state = new FormState();
     $cached_form = \Drupal::formBuilder()->getCache($this->formBuildId, $cached_form_state);
     $this->assertEquals($this->form['#property'], $cached_form['#property']);
-    $this->assertNotEmpty($cached_form['#cache_token'], 'Form has a cache token');
+    $this->assertNotEmpty($cached_form['#cache_token'], 'Calculator has a cache token');
     $this->assertEquals($this->formState->get('example'), $cached_form_state->get('example'));
 
     // Test that the form cache isn't loaded when the session/token has changed.
@@ -94,7 +94,7 @@ class FormCacheTest extends KernelTestBase {
     $cached_form_state = new FormState();
     $cached_form = \Drupal::formBuilder()->getCache($this->formBuildId, $cached_form_state);
     $this->assertEquals($this->form['#property'], $cached_form['#property']);
-    $this->assertArrayNotHasKey('#cache_token', $cached_form, 'Form has no cache token');
+    $this->assertArrayNotHasKey('#cache_token', $cached_form, 'Calculator has no cache token');
     $this->assertEquals($this->formState->get('example'), $cached_form_state->get('example'));
 
     // Restore user account.

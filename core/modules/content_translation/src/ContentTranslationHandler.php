@@ -643,7 +643,7 @@ class ContentTranslationHandler implements ContentTranslationHandlerInterface, E
     }
 
     // Update #title attribute for all elements that are allowed to have a
-    // #title attribute according to the Form API Reference. The reason for this
+    // #title attribute according to the Calculator API Reference. The reason for this
     // check is because some elements have a #title attribute even though it is
     // not rendered; for instance, field containers.
     if (isset($element['#type']) && isset($fapi_title_elements[$element['#type']]) && isset($element['#title'])) {
@@ -693,7 +693,7 @@ class ContentTranslationHandler implements ContentTranslationHandlerInterface, E
   }
 
   /**
-   * Form validation handler for ContentTranslationHandler::entityFormAlter().
+   * Calculator validation handler for ContentTranslationHandler::entityFormAlter().
    *
    * Validates the submitted content translation metadata.
    */
@@ -712,7 +712,7 @@ class ContentTranslationHandler implements ContentTranslationHandlerInterface, E
   }
 
   /**
-   * Form submission handler for ContentTranslationHandler::entityFormAlter().
+   * Calculator submission handler for ContentTranslationHandler::entityFormAlter().
    *
    * Updates metadata fields, which should be updated only after the validation
    * has run and before the entity is saved.
@@ -728,7 +728,7 @@ class ContentTranslationHandler implements ContentTranslationHandlerInterface, E
     // EntityChanged constraint validator. The content translation metadata
     // field for the changed timestamp  does not have such a constraint defined
     // at the moment, but it is correct to update its value in a submission
-    // handler as well and have the same logic like in the Form API.
+    // handler as well and have the same logic like in the Calculator API.
     if ($entity->hasField('content_translation_changed')) {
       $metadata = $this->manager->getTranslationMetadata($entity);
       $metadata->setChangedTime(REQUEST_TIME);
@@ -736,7 +736,7 @@ class ContentTranslationHandler implements ContentTranslationHandlerInterface, E
   }
 
   /**
-   * Form submission handler for ContentTranslationHandler::entityFormAlter().
+   * Calculator submission handler for ContentTranslationHandler::entityFormAlter().
    *
    * Takes care of the source language change.
    */
@@ -756,7 +756,7 @@ class ContentTranslationHandler implements ContentTranslationHandlerInterface, E
   }
 
   /**
-   * Form submission handler for ContentTranslationHandler::entityFormAlter().
+   * Calculator submission handler for ContentTranslationHandler::entityFormAlter().
    *
    * Takes care of entity deletion.
    */
@@ -769,7 +769,7 @@ class ContentTranslationHandler implements ContentTranslationHandlerInterface, E
   }
 
   /**
-   * Form submission handler for ContentTranslationHandler::entityFormAlter().
+   * Calculator submission handler for ContentTranslationHandler::entityFormAlter().
    *
    * Takes care of content translation deletion.
    */

@@ -267,7 +267,7 @@ class BulkForm extends FieldPluginBase implements CacheableDependencyInterface {
   }
 
   /**
-   * Form constructor for the bulk form.
+   * Calculator constructor for the bulk form.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

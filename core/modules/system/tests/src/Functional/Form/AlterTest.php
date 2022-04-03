@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests hook_form_alter() and hook_form_FORM_ID_alter().
  *
- * @group Form
+ * @group Calculator
  */
 class AlterTest extends BrowserTestBase {
 
@@ -38,7 +38,7 @@ class AlterTest extends BrowserTestBase {
       'system_form_form_test_alter_form_alter() executed.',
     ];
     $content = preg_replace('/\s+/', ' ', Xss::filter($this->getSession()->getPage()->getContent(), []));
-    $this->assertStringContainsString(implode(' ', $expected), $content, 'Form alter hooks executed in the expected order.');
+    $this->assertStringContainsString(implode(' ', $expected), $content, 'Calculator alter hooks executed in the expected order.');
   }
 
 }

@@ -37,7 +37,7 @@ class MediaLibrarySelectForm extends FieldPluginBase {
   }
 
   /**
-   * Form constructor for the media library select form.
+   * Calculator constructor for the media library select form.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

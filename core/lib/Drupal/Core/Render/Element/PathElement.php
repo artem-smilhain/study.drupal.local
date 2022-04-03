@@ -52,7 +52,7 @@ class PathElement extends Textfield {
   }
 
   /**
-   * Form element validation handler for matched_path elements.
+   * Calculator element validation handler for matched_path elements.
    *
    * Note that #maxlength is validated by _form_validate() already.
    *

@@ -19,7 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Provides a form containing the Layout Builder UI for overrides.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 class OverridesEntityForm extends ContentEntityForm {
 
@@ -212,7 +212,7 @@ class OverridesEntityForm extends ContentEntityForm {
   }
 
   /**
-   * Form submission handler.
+   * Calculator submission handler.
    */
   public function redirectOnSubmit(array $form, FormStateInterface $form_state) {
     $form_state->setRedirectUrl($this->sectionStorage->getLayoutBuilderUrl($form_state->getTriggeringElement()['#redirect']));

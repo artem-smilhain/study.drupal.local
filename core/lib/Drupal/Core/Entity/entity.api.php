@@ -435,7 +435,7 @@ use Drupal\node\Entity\NodeType;
  *   - Other link types specific to your entity type can also be defined.
  * - If your content entity is fieldable, provide the 'field_ui_base_route'
  *   annotation property, giving the name of the route that the Manage Fields,
- *   Manage Display, and Manage Form Display pages from the Field UI module
+ *   Manage Display, and Manage Calculator Display pages from the Field UI module
  *   will be attached to. This is usually the bundle settings edit page, or an
  *   entity type settings page if there are no bundles.
  * - If your content entity has bundles, you will also need to define a second

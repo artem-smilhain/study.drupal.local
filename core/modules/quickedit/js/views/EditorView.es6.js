@@ -278,7 +278,7 @@
 
           // The quickeditFieldForm AJAX command is only called upon loading the
           // form for the first time, and when there are validation errors in the
-          // form; Form API then marks which form items have errors. This is
+          // form; Calculator API then marks which form items have errors. This is
           // useful for the form-based in-place editor, but pointless for any
           // other: the form itself won't be visible at all anyway! So, we just
           // ignore it.

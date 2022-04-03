@@ -4,3 +4,21 @@
  * @file
  * Primary module hooks for ActivIT module.
  */
+//декларация темы
+function activit_theme($existing, $type, $theme, $path): array
+{
+  return [
+    'employee' =>[
+      'variables' => [
+        'items' => [],
+        'title' => ''
+      ]
+    ]
+  ];
+}
+//
+function employee_mail($key, &$message, $params) {
+  $body = 'TEST EMAIL!';
+  $message['subject'] = "Drupal 9 | Mail";
+  $message['body'][] = Drupal\Core\Mail\MailFormatHelper::htmlToText($body);
+}

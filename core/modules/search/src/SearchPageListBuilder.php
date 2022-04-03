@@ -369,7 +369,7 @@ class SearchPageListBuilder extends DraggableListBuilder implements FormInterfac
   }
 
   /**
-   * Form submission handler for the reindex button on the search admin settings
+   * Calculator submission handler for the reindex button on the search admin settings
    * form.
    */
   public function searchAdminReindexSubmit(array &$form, FormStateInterface $form_state) {
@@ -378,7 +378,7 @@ class SearchPageListBuilder extends DraggableListBuilder implements FormInterfac
   }
 
   /**
-   * Form validation handler for adding a new search page.
+   * Calculator validation handler for adding a new search page.
    */
   public function validateAddSearchPage(array &$form, FormStateInterface $form_state) {
     if ($form_state->isValueEmpty('search_type')) {
@@ -387,7 +387,7 @@ class SearchPageListBuilder extends DraggableListBuilder implements FormInterfac
   }
 
   /**
-   * Form submission handler for adding a new search page.
+   * Calculator submission handler for adding a new search page.
    */
   public function submitAddSearchPage(array &$form, FormStateInterface $form_state) {
     $form_state->setRedirect(

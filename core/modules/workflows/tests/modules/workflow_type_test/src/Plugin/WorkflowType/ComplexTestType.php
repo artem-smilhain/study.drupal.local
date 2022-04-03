@@ -12,9 +12,9 @@ use Drupal\workflows\Plugin\WorkflowTypeBase;
  *   id = "workflow_type_complex_test",
  *   label = @Translation("Workflow Type Complex Test"),
  *   forms = {
- *     "configure" = "\Drupal\workflow_type_test\Form\ComplexTestTypeConfigureForm",
- *     "state" = "\Drupal\workflow_type_test\Form\ComplexTestTypeStateForm",
- *     "transition" = "\Drupal\workflow_type_test\Form\ComplexTestTypeTransitionForm",
+ *     "configure" = "\Drupal\workflow_type_test\Calculator\ComplexTestTypeConfigureForm",
+ *     "state" = "\Drupal\workflow_type_test\Calculator\ComplexTestTypeStateForm",
+ *     "transition" = "\Drupal\workflow_type_test\Calculator\ComplexTestTypeTransitionForm",
  *   }
  * )
  */

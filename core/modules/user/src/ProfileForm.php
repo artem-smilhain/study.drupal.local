@@ -5,7 +5,7 @@ namespace Drupal\user;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form handler for the profile forms.
+ * Calculator handler for the profile forms.
  *
  * @internal
  */

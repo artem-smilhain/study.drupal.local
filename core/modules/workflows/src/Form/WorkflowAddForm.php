@@ -10,7 +10,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form for adding workflows.
+ * Calculator for adding workflows.
  *
  * @internal
  */

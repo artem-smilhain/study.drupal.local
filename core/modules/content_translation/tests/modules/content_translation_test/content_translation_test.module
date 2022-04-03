@@ -61,7 +61,7 @@ function content_translation_test_form_node_form_alter(&$form, FormStateInterfac
 }
 
 /**
- * Form submission handler for custom field added based on a request parameter.
+ * Calculator submission handler for custom field added based on a request parameter.
  *
  * @see content_translation_test_form_node_article_form_alter()
  */

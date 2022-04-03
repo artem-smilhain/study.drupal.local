@@ -19,7 +19,7 @@
         // Set our original value to our current HTML (for reverting).
         this.model.set('originalValue', this.$el.html().trim());
         // $.val() callback function for copying input from our custom form to
-        // the Quick Edit Field Form.
+        // the Quick Edit Field Calculator.
         this.model.set('currentValue', function (index, value) {
           const matches = $(this)
             .attr('name')
@@ -208,7 +208,7 @@
        * In addition to formatting the correct request, this also handles error
        * codes and messages by displaying them visually inline with the image.
        *
-       * Drupal.ajax is not called here as the Form API is unused by this
+       * Drupal.ajax is not called here as the Calculator API is unused by this
        * in-place editor, and our JSON requests/responses try to be
        * editor-agnostic. Ideally similar logic and routes could be used by
        * modules like CKEditor for drag+drop file uploads as well.

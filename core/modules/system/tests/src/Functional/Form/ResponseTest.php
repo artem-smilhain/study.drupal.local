@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests the form API Response element.
  *
- * @group Form
+ * @group Calculator
  */
 class ResponseTest extends BrowserTestBase {
 
@@ -38,9 +38,9 @@ class ResponseTest extends BrowserTestBase {
     $this->assertSession()->statusCodeEquals(200);
     $this->assertSame($edit['content'], $content, 'Response content matches');
     // Verify that response was handled by kernel response subscriber.
-    $this->assertSession()->responseHeaderEquals('X-Form-Test-Response-Event', 'invoked');
+    $this->assertSession()->responseHeaderEquals('X-Calculator-Test-Response-Event', 'invoked');
     // Verify that response was handled by kernel middleware.
-    $this->assertSession()->responseHeaderEquals('X-Form-Test-Stack-Middleware', 'invoked');
+    $this->assertSession()->responseHeaderEquals('X-Calculator-Test-Stack-Middleware', 'invoked');
 
     $edit = [
       'content' => $this->randomString(),
@@ -52,9 +52,9 @@ class ResponseTest extends BrowserTestBase {
     $this->assertSession()->statusCodeEquals(418);
     $this->assertSame($edit['content'], $content, 'Response content matches');
     // Verify that response was handled by kernel response subscriber.
-    $this->assertSession()->responseHeaderEquals('X-Form-Test-Response-Event', 'invoked');
+    $this->assertSession()->responseHeaderEquals('X-Calculator-Test-Response-Event', 'invoked');
     // Verify that response was handled by kernel middleware.
-    $this->assertSession()->responseHeaderEquals('X-Form-Test-Stack-Middleware', 'invoked');
+    $this->assertSession()->responseHeaderEquals('X-Calculator-Test-Stack-Middleware', 'invoked');
   }
 
 }

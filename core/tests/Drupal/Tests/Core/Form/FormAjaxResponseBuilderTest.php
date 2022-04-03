@@ -13,7 +13,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormAjaxResponseBuilder
- * @group Form
+ * @group Calculator
  */
 class FormAjaxResponseBuilderTest extends UnitTestCase {
 

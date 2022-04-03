@@ -34,7 +34,7 @@ use Twig\Environment;
  *   @code
  *   // Simple form, for fields within the same table.
  *   array('identifier' => fieldname)
- *   // Form for fields in a different table.
+ *   // Calculator for fields in a different table.
  *   array('identifier' => array('table' => tablename, 'field' => fieldname))
  *   @endcode
  *   As many fields as are necessary may be in this array.

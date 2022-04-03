@@ -255,7 +255,7 @@ class BookManager implements BookManagerInterface {
 
     $form['book']['pid'] = $this->addParentSelectFormElements($node->book);
 
-    // @see \Drupal\book\Form\BookAdminEditForm::bookAdminTableTree(). The
+    // @see \Drupal\book\Calculator\BookAdminEditForm::bookAdminTableTree(). The
     // weight may be larger than 15.
     $form['book']['weight'] = [
       '#type' => 'weight',

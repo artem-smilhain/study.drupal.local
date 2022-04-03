@@ -6,7 +6,7 @@ use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 use Drupal\node\Entity\NodeType;
 
 /**
- * Tests Inline Form Errors compatibility with Quick Edit.
+ * Tests Inline Calculator Errors compatibility with Quick Edit.
  *
  * @group quickedit
  */
@@ -87,7 +87,7 @@ class InlineFormErrorsIntegrationTest extends WebDriverTestBase {
     // Wait until the form submission is complete.
     $web_assert->assertWaitOnAjaxRequest();
 
-    // Assert that no error summary from Inline Form Errors is shown.
+    // Assert that no error summary from Inline Calculator Errors is shown.
     $web_assert->elementTextNotContains('css', '.quickedit-validation-errors', '1 error has been found');
 
     // Assert that the required title error is shown.

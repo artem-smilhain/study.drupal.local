@@ -32,7 +32,7 @@ use Drupal\shortcut\ShortcutInterface;
  *       "default" = "Drupal\shortcut\ShortcutForm",
  *       "add" = "Drupal\shortcut\ShortcutForm",
  *       "edit" = "Drupal\shortcut\ShortcutForm",
- *       "delete" = "Drupal\shortcut\Form\ShortcutDeleteForm"
+ *       "delete" = "Drupal\shortcut\Calculator\ShortcutDeleteForm"
  *     },
  *   },
  *   base_table = "shortcut",

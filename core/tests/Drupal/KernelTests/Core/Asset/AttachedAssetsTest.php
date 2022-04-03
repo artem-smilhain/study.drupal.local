@@ -425,7 +425,7 @@ class AttachedAssetsTest extends KernelTestBase {
     $library = $library_discovery->getLibraryByName('core', 'jquery.farbtastic');
     $this->assertEquals('0.0', $library['version'], 'Registered libraries were altered.');
 
-    // common_test_library_info_alter() also added a dependency on jQuery Form.
+    // common_test_library_info_alter() also added a dependency on jQuery Calculator.
     $build['#attached']['library'][] = 'core/jquery.farbtastic';
     $assets = AttachedAssets::createFromRenderArray($build);
     $js = $this->assetResolver->getJsAssets($assets, FALSE)[1];

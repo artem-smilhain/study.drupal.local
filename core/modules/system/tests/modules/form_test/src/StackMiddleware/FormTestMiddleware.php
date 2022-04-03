@@ -33,7 +33,7 @@ class FormTestMiddleware implements HttpKernelInterface {
    */
   public function handle(Request $request, $type = self::MASTER_REQUEST, $catch = TRUE): Response {
     $response = $this->httpKernel->handle($request, $type, $catch);
-    $response->headers->set('X-Form-Test-Stack-Middleware', 'invoked');
+    $response->headers->set('X-Calculator-Test-Stack-Middleware', 'invoked');
     return $response;
   }
 

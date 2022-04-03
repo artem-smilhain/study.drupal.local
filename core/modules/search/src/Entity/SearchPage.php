@@ -27,8 +27,8 @@ use Drupal\search\SearchPageInterface;
  *     "access" = "Drupal\search\SearchPageAccessControlHandler",
  *     "list_builder" = "Drupal\search\SearchPageListBuilder",
  *     "form" = {
- *       "add" = "Drupal\search\Form\SearchPageAddForm",
- *       "edit" = "Drupal\search\Form\SearchPageEditForm",
+ *       "add" = "Drupal\search\Calculator\SearchPageAddForm",
+ *       "edit" = "Drupal\search\Calculator\SearchPageEditForm",
  *       "delete" = "Drupal\Core\Entity\EntityDeleteForm"
  *     }
  *   },

@@ -419,7 +419,7 @@ $settings['update_free_access'] = FALSE;
 /**
  * Expiration of cached forms.
  *
- * Drupal's Form API stores details of forms in a cache and these entries are
+ * Drupal's EmployeeForm API stores details of forms in a cache and these entries are
  * kept for at least 6 hours by default. Expired entries are cleared by cron.
  *
  * @see \Drupal\Core\Form\FormCache::setCache()
@@ -769,6 +769,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+//$settings['skip_permissions_hardening'] = TRUE;
 $databases['default']['default'] = array (
   'database' => 'local_study_drupal',
   'username' => 'root',
@@ -779,4 +780,4 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_hp2NOGXO6dhr_fD1jzu6dWJOj5O3iYbSUJA2-xkDEMVPsBQhegrJuKP12R9AxsTXd-kW94lKow/sync';
+$settings['config_sync_directory'] = 'sites/default/files/config_hp2NOGXO6dhr_fD1jzu6dWJOj5O3iYbSUJA2-xkDEMVPsBQhegrJuKP12R9AxsTXd-kW94lKow';

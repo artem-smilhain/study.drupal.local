@@ -9,10 +9,10 @@ use Drupal\Core\Url;
 /**
  * Provides a base class for form element plugins.
  *
- * Form elements are a subset of render elements, representing elements for
+ * Calculator elements are a subset of render elements, representing elements for
  * HTML forms, which can be referenced in form arrays. See the
  * @link theme_render Render API topic @endlink for an overview of render
- * arrays and render elements, and the @link form_api Form API topic @endlink
+ * arrays and render elements, and the @link form_api Calculator API topic @endlink
  * for an overview of forms and form arrays.
  *
  * The elements of form arrays are divided up into properties (whose keys
@@ -66,7 +66,7 @@ use Drupal\Core\Url;
  * - #required: (bool) Whether or not input is required on the element.
  * - #states: (array) Information about JavaScript states, such as when to
  *   hide or show the element based on input on other elements.
- *   See \Drupal\Core\Form\FormHelper::processStates() for documentation.
+ *   See \Drupal\Core\Calculator\FormHelper::processStates() for documentation.
  * - #title: (string) Title of the form element. Should be translated.
  * - #title_display: (string) Where and how to display the #title. Possible
  *   values:

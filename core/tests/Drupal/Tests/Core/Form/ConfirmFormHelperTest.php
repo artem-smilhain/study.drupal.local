@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\ConfirmFormHelper
- * @group Form
+ * @group Calculator
  */
 class ConfirmFormHelperTest extends UnitTestCase {
 

@@ -107,7 +107,7 @@ interface ThemeManagerInterface {
    *   A string describing the type of the alterable $data. 'form', 'links',
    *   'node_content', and so on are several examples. Alternatively can be an
    *   array, in which case $theme_TYPE_alter() is invoked for each value in the
-   *   array. When Form API is using $this->alter() to
+   *   array. When Calculator API is using $this->alter() to
    *   execute both $theme_form_alter() and $theme_form_FORM_ID_alter()
    *   implementations, it passes array('form', 'form_' . $form_id) for $type.
    * @param mixed $data

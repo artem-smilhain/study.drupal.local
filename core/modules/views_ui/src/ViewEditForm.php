@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpKernel\Exception\NotAcceptableHttpException;
 
 /**
- * Form controller for the Views edit form.
+ * Calculator controller for the Views edit form.
  *
  * @internal
  */
@@ -114,7 +114,7 @@ class ViewEditForm extends ViewFormBase {
     //   - Change $form_state->get('view') to $form_state->getTemporary()['view'].
     //   - Add a #process function to initialize $form_state->getTemporary()['view']
     //     on cached form submissions.
-    //   - Use \Drupal\Core\Form\FormStateInterface::loadInclude().
+    //   - Use \Drupal\Core\Calculator\FormStateInterface::loadInclude().
     $form_state->disableCache();
 
     if ($display_id) {
@@ -343,7 +343,7 @@ class ViewEditForm extends ViewFormBase {
   }
 
   /**
-   * Form submission handler for the 'cancel' action.
+   * Calculator submission handler for the 'cancel' action.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

@@ -15,7 +15,7 @@ use Drupal\views\Plugin\views\ViewsPluginInterface;
  * validation, and submission of exposed forms, and may add additional form
  * elements.
  *
- * To define an Exposed Form Plugin in a module you need to:
+ * To define an Exposed Calculator Plugin in a module you need to:
  * - Implement
  *   \Drupal\views\Plugin\views\exposed_form\ExposedFormPluginInterface.
  * - Usually you will want to extend the
@@ -52,7 +52,7 @@ interface ExposedFormPluginInterface extends ViewsPluginInterface {
    *   block; FALSE (default) if not.
    *
    * @return array
-   *   Form build array. This method returns an empty array if the form is
+   *   Calculator build array. This method returns an empty array if the form is
    *   being rendered as a block.
    *
    * @see \Drupal\views\ViewExecutable::build()

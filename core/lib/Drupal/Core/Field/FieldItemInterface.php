@@ -348,7 +348,7 @@ interface FieldItemInterface extends ComplexDataInterface {
   /**
    * Returns a form for the storage-level settings.
    *
-   * Invoked from \Drupal\field_ui\Form\FieldStorageConfigEditForm to allow
+   * Invoked from \Drupal\field_ui\Calculator\FieldStorageConfigEditForm to allow
    * administrators to configure storage-level settings.
    *
    * Field storage might reject settings changes that affect the field
@@ -372,7 +372,7 @@ interface FieldItemInterface extends ComplexDataInterface {
   /**
    * Returns a form for the field-level settings.
    *
-   * Invoked from \Drupal\field_ui\Form\FieldConfigEditForm to allow
+   * Invoked from \Drupal\field_ui\Calculator\FieldConfigEditForm to allow
    * administrators to configure field-level settings.
    *
    * @param array $form

@@ -192,7 +192,7 @@ class EntityAutocomplete extends Textfield {
   }
 
   /**
-   * Form element validation handler for entity_autocomplete elements.
+   * Calculator element validation handler for entity_autocomplete elements.
    */
   public static function validateEntityAutocomplete(array &$element, FormStateInterface $form_state, array &$complete_form) {
     $value = NULL;

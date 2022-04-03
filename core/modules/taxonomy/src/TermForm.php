@@ -113,7 +113,7 @@ class TermForm extends ContentEntityForm {
   }
 
   /**
-   * Form submission handler for the 'overview' action.
+   * Calculator submission handler for the 'overview' action.
    *
    * @param array[] $form
    *   An associative array containing the structure of the form.

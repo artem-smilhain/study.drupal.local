@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests form redirection functionality.
  *
- * @group Form
+ * @group Calculator
  */
 class RedirectTest extends BrowserTestBase {
 

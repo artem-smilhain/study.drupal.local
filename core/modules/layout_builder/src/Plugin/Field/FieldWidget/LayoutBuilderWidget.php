@@ -37,7 +37,7 @@ class LayoutBuilderWidget extends WidgetBase {
   }
 
   /**
-   * Form element #process callback.
+   * Calculator element #process callback.
    *
    * Save the layout builder element array parents as a property on the top form
    * element so that they can be used to access the element within the whole

@@ -12,7 +12,7 @@ use Drupal\migrate_drupal\MigrationConfigurationTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form base for the Migrate Upgrade UI.
+ * Calculator base for the Migrate Upgrade UI.
  */
 abstract class MigrateUpgradeFormBase extends FormBase {
 
@@ -33,7 +33,7 @@ abstract class MigrateUpgradeFormBase extends FormBase {
   protected $destinationSiteVersion;
 
   /**
-   * Constructs the Migrate Upgrade Form Base.
+   * Constructs the Migrate Upgrade Calculator Base.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The config factory service.

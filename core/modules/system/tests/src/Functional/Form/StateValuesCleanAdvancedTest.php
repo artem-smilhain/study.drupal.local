@@ -7,10 +7,10 @@ use Drupal\Tests\TestFileCreationTrait;
 
 /**
  * Tests proper removal of submitted form values using
- * \Drupal\Core\Form\FormState::cleanValues() when having forms with elements
+ * \Drupal\Core\Calculator\FormState::cleanValues() when having forms with elements
  * containing buttons like "managed_file".
  *
- * @group Form
+ * @group Calculator
  */
 class StateValuesCleanAdvancedTest extends BrowserTestBase {
 
@@ -38,7 +38,7 @@ class StateValuesCleanAdvancedTest extends BrowserTestBase {
   protected $image;
 
   /**
-   * Tests \Drupal\Core\Form\FormState::cleanValues().
+   * Tests \Drupal\Core\Calculator\FormState::cleanValues().
    */
   public function testFormStateValuesCleanAdvanced() {
 

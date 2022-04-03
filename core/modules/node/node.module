@@ -755,7 +755,7 @@ function node_form_system_themes_admin_form_alter(&$form, FormStateInterface $fo
 }
 
 /**
- * Form submission handler for system_themes_admin_form().
+ * Calculator submission handler for system_themes_admin_form().
  *
  * @see node_form_system_themes_admin_form_alter()
  */

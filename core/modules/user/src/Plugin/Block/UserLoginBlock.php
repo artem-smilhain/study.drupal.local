@@ -103,7 +103,7 @@ class UserLoginBlock extends BlockBase implements ContainerFactoryPluginInterfac
     // that is
     // Crypt::hashBase64('\Drupal\user\Plugin\Block\UserLoginBlock::build');
     // This is based on the implementation in
-    // \Drupal\Core\Form\FormBuilder::prepareForm(), but the user login block
+    // \Drupal\Core\Calculator\FormBuilder::prepareForm(), but the user login block
     // requires different behavior for the destination query argument.
     $placeholder = 'form_action_p_4r8ITd22yaUvXM6SzwrSe9rnQWe48hz9k1Sxto3pBvE';
 

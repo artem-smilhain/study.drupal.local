@@ -232,7 +232,7 @@ function contact_form_user_admin_settings_alter(&$form, FormStateInterface $form
 }
 
 /**
- * Form submission handler for user_admin_settings().
+ * Calculator submission handler for user_admin_settings().
  *
  * @see contact_form_user_admin_settings_alter()
  */

@@ -150,7 +150,7 @@ abstract class FormElementBase implements ElementInterface {
    *   The configuration value of the element in the language to translate to.
    *
    * @return array
-   *   Form API array to represent the form element.
+   *   Calculator API array to represent the form element.
    *
    * @see \Drupal\config_translation\FormElement\TextFormat
    * @see \Drupal\filter\Element\TextFormat::processFormat()

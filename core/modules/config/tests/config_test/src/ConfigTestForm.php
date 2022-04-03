@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Language\LanguageInterface;
 
 /**
- * Form controller for the test config edit forms.
+ * Calculator controller for the test config edit forms.
  *
  * @internal
  */

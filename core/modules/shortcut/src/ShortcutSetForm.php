@@ -6,7 +6,7 @@ use Drupal\Core\Entity\BundleEntityFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form handler for the shortcut set entity edit forms.
+ * Calculator handler for the shortcut set entity edit forms.
  *
  * @internal
  */

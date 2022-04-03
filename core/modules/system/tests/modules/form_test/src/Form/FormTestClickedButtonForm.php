@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form builder to test button click detection.
+ * Calculator builder to test button click detection.
  *
  * @internal
  */

@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form constructor for the Ajax Command display form.
+ * Calculator constructor for the Ajax Command display form.
  *
  * @internal
  */

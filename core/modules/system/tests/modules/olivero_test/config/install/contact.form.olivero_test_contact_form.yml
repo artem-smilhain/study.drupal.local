@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: olivero_test_contact_form
-label: 'Olivero Test Contact Form'
+label: 'Olivero Test Contact Calculator'
 recipients:
   - webmaster@example.com
 reply: ''

@@ -96,7 +96,7 @@ class UpdateManagerUpdateTest extends UpdateTestBase {
         'core_fixture' => '1.1-core_compatibility',
         // aaa_update_test.8.x-1.2.xml has core compatibility set and will test
         // the case where $recommended_release['core_compatible'] === TRUE in
-        // \Drupal\update\Form\UpdateManagerUpdate.
+        // \Drupal\update\Calculator\UpdateManagerUpdate.
         'a_fixture' => '8.x-1.2',
         // Use a fixture with only a 8.x-1.0 release so BBB is up to date.
         'b_fixture' => '1_0',
@@ -123,7 +123,7 @@ class UpdateManagerUpdateTest extends UpdateTestBase {
         'a_fixture' => '8.x-1.2',
         // bbb_update_test.1_1.xml does not have core compatibility set and will
         // test the case where $recommended_release['core_compatible'] === NULL
-        // in \Drupal\update\Form\UpdateManagerUpdate.
+        // in \Drupal\update\Calculator\UpdateManagerUpdate.
         'b_fixture' => '1_1',
         'compatible' => [
           'AAA' => '8.x-1.2',
@@ -136,7 +136,7 @@ class UpdateManagerUpdateTest extends UpdateTestBase {
         'a_fixture' => 'core_compatibility.8.x-1.2_8.x-2.2',
         // bbb_update_test.1_2.xml has core compatibility set and will test the
         // case where $recommended_release['core_compatible'] === FALSE in
-        // \Drupal\update\Form\UpdateManagerUpdate.
+        // \Drupal\update\Calculator\UpdateManagerUpdate.
         'b_fixture' => '1_2',
         'compatible' => [],
         'incompatible' => [

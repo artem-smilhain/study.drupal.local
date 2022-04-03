@@ -593,7 +593,7 @@ function user_pass_rehash(UserInterface $account, $timestamp) {
  * Cancel a user account.
  *
  * Since the user cancellation process needs to be run in a batch, either
- * Form API will invoke it, or batch_process() needs to be invoked after calling
+ * Calculator API will invoke it, or batch_process() needs to be invoked after calling
  * this function and should define the path to redirect to.
  *
  * @param array $edit
@@ -642,7 +642,7 @@ function user_cancel($edit, $uid, $method) {
 
   batch_set($batch_builder->toArray());
 
-  // Batch processing is either handled via Form API or has to be invoked
+  // Batch processing is either handled via Calculator API or has to be invoked
   // manually.
 }
 
@@ -1084,7 +1084,7 @@ function user_element_info_alter(array &$types) {
 }
 
 /**
- * Form element process handler for client-side password validation.
+ * Calculator element process handler for client-side password validation.
  *
  * This #process handler is automatically invoked for 'password_confirm' form
  * elements to add the JavaScript and string translations for dynamic password
@@ -1256,7 +1256,7 @@ function template_preprocess_user(&$variables) {
 }
 
 /**
- * Implements hook_form_FORM_ID_alter() for \Drupal\system\Form\RegionalForm.
+ * Implements hook_form_FORM_ID_alter() for \Drupal\system\Calculator\RegionalForm.
  */
 function user_form_system_regional_settings_alter(&$form, FormStateInterface $form_state) {
   $config = \Drupal::config('system.date');
@@ -1300,7 +1300,7 @@ function user_form_system_regional_settings_alter(&$form, FormStateInterface $fo
 }
 
 /**
- * Additional submit handler for \Drupal\system\Form\RegionalForm.
+ * Additional submit handler for \Drupal\system\Calculator\RegionalForm.
  */
 function user_form_system_regional_settings_submit($form, FormStateInterface $form_state) {
   \Drupal::configFactory()->getEditable('system.date')

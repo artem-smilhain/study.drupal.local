@@ -72,7 +72,7 @@ form_test.alter_form:
   path: '/form-test/alter'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestAlterForm'
-    _title: 'Form altering test'
+    _title: 'Calculator altering test'
   requirements:
     _access: 'TRUE'
 
@@ -80,7 +80,7 @@ form_test.validate_form:
   path: '/form-test/validate'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestValidateForm'
-    _title: 'Form validation handlers test'
+    _title: 'Calculator validation handlers test'
   requirements:
     _access: 'TRUE'
 
@@ -88,7 +88,7 @@ form_test.validate_required:
   path: '/form-test/validate-required'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestValidateRequiredForm'
-    _title: 'Form #required validation'
+    _title: 'Calculator #required validation'
   requirements:
     _access: 'TRUE'
 
@@ -96,7 +96,7 @@ form_test.validate_required_no_title:
   path: '/form-test/validate-required-no-title'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestValidateRequiredNoTitleForm'
-    _title: 'Form #required validation without #title'
+    _title: 'Calculator #required validation without #title'
   requirements:
     _access: 'TRUE'
 
@@ -104,7 +104,7 @@ form_test.validate_without_csrf_token:
   path: '/form-test/validate-no-token'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestValidateNoToken'
-    _title: 'Form validation on forms with a disabled CSRF token'
+    _title: 'Calculator validation on forms with a disabled CSRF token'
   requirements:
     _access: 'TRUE'
 
@@ -112,7 +112,7 @@ form_test.validate_with_error_suppression:
   path: '/form-test/limit-validation-errors'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestLimitValidationErrorsForm'
-    _title: 'Form validation with some error suppression'
+    _title: 'Calculator validation with some error suppression'
   requirements:
     _access: 'TRUE'
 
@@ -176,7 +176,7 @@ form_test.storage:
   path: '/form_test/form-storage'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestStorageForm'
-    _title: 'Form storage test'
+    _title: 'Calculator storage test'
   requirements:
     _access: 'TRUE'
 
@@ -192,7 +192,7 @@ form_test.state_clean:
   path: '/form_test/form-state-values-clean'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestFormStateValuesCleanForm'
-    _title: 'Form state values clearance test'
+    _title: 'Calculator state values clearance test'
   requirements:
     _access: 'TRUE'
 
@@ -200,7 +200,7 @@ form_test.state_clean_advanced:
   path: '/form_test/form-state-values-clean-advanced'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestFormStateValuesCleanAdvancedForm'
-    _title: 'Form state values clearance advanced test'
+    _title: 'Calculator state values clearance advanced test'
   requirements:
     _access: 'TRUE'
 
@@ -208,7 +208,7 @@ form_test.checkbox:
   path: '/form-test/checkbox'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestCheckboxForm'
-    _title: 'Form test'
+    _title: 'Calculator test'
   requirements:
     _access: 'TRUE'
 
@@ -330,7 +330,7 @@ form_test.disabled_elements:
   path: '/form-test/disabled-elements'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestDisabledElementsForm'
-    _title: 'Form test'
+    _title: 'Calculator test'
   requirements:
     _access: 'TRUE'
 
@@ -338,7 +338,7 @@ form_test.input_forgery:
   path: '/form-test/input-forgery'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestInputForgeryForm'
-    _title: 'Form test'
+    _title: 'Calculator test'
   requirements:
     _access: 'TRUE'
 
@@ -346,7 +346,7 @@ form_test.rebuild_preservation:
   path: '/form-test/form-rebuild-preserve-values'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestRebuildPreserveValuesForm'
-    _title: 'Form values preservation during rebuild test'
+    _title: 'Calculator values preservation during rebuild test'
   requirements:
     _access: 'TRUE'
 
@@ -362,7 +362,7 @@ form_test.label:
   path: '/form_test/form-labels'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestLabelForm'
-    _title: 'Form label test'
+    _title: 'Calculator label test'
   requirements:
     _access: 'TRUE'
 
@@ -378,7 +378,7 @@ form_test.state_persistence:
   path: '/form-test/state-persist'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestStatePersistForm'
-    _title: 'Form state persistence without storage'
+    _title: 'Calculator state persistence without storage'
   requirements:
     _access: 'TRUE'
 
@@ -421,7 +421,7 @@ form_test.details_form:
   path: '/form_test/details-form'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestDetailsForm'
-    _title: 'Form details form test'
+    _title: 'Calculator details form test'
   requirements:
     _access: 'TRUE'
 
@@ -429,7 +429,7 @@ form_test.description_display:
   path: '/form_test/form-descriptions'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestDescriptionForm'
-    _title: 'Form description test'
+    _title: 'Calculator description test'
   requirements:
     _access: 'TRUE'
 
@@ -487,7 +487,7 @@ form_test.form_storage_page_cache:
   path: '/form-test/form-storage-page-cache'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestStoragePageCacheForm'
-    _title: 'Form storage with page cache test'
+    _title: 'Calculator storage with page cache test'
   requirements:
     _access: 'TRUE'
 
@@ -502,7 +502,7 @@ form_test.machine_name_validation:
   path: '/form-test/form-test-machine-name-validation'
   defaults:
     _form: '\Drupal\form_test\Form\FormTestMachineNameValidationForm'
-    _title: 'Form machine name validation test'
+    _title: 'Calculator machine name validation test'
   requirements:
     _access: 'TRUE'
 

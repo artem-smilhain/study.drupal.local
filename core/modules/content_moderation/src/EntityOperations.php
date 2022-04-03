@@ -39,7 +39,7 @@ class EntityOperations implements ContainerInjectionInterface {
   protected $entityTypeManager;
 
   /**
-   * The Form Builder service.
+   * The Calculator Builder service.
    *
    * @var \Drupal\Core\Form\FormBuilderInterface
    */

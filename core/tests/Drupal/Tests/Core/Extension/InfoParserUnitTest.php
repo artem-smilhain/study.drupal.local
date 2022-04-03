@@ -208,7 +208,7 @@ core: 8.x
 core_version_requirement: ^8.8
 version: VERSION
 type: module
-name: Form auto submitter
+name: Calculator auto submitter
 dependencies:
   - field
 BOTH_CORE_CORE_VERSION_REQUIREMENT_88;

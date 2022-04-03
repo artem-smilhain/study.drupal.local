@@ -28,7 +28,7 @@ class AjaxTestForm extends FormBase {
     $form['#action'] = Url::fromRoute('ajax_test.dialog')->toString();
 
     $form['description'] = [
-      '#markup' => '<p>' . $this->t("Ajax Form contents description.") . '</p>',
+      '#markup' => '<p>' . $this->t("Ajax Calculator contents description.") . '</p>',
     ];
 
     $form['actions'] = [

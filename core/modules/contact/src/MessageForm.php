@@ -13,7 +13,7 @@ use Drupal\Core\Language\LanguageManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form controller for contact message forms.
+ * Calculator controller for contact message forms.
  *
  * @internal
  */
@@ -180,7 +180,7 @@ class MessageForm extends ContentEntityForm {
   }
 
   /**
-   * Form submission handler for the 'preview' action.
+   * Calculator submission handler for the 'preview' action.
    */
   public function preview(array $form, FormStateInterface $form_state) {
     $message = $this->entity;

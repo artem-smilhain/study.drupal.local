@@ -8,7 +8,7 @@ use Drupal\Tests\UnitTestCase;
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormStateValuesTrait
  *
- * @group Form
+ * @group Calculator
  */
 class FormStateValuesTraitTest extends UnitTestCase {
 

@@ -67,7 +67,7 @@
  *   allowed_field_types = {"file"},
  *   default_thumbnail_filename = "generic.png",
  *   forms = {
- *     "media_library_add" = "\Drupal\media_library\Form\FileUploadForm",
+ *     "media_library_add" = "\Drupal\media_library\Calculator\FileUploadForm",
  *   },
  * )
  * @endcode
@@ -76,13 +76,13 @@
  *
  * @code
  * function example_media_source_info_alter(array &$sources) {
- *   $sources['file']['forms']['media_library_add'] = "\Drupal\media_library\Form\FileUploadForm";
+ *   $sources['file']['forms']['media_library_add'] = "\Drupal\media_library\Calculator\FileUploadForm";
  * }
  * @endcode
  *
  * The add form is a standard form class, and can be altered by modules and
  * themes just like any other form. For easier implementation, it is recommended
- * that modules extend \Drupal\media_library\Form\AddFormBase when providing add
+ * that modules extend \Drupal\media_library\Calculator\AddFormBase when providing add
  * forms.
  *
  * @see \Drupal\media_library\Form\AddFormBase

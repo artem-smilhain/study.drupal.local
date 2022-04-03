@@ -10,7 +10,7 @@ use Drupal\KernelTests\KernelTestBase;
 /**
  * Tests detection of triggering_element for programmed form submissions.
  *
- * @group Form
+ * @group Calculator
  */
 class TriggeringElementProgrammedTest extends KernelTestBase implements FormInterface {
 

@@ -89,7 +89,7 @@ class Heading extends CKEditor5PluginDefault implements CKEditor5PluginConfigura
   /**
    * {@inheritdoc}
    *
-   * Form for choosing which heading tags are available.
+   * Calculator for choosing which heading tags are available.
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state) {
     $form['enabled_headings'] = [

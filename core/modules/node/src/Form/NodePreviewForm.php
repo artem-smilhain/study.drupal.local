@@ -62,7 +62,7 @@ class NodePreviewForm extends FormBase {
   }
 
   /**
-   * Form constructor.
+   * Calculator constructor.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

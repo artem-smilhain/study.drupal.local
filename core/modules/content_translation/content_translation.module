@@ -572,7 +572,7 @@ function content_translation_enable_widget($entity_type, $bundle, array &$form, 
  * Process callback: Expands the language_configuration form element.
  *
  * @param array $element
- *   Form API element.
+ *   Calculator API element.
  *
  * @return
  *   Processed language configuration element.
@@ -606,7 +606,7 @@ function content_translation_language_configuration_element_process(array $eleme
 }
 
 /**
- * Form validation handler for element added with content_translation_language_configuration_element_process().
+ * Calculator validation handler for element added with content_translation_language_configuration_element_process().
  *
  * Checks whether translation can be enabled: if language is set to one of the
  * special languages and language selector is not hidden, translation cannot be
@@ -629,7 +629,7 @@ function content_translation_language_configuration_element_validate($element, F
 }
 
 /**
- * Form submission handler for element added with content_translation_language_configuration_element_process().
+ * Calculator submission handler for element added with content_translation_language_configuration_element_process().
  *
  * Stores the content translation settings.
  *

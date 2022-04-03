@@ -11,7 +11,7 @@ use Drupal\language\Entity\ConfigurableLanguage;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form constructor for the translation import screen.
+ * Calculator constructor for the translation import screen.
  *
  * @internal
  */
@@ -69,7 +69,7 @@ class ImportForm extends FormBase {
   }
 
   /**
-   * Form constructor for the translation import screen.
+   * Calculator constructor for the translation import screen.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $languages = $this->languageManager->getLanguages();

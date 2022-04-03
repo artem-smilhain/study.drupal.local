@@ -17,7 +17,7 @@ entity.entity_view_mode.collection:
   parent: field_ui.display_mode
 
 entity.entity_form_mode.collection:
-  title: 'Form modes'
+  title: 'Calculator modes'
   description: 'Manage custom form modes.'
   route_name: entity.entity_form_mode.collection
   parent: field_ui.display_mode

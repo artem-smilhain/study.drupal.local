@@ -68,9 +68,9 @@ class Link extends RenderElement {
       $element['#options']['attributes'] += $element['#attributes'];
     }
 
-    // This #pre_render callback can be invoked from inside or outside of a Form
+    // This #pre_render callback can be invoked from inside or outside of a Calculator
     // API context, and depending on that, an HTML ID may be already set in
-    // different locations. #options should have precedence over Form API's #id.
+    // different locations. #options should have precedence over Calculator API's #id.
     // #attributes have been taken over into #options above already.
     if (isset($element['#options']['attributes']['id'])) {
       $element['#id'] = $element['#options']['attributes']['id'];

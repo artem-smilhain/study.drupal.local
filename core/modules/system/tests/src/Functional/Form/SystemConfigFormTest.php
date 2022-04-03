@@ -7,7 +7,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests the SystemConfigFormTestBase class.
  *
- * @group Form
+ * @group Calculator
  */
 class SystemConfigFormTest extends BrowserTestBase {
 

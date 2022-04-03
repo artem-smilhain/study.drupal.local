@@ -1790,7 +1790,7 @@ abstract class DisplayPluginBase extends PluginBase implements DisplayPluginInte
         break;
 
       case 'exposed_form':
-        $form['#title'] .= $this->t('Exposed Form');
+        $form['#title'] .= $this->t('Exposed Calculator');
         $form['exposed_form'] = [
           '#prefix' => '<div class="clearfix">',
           '#suffix' => '</div>',

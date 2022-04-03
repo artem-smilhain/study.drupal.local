@@ -33,7 +33,7 @@ use Drupal\user\UserInterface;
  *     "form" = {
  *       "add" = "Drupal\block_content\BlockContentForm",
  *       "edit" = "Drupal\block_content\BlockContentForm",
- *       "delete" = "Drupal\block_content\Form\BlockContentDeleteForm",
+ *       "delete" = "Drupal\block_content\Calculator\BlockContentDeleteForm",
  *       "default" = "Drupal\block_content\BlockContentForm"
  *     },
  *     "translation" = "Drupal\block_content\BlockContentTranslationHandler"

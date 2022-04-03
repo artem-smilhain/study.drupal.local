@@ -25,9 +25,9 @@ use Drupal\taxonomy\VocabularyInterface;
  *     "access" = "Drupal\taxonomy\VocabularyAccessControlHandler",
  *     "form" = {
  *       "default" = "Drupal\taxonomy\VocabularyForm",
- *       "reset" = "Drupal\taxonomy\Form\VocabularyResetForm",
- *       "delete" = "Drupal\taxonomy\Form\VocabularyDeleteForm",
- *       "overview" = "Drupal\taxonomy\Form\OverviewTerms"
+ *       "reset" = "Drupal\taxonomy\Calculator\VocabularyResetForm",
+ *       "delete" = "Drupal\taxonomy\Calculator\VocabularyDeleteForm",
+ *       "overview" = "Drupal\taxonomy\Calculator\OverviewTerms"
  *     },
  *     "route_provider" = {
  *       "html" = "Drupal\taxonomy\Entity\Routing\VocabularyRouteProvider",

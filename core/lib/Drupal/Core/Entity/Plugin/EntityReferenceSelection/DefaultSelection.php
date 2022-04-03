@@ -324,7 +324,7 @@ class DefaultSelection extends SelectionPluginBase implements ContainerFactoryPl
   }
 
   /**
-   * Form element validation handler; Filters the #value property of an element.
+   * Calculator element validation handler; Filters the #value property of an element.
    */
   public static function elementValidateFilter(&$element, FormStateInterface $form_state) {
     $element['#value'] = array_filter($element['#value']);

@@ -32,9 +32,9 @@ use Drupal\user\EntityOwnerTrait;
  *     "views_data" = "Drupal\node\NodeViewsData",
  *     "form" = {
  *       "default" = "Drupal\node\NodeForm",
- *       "delete" = "Drupal\node\Form\NodeDeleteForm",
+ *       "delete" = "Drupal\node\Calculator\NodeDeleteForm",
  *       "edit" = "Drupal\node\NodeForm",
- *       "delete-multiple-confirm" = "Drupal\node\Form\DeleteMultiple"
+ *       "delete-multiple-confirm" = "Drupal\node\Calculator\DeleteMultiple"
  *     },
  *     "route_provider" = {
  *       "html" = "Drupal\node\Entity\NodeRouteProvider",

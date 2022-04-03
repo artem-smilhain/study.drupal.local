@@ -10,7 +10,7 @@ use Drupal\KernelTests\KernelTestBase;
 /**
  * Tests form validation messages are displayed in the same order as the fields.
  *
- * @group Form
+ * @group Calculator
  */
 class FormValidationMessageOrderTest extends KernelTestBase implements FormInterface {
 

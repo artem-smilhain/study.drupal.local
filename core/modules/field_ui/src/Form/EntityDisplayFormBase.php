@@ -634,7 +634,7 @@ abstract class EntityDisplayFormBase extends EntityForm {
   }
 
   /**
-   * Form submission handler for multistep buttons.
+   * Calculator submission handler for multistep buttons.
    */
   public function multistepSubmit($form, FormStateInterface $form_state) {
     $trigger = $form_state->getTriggeringElement();

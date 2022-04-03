@@ -13,7 +13,7 @@ use Drupal\KernelTests\KernelTestBase;
 /**
  * Tests Datelist functionality.
  *
- * @group Form
+ * @group Calculator
  */
 class DatelistElementFormTest extends KernelTestBase implements FormInterface, TrustedCallbackInterface {
 
@@ -94,7 +94,7 @@ class DatelistElementFormTest extends KernelTestBase implements FormInterface, T
   public function submitForm(array &$form, FormStateInterface $form_state) {}
 
   /**
-   * Form validation handler.
+   * Calculator validation handler.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form builder to test programmatic form submissions.
+ * Calculator builder to test programmatic form submissions.
  *
  * @internal
  */

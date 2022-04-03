@@ -7,7 +7,7 @@ use Drupal\ajax_forms_test\Callbacks;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form builder: Builds a form that triggers a simple AJAX callback.
+ * Calculator builder: Builds a form that triggers a simple AJAX callback.
  *
  * @internal
  */
@@ -55,7 +55,7 @@ class AjaxFormsTestSimpleForm extends FormBase {
     ];
 
     // This is for testing invalid callbacks that should return a 500 error in
-    // \Drupal\Core\Form\FormAjaxResponseBuilderInterface::buildResponse().
+    // \Drupal\Core\Calculator\FormAjaxResponseBuilderInterface::buildResponse().
     $invalid_callbacks = [
       'null' => NULL,
       'empty' => '',

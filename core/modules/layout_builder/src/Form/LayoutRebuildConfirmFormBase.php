@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Provides a base class for confirmation forms that rebuild the Layout Builder.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 abstract class LayoutRebuildConfirmFormBase extends ConfirmFormBase {
 

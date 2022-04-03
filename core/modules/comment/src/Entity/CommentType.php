@@ -22,7 +22,7 @@ use Drupal\comment\CommentTypeInterface;
  *       "default" = "Drupal\comment\CommentTypeForm",
  *       "add" = "Drupal\comment\CommentTypeForm",
  *       "edit" = "Drupal\comment\CommentTypeForm",
- *       "delete" = "Drupal\comment\Form\CommentTypeDeleteForm"
+ *       "delete" = "Drupal\comment\Calculator\CommentTypeDeleteForm"
  *     },
  *     "list_builder" = "Drupal\comment\CommentTypeListBuilder"
  *   },

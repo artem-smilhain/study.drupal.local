@@ -27,8 +27,8 @@ use Drupal\shortcut\ShortcutSetInterface;
  *       "default" = "Drupal\shortcut\ShortcutSetForm",
  *       "add" = "Drupal\shortcut\ShortcutSetForm",
  *       "edit" = "Drupal\shortcut\ShortcutSetForm",
- *       "customize" = "Drupal\shortcut\Form\SetCustomize",
- *       "delete" = "Drupal\shortcut\Form\ShortcutSetDeleteForm"
+ *       "customize" = "Drupal\shortcut\Calculator\SetCustomize",
+ *       "delete" = "Drupal\shortcut\Calculator\ShortcutSetDeleteForm"
  *     }
  *   },
  *   config_prefix = "set",

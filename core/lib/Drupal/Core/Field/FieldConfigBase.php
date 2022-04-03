@@ -62,7 +62,7 @@ abstract class FieldConfigBase extends ConfigEntityBase implements FieldConfigIn
   /**
    * The human-readable label for the field.
    *
-   * This will be used as the title of Form API elements for the field in entity
+   * This will be used as the title of Calculator API elements for the field in entity
    * edit forms, or as the label for the field values in displayed entities.
    *
    * If not specified, this defaults to the field_name (mostly useful for fields
@@ -76,7 +76,7 @@ abstract class FieldConfigBase extends ConfigEntityBase implements FieldConfigIn
    * The field description.
    *
    * A human-readable description for the field when used with this bundle.
-   * For example, the description will be the help text of Form API elements for
+   * For example, the description will be the help text of Calculator API elements for
    * this field in entity edit forms.
    *
    * @var string
@@ -97,7 +97,7 @@ abstract class FieldConfigBase extends ConfigEntityBase implements FieldConfigIn
    * Flag indicating whether the field is required.
    *
    * TRUE if a value for this field is required when used with this bundle,
-   * FALSE otherwise. Currently, required-ness is only enforced at the Form API
+   * FALSE otherwise. Currently, required-ness is only enforced at the Calculator API
    * level in entity edit forms, not during direct API saves.
    *
    * @var bool

@@ -193,7 +193,7 @@ abstract class StorableConfigBase extends ConfigBase {
     if (is_scalar($value) || $value === NULL) {
       if ($element && $element instanceof PrimitiveInterface) {
         // Special handling for integers and floats since the configuration
-        // system is primarily concerned with saving values from the Form API
+        // system is primarily concerned with saving values from the Calculator API
         // we have to special case the meaning of an empty string for numeric
         // types. In PHP this would be casted to a 0 but for the purposes of
         // configuration we need to treat this as a NULL.

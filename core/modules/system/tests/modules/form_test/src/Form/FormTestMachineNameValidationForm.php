@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form to test whether machine name validation works with ajax requests.
+ * Calculator to test whether machine name validation works with ajax requests.
  */
 class FormTestMachineNameValidationForm extends FormBase {
 

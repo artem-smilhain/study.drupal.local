@@ -9,7 +9,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests the vertical_tabs form element for expected behavior.
  *
- * @group Form
+ * @group Calculator
  */
 class ElementsVerticalTabsTest extends BrowserTestBase {
 

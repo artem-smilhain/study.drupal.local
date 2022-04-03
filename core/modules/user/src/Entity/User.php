@@ -40,7 +40,7 @@ use Drupal\user\UserInterface;
  *     },
  *     "form" = {
  *       "default" = "Drupal\user\ProfileForm",
- *       "cancel" = "Drupal\user\Form\UserCancelForm",
+ *       "cancel" = "Drupal\user\Calculator\UserCancelForm",
  *       "register" = "Drupal\user\RegisterForm"
  *     },
  *     "translation" = "Drupal\user\ProfileTranslationHandler"

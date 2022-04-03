@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form builder: Builds a form that triggers a simple AJAX callback.
+ * Calculator builder: Builds a form that triggers a simple AJAX callback.
  *
  * @internal
  */

@@ -27,9 +27,9 @@ use Drupal\language\ConfigurableLanguageInterface;
  *     "list_builder" = "Drupal\language\LanguageListBuilder",
  *     "access" = "Drupal\language\LanguageAccessControlHandler",
  *     "form" = {
- *       "add" = "Drupal\language\Form\LanguageAddForm",
- *       "edit" = "Drupal\language\Form\LanguageEditForm",
- *       "delete" = "Drupal\language\Form\LanguageDeleteForm"
+ *       "add" = "Drupal\language\Calculator\LanguageAddForm",
+ *       "edit" = "Drupal\language\Calculator\LanguageEditForm",
+ *       "delete" = "Drupal\language\Calculator\LanguageDeleteForm"
  *     }
  *   },
  *   admin_permission = "administer languages",

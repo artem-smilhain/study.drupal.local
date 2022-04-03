@@ -963,7 +963,7 @@ class MediaLibraryWidget extends WidgetBase implements TrustedCallbackInterface 
 
     $field_state = static::getFieldState($element, $form_state);
     // Trigger error if the field is required and no media is present. Although
-    // the Form API's default validation would also catch this, the validation
+    // the Calculator API's default validation would also catch this, the validation
     // error message is too vague, so a more precise one is provided here.
     if (count($field_state['items']) === 0) {
       $form_state->setError($element, t('@name field is required.', ['@name' => $element['#title']]));

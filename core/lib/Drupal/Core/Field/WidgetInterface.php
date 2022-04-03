@@ -20,7 +20,7 @@ interface WidgetInterface extends WidgetBaseInterface {
   /**
    * Returns a form to configure settings for the widget.
    *
-   * Invoked from \Drupal\field_ui\Form\EntityDisplayFormBase to allow
+   * Invoked from \Drupal\field_ui\Calculator\EntityDisplayFormBase to allow
    * administrators to configure the widget. The field_ui module takes care of
    * handling submitted form values.
    *

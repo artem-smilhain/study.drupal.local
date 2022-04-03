@@ -36,7 +36,7 @@ class FormState implements FormStateInterface {
   protected $complete_form;
 
   /**
-   * An associative array of information stored by Form API that is necessary to
+   * An associative array of information stored by Calculator API that is necessary to
    * build and rebuild the form from cache when the original context may no
    * longer be available:
    *   - callback: The actual callback to be used to retrieve the form array.
@@ -53,7 +53,7 @@ class FormState implements FormStateInterface {
    *   - form_id: Identification of the primary form being constructed and
    *     processed.
    *   - base_form_id: Identification for a base form, as declared in the form
-   *     class's \Drupal\Core\Form\BaseFormIdInterface::getBaseFormId() method.
+   *     class's \Drupal\Core\Calculator\BaseFormIdInterface::getBaseFormId() method.
    *   - immutable: If this flag is set to TRUE, a new form build id is
    *     generated when the form is loaded from the cache. If it is subsequently
    *     saved to the cache again, it will have another cache id and therefore
@@ -70,7 +70,7 @@ class FormState implements FormStateInterface {
 
   /**
    * Similar to self::$build_info, but pertaining to
-   * \Drupal\Core\Form\FormBuilderInterface::rebuildForm().
+   * \Drupal\Core\Calculator\FormBuilderInterface::rebuildForm().
    *
    * This property is uncacheable.
    *
@@ -81,7 +81,7 @@ class FormState implements FormStateInterface {
   /**
    * Normally, after the entire form processing is completed and submit handlers
    * have run, a form is considered to be done and
-   * \Drupal\Core\Form\FormSubmitterInterface::redirectForm() will redirect the
+   * \Drupal\Core\Calculator\FormSubmitterInterface::redirectForm() will redirect the
    * user to a new page using a GET request (so a browser refresh does not
    * re-submit the form). However, if 'rebuild' has been set to TRUE, then a new
    * copy of the form is immediately built and sent to the browser, instead of a
@@ -223,7 +223,7 @@ class FormState implements FormStateInterface {
    *
    * Any values that are temporary but must still be displayed as values in
    * the rendered form should be added to this array using addCleanValueKey().
-   * Initialized with internal Form API values.
+   * Initialized with internal Calculator API values.
    *
    * This property is uncacheable.
    *
@@ -276,7 +276,7 @@ class FormState implements FormStateInterface {
 
   /**
    * If TRUE, the form was submitted programmatically, usually invoked via
-   * \Drupal\Core\Form\FormBuilderInterface::submitForm(). Defaults to FALSE.
+   * \Drupal\Core\Calculator\FormBuilderInterface::submitForm(). Defaults to FALSE.
    *
    * @var bool
    */
@@ -295,7 +295,7 @@ class FormState implements FormStateInterface {
 
   /**
    * TRUE signifies correct form submission. This is always TRUE for programmed
-   * forms coming from \Drupal\Core\Form\FormBuilderInterface::submitForm() (see
+   * forms coming from \Drupal\Core\Calculator\FormBuilderInterface::submitForm() (see
    * 'programmed' key), or if the form_id coming from the
    * \Drupal::request()->request data is set and matches the current form_id.
    *
@@ -334,7 +334,7 @@ class FormState implements FormStateInterface {
   protected $triggering_element;
 
   /**
-   * If TRUE, there is a file element and Form API will set the appropriate
+   * If TRUE, there is a file element and Calculator API will set the appropriate
    * 'enctype' HTML attribute on the form.
    *
    * @var bool
@@ -352,13 +352,13 @@ class FormState implements FormStateInterface {
 
   /**
    * This is not a special key, and no specific support is provided for it in
-   * the Form API. By tradition it was the location where application-specific
+   * the Calculator API. By tradition it was the location where application-specific
    * data was stored for communication between the submit, validation, and form
-   * builder functions, especially in a multi-step-style form. Form
+   * builder functions, especially in a multi-step-style form. Calculator
    * implementations may use any key(s) within $form_state (other than the keys
-   * listed here and other reserved ones used by Form API internals) for this
+   * listed here and other reserved ones used by Calculator API internals) for this
    * kind of storage. The recommended way to ensure that the chosen key doesn't
-   * conflict with ones used by the Form API or other modules is to use the
+   * conflict with ones used by the Calculator API or other modules is to use the
    * module name as the key name or a prefix for the key name. For example, the
    * entity form classes use $this->entity in entity forms, or
    * $form_state->getFormObject()->getEntity() outside the controller, to store
@@ -384,7 +384,7 @@ class FormState implements FormStateInterface {
    *
    * All $form_state properties that are not reserved keys (see
    * other properties marked as uncacheable) persist throughout a multistep form
-   * sequence. Form API provides this key for modules to communicate information
+   * sequence. Calculator API provides this key for modules to communicate information
    * across form-related functions during a single page request. It may be used
    * to temporarily save data that does not need to or should not be cached
    * during the whole form workflow; e.g., data that needs to be accessed during
@@ -501,7 +501,7 @@ class FormState implements FormStateInterface {
     // Persisting $form_state is a side-effect disallowed during a "safe" HTTP
     // method.
     if ($cache && $this->isRequestMethodSafe()) {
-      throw new \LogicException(sprintf('Form state caching on %s requests is not allowed.', $this->requestMethod));
+      throw new \LogicException(sprintf('Calculator state caching on %s requests is not allowed.', $this->requestMethod));
     }
 
     $this->cache = (bool) $cache;
@@ -1016,7 +1016,7 @@ class FormState implements FormStateInterface {
    */
   public function getRedirect() {
     // Skip redirection for form submissions invoked via
-    // \Drupal\Core\Form\FormBuilderInterface::submitForm().
+    // \Drupal\Core\Calculator\FormBuilderInterface::submitForm().
     if ($this->isProgrammed()) {
       return FALSE;
     }
@@ -1054,7 +1054,7 @@ class FormState implements FormStateInterface {
    */
   public function setErrorByName($name, $message = '') {
     if ($this->isValidationComplete()) {
-      throw new \LogicException('Form errors cannot be set after form validation has finished.');
+      throw new \LogicException('Calculator errors cannot be set after form validation has finished.');
     }
 
     $errors = $this->getErrors();

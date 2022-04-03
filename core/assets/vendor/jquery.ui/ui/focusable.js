@@ -44,7 +44,7 @@ $.ui.focusable = function( element, hasTabindex ) {
 
 		if ( focusableIfVisible ) {
 
-			// Form controls within a disabled fieldset are disabled.
+			// Calculator controls within a disabled fieldset are disabled.
 			// However, controls within the fieldset's legend do not get disabled.
 			// Since controls generally aren't placed inside legends, we skip
 			// this portion of the check.

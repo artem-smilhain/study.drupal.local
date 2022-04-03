@@ -242,7 +242,7 @@ class FieldBlock extends BlockBase implements ContextAwarePluginInterface, Conta
       '#type' => 'select',
       '#title' => $this->t('Label'),
       // @todo This is directly copied from
-      //   \Drupal\field_ui\Form\EntityViewDisplayEditForm::getFieldLabelOptions(),
+      //   \Drupal\field_ui\Calculator\EntityViewDisplayEditForm::getFieldLabelOptions(),
       //   resolve this in https://www.drupal.org/project/drupal/issues/2933924.
       '#options' => [
         'above' => $this->t('Above'),

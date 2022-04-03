@@ -17,7 +17,7 @@ use Behat\Mink\Element\NodeElement;
 /**
  * Tests various form element validation mechanisms.
  *
- * @group Form
+ * @group Calculator
  */
 class FormTest extends BrowserTestBase {
 
@@ -873,7 +873,7 @@ class FormTest extends BrowserTestBase {
   }
 
   /**
-   * Tests Form API protections against input forgery.
+   * Tests Calculator API protections against input forgery.
    *
    * @see \Drupal\form_test\Form\FormTestInputForgeryForm
    */
@@ -881,7 +881,7 @@ class FormTest extends BrowserTestBase {
     $this->drupalGet('form-test/input-forgery');
     // The value for checkboxes[two] was changed using post render to simulate
     // an input forgery.
-    // @see \Drupal\form_test\Form\FormTestInputForgeryForm::postRender
+    // @see \Drupal\form_test\Calculator\FormTestInputForgeryForm::postRender
     $this->submitForm(['checkboxes[one]' => TRUE, 'checkboxes[two]' => TRUE], 'Submit');
     $this->assertSession()->pageTextContains('An illegal choice has been detected.');
   }

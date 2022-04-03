@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormInterface;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form for testing AJAX MessageCommand.
+ * Calculator for testing AJAX MessageCommand.
  *
  * @internal
  */

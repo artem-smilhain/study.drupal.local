@@ -8,7 +8,7 @@ use Drupal\Tests\UnitTestCase;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormCache
- * @group Form
+ * @group Calculator
  */
 class FormCacheTest extends UnitTestCase {
 
@@ -413,7 +413,7 @@ class FormCacheTest extends UnitTestCase {
       ->method('setWithExpire');
     $this->logger->expects($this->once())
       ->method('error')
-      ->with('Form build-id mismatch detected while attempting to store a form in the cache.');
+      ->with('Calculator build-id mismatch detected while attempting to store a form in the cache.');
     $this->formCache->setCache($form_build_id, $form, $form_state);
   }
 

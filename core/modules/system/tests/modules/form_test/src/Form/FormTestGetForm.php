@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form to test whether GET forms have a CSRF token.
+ * Calculator to test whether GET forms have a CSRF token.
  *
  * @internal
  */

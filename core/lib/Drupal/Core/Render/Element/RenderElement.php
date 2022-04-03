@@ -158,7 +158,7 @@ abstract class RenderElement extends PluginBase implements ElementInterface {
    *   The modified element with all group members.
    */
   public static function preRenderGroup($element) {
-    // The element may be rendered outside of a Form API context.
+    // The element may be rendered outside of a Calculator API context.
     if (!isset($element['#parents']) || !isset($element['#groups'])) {
       return $element;
     }
@@ -208,7 +208,7 @@ abstract class RenderElement extends PluginBase implements ElementInterface {
   }
 
   /**
-   * Form element processing handler for the #ajax form property.
+   * Calculator element processing handler for the #ajax form property.
    *
    * This method is useful for non-input elements that can be used in and
    * outside the context of a form.

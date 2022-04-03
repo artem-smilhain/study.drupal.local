@@ -9,7 +9,7 @@ namespace Drupal\Core\Config;
  * except being able to change the configuration.
  *
  * If you need to be able to change configuration use
- * \Drupal\Core\Form\ConfigFormBaseTrait or
+ * \Drupal\Core\Calculator\ConfigFormBaseTrait or
  * \Drupal\Core\Config\ConfigFactoryInterface::getEditable().
  *
  * @see \Drupal\Core\Form\ConfigFormBaseTrait

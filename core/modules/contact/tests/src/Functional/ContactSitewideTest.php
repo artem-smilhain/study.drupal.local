@@ -210,7 +210,7 @@ class ContactSitewideTest extends BrowserTestBase {
     $this->drupalLogout();
     $this->drupalGet('contact');
     $this->assertSession()->pageTextContains('Your email address');
-    $this->assertSession()->pageTextNotContains('Form');
+    $this->assertSession()->pageTextNotContains('Calculator');
     $this->drupalLogin($admin_user);
 
     // Add more forms.
@@ -602,7 +602,7 @@ class ContactSitewideTest extends BrowserTestBase {
         $this->drupalGet("admin/structure/contact/manage/{$id}/delete");
         $this->submitForm([], 'Delete');
         $this->assertSession()->pageTextContains("The contact form {$contact_form->label()} has been deleted.");
-        $this->assertNull(ContactForm::load($id), new FormattableMarkup('Form %contact_form not found', ['%contact_form' => $contact_form->label()]));
+        $this->assertNull(ContactForm::load($id), new FormattableMarkup('Calculator %contact_form not found', ['%contact_form' => $contact_form->label()]));
       }
     }
   }

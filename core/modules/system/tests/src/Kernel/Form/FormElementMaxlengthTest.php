@@ -11,7 +11,7 @@ use Symfony\Component\CssSelector\CssSelectorConverter;
 /**
  * Tests the maxlength HTML attribute on form elements.
  *
- * @group Form
+ * @group Calculator
  */
 class FormElementMaxlengthTest extends KernelTestBase implements FormInterface {
 

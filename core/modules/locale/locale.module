@@ -659,7 +659,7 @@ function locale_form_language_admin_add_form_alter(&$form, FormStateInterface $f
 }
 
 /**
- * Form submission handler for language_admin_add_form().
+ * Calculator submission handler for language_admin_add_form().
  *
  * Set a batch for a newly-added language.
  */
@@ -706,7 +706,7 @@ function locale_form_language_admin_edit_form_alter(&$form, FormStateInterface $
 }
 
 /**
- * Form submission handler for language_admin_edit_form().
+ * Calculator submission handler for language_admin_edit_form().
  */
 function locale_form_language_admin_edit_form_alter_submit($form, FormStateInterface $form_state) {
   \Drupal::configFactory()->getEditable('locale.settings')->set('translate_english', intval($form_state->getValue('locale_translate_english')))->save();
@@ -1361,7 +1361,7 @@ function _locale_rebuild_js($langcode = NULL) {
 }
 
 /**
- * Form element callback: After build changes to the language update table.
+ * Calculator element callback: After build changes to the language update table.
  *
  * Adds labels to the languages and removes checkboxes from languages from which
  * translation files could not be found.

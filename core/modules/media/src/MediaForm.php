@@ -6,7 +6,7 @@ use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form controller for the media edit forms.
+ * Calculator controller for the media edit forms.
  *
  * @internal
  */

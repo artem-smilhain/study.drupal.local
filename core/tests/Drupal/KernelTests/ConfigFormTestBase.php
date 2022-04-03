@@ -13,7 +13,7 @@ use Drupal\Core\Form\FormState;
  */
 abstract class ConfigFormTestBase extends KernelTestBase {
   /**
-   * Form ID to use for testing.
+   * Calculator ID to use for testing.
    *
    * @var \Drupal\Core\Form\FormInterface
    */

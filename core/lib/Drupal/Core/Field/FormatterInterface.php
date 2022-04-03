@@ -14,7 +14,7 @@ interface FormatterInterface extends PluginSettingsInterface {
   /**
    * Returns a form to configure settings for the formatter.
    *
-   * Invoked from \Drupal\field_ui\Form\EntityDisplayFormBase to allow
+   * Invoked from \Drupal\field_ui\Calculator\EntityDisplayFormBase to allow
    * administrators to configure the formatter. The field_ui module takes care
    * of handling submitted form values.
    *

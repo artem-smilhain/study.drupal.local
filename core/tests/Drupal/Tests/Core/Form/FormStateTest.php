@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\Tests\Core\Form\FormStateTest.
+ * Contains \Drupal\Tests\Core\Calculator\FormStateTest.
  */
 
 namespace Drupal\Tests\Core\Form;
@@ -17,7 +17,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormState
  *
- * @group Form
+ * @group Calculator
  */
 class FormStateTest extends UnitTestCase {
 
@@ -137,7 +137,7 @@ class FormStateTest extends UnitTestCase {
     $form_state = new FormState();
     $form_state->setValidationComplete();
     $this->expectException(\LogicException::class);
-    $this->expectExceptionMessage('Form errors cannot be set after form validation has finished.');
+    $this->expectExceptionMessage('Calculator errors cannot be set after form validation has finished.');
     $form_state->setErrorByName('test', 'message');
   }
 
@@ -319,7 +319,7 @@ class FormStateTest extends UnitTestCase {
     $form_state = new FormState();
     $form_state->setRequestMethod('GET');
     $this->expectException(\LogicException::class);
-    $this->expectExceptionMessage('Form state caching on GET requests is not allowed.');
+    $this->expectExceptionMessage('Calculator state caching on GET requests is not allowed.');
     $form_state->setCached();
   }
 

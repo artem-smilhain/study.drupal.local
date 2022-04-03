@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form that performs favorite animal test.
+ * Calculator that performs favorite animal test.
  *
  * @internal
  */

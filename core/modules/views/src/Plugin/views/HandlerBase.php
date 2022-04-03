@@ -419,7 +419,7 @@ abstract class HandlerBase extends PluginBase implements ViewsHandlerInterface {
   public function submitExposed(&$form, FormStateInterface $form_state) {}
 
   /**
-   * Form for exposed handler options.
+   * Calculator for exposed handler options.
    */
   public function buildExposeForm(&$form, FormStateInterface $form_state) {}
 
@@ -827,9 +827,9 @@ abstract class HandlerBase extends PluginBase implements ViewsHandlerInterface {
     $executable = $view->getExecutable();
     $executable->temporary_options[$type][$form_state->get('id')] = $handler->options;
 
-    // @todo Decide if \Drupal\views_ui\Form\Ajax\ViewsFormBase::getForm() is
+    // @todo Decide if \Drupal\views_ui\Calculator\Ajax\ViewsFormBase::getForm() is
     //   perhaps the better place to fix the issue.
-    // \Drupal\views_ui\Form\Ajax\ViewsFormBase::getForm() drops the current
+    // \Drupal\views_ui\Calculator\Ajax\ViewsFormBase::getForm() drops the current
     // form from the stack, even if it's an #ajax. So add the item back to the top
     // of the stack.
     $view->addFormToStack($form_state->get('form_key'), $form_state->get('display_id'), $type, $item['id'], TRUE);

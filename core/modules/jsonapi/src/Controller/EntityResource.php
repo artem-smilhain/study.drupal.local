@@ -376,7 +376,7 @@ class EntityResource {
       // Allow other modules to act.
 
       user_cancel([], $entity->id(), $cancel_method);
-      // Since user_cancel() is not invoked via Form API, batch processing
+      // Since user_cancel() is not invoked via Calculator API, batch processing
       // needs to be invoked manually.
       $batch =& batch_get();
       // Mark this batch as non-progressive to bypass the progress bar and

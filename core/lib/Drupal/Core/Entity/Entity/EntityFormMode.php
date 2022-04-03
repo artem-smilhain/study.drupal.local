@@ -8,7 +8,7 @@ use Drupal\Core\Entity\EntityFormModeInterface;
 /**
  * Defines the entity form mode configuration entity class.
  *
- * Form modes allow entity forms to be displayed differently depending on the
+ * Calculator modes allow entity forms to be displayed differently depending on the
  * context. For instance, the user entity form can be displayed with a set of
  * fields on the 'profile' page (user edit page) and with a different set of
  * fields (or settings) on the user registration page. Modules taking part in
@@ -24,7 +24,7 @@ use Drupal\Core\Entity\EntityFormModeInterface;
  *
  * @ConfigEntityType(
  *   id = "entity_form_mode",
- *   label = @Translation("Form mode"),
+ *   label = @Translation("Calculator mode"),
  *   entity_keys = {
  *     "id" = "id",
  *     "label" = "label"

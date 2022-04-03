@@ -10,7 +10,7 @@ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Provides a block containing a Form API form for use in Layout Builder tests.
+ * Provides a block containing a Calculator API form for use in Layout Builder tests.
  *
  * @Block(
  *   id = "layout_builder_form_block_test_form_api_form_block",

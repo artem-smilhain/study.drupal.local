@@ -5,9 +5,9 @@ namespace Drupal\Tests\system\Functional\Form;
 use Drupal\Tests\BrowserTestBase;
 
 /**
- * Tests functionality of \Drupal\Core\Form\FormBuilderInterface::rebuildForm().
+ * Tests functionality of \Drupal\Core\Calculator\FormBuilderInterface::rebuildForm().
  *
- * @group Form
+ * @group Calculator
  */
 class RebuildTest extends BrowserTestBase {
 

@@ -103,7 +103,7 @@ abstract class ConfigTranslationFormBase extends FormBase implements BaseFormIdI
   }
 
   /**
-   * Implements \Drupal\Core\Form\FormInterface::buildForm().
+   * Implements \Drupal\Core\Calculator\FormInterface::buildForm().
    *
    * Builds configuration form with metadata and values from the source
    * language.
@@ -237,7 +237,7 @@ abstract class ConfigTranslationFormBase extends FormBase implements BaseFormIdI
    */
   public static function createFormElement(TypedDataInterface $schema) {
     $definition = $schema->getDataDefinition();
-    // Form element classes can be specified even for non-translatable elements
+    // Calculator element classes can be specified even for non-translatable elements
     // such as the ListElement form element which is used for Mapping and
     // Sequence schema elements.
     if (isset($definition['form_element_class'])) {

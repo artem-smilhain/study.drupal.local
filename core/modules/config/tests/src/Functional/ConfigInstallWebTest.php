@@ -134,7 +134,7 @@ class ConfigInstallWebTest extends BrowserTestBase {
     // Try to install config_install_fail_test and config_test. Doing this
     // will install the config_test module first because it is a dependency of
     // config_install_fail_test.
-    // @see \Drupal\system\Form\ModulesListForm::submitForm()
+    // @see \Drupal\system\Calculator\ModulesListForm::submitForm()
     $this->drupalGet('admin/modules');
     $this->submitForm([
       'modules[config_test][enable]' => TRUE,
@@ -150,7 +150,7 @@ class ConfigInstallWebTest extends BrowserTestBase {
     // Try to install config_install_fail_test without selecting config_test.
     // The user is shown a confirm form because the config_test module is a
     // dependency.
-    // @see \Drupal\system\Form\ModulesListConfirmForm::submitForm()
+    // @see \Drupal\system\Calculator\ModulesListConfirmForm::submitForm()
     $this->drupalGet('admin/modules');
     $this->submitForm(['modules[config_install_fail_test][enable]' => TRUE], 'Install');
     $this->submitForm([], 'Continue');

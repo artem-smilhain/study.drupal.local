@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormValidator
- * @group Form
+ * @group Calculator
  */
 class FormValidatorTest extends UnitTestCase {
 

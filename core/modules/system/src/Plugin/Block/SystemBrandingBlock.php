@@ -17,7 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   id = "system_branding_block",
  *   admin_label = @Translation("Site branding"),
  *   forms = {
- *     "settings_tray" = "Drupal\system\Form\SystemBrandingOffCanvasForm",
+ *     "settings_tray" = "Drupal\system\Calculator\SystemBrandingOffCanvasForm",
  *   },
  * )
  */

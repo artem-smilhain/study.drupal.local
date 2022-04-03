@@ -18,7 +18,7 @@ use Drupal\Core\Entity\EntityTypeInterface;
  *     "form" = {
  *       "default" = "Drupal\entity_test\EntityTestForm",
  *       "delete" = "Drupal\entity_test\EntityTestDeleteForm",
- *       "delete-multiple-confirm" = "Drupal\Core\Entity\Form\DeleteMultipleForm"
+ *       "delete-multiple-confirm" = "Drupal\Core\Entity\Calculator\DeleteMultipleForm"
  *     },
  *     "views_data" = "Drupal\views\EntityViewsData",
  *     "route_provider" = {

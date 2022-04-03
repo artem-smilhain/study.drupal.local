@@ -65,7 +65,7 @@ class FormAjaxSubscriber implements EventSubscriberInterface {
     // later VIEW subscribers process the controller result as though for
     // HTML display (i.e., add blocks). During that block building, when the
     // submitted form gets processed, an exception gets thrown by
-    // \Drupal\Core\Form\FormBuilderInterface::buildForm(), allowing
+    // \Drupal\Core\Calculator\FormBuilderInterface::buildForm(), allowing
     // self::onException() to return an AJAX response instead of an HTML one.
     $request = $event->getRequest();
     if ($request->query->has(FormBuilderInterface::AJAX_FORM_REQUEST)) {

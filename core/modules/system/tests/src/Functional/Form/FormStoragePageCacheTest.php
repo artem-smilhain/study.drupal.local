@@ -7,7 +7,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests form storage from cached pages.
  *
- * @group Form
+ * @group Calculator
  */
 class FormStoragePageCacheTest extends BrowserTestBase {
 

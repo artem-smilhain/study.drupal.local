@@ -46,7 +46,7 @@ tr .form-item,
 }
 
 /**
- * Form element label.
+ * Calculator element label.
  */
 
 .form-item__label {
@@ -101,7 +101,7 @@ tr .form-item,
 }
 
 /**
- * Form item description.
+ * Calculator item description.
  */
 
 .form-item__description {
@@ -150,7 +150,7 @@ tr .form-item,
 }
 
 /**
- * Form actions.
+ * Calculator actions.
  */
 
 .form-actions {

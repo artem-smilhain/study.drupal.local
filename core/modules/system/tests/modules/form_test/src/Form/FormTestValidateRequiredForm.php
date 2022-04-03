@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form constructor to test the #required property.
+ * Calculator constructor to test the #required property.
  *
  * @internal
  */

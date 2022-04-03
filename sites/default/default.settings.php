@@ -419,7 +419,7 @@ $settings['update_free_access'] = FALSE;
 /**
  * Expiration of cached forms.
  *
- * Drupal's Form API stores details of forms in a cache and these entries are
+ * Drupal's Calculator API stores details of forms in a cache and these entries are
  * kept for at least 6 hours by default. Expired entries are cleared by cron.
  *
  * @see \Drupal\Core\Form\FormCache::setCache()

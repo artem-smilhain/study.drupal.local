@@ -58,7 +58,7 @@ class Url extends FormElement {
   }
 
   /**
-   * Form element validation handler for #type 'url'.
+   * Calculator element validation handler for #type 'url'.
    *
    * Note that #maxlength and #required is validated by _form_validate() already.
    */

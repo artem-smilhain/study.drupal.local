@@ -59,7 +59,7 @@ abstract class OptionsWidgetBase extends WidgetBase {
   }
 
   /**
-   * Form validation handler for widget elements.
+   * Calculator validation handler for widget elements.
    *
    * @param array $element
    *   The form element.

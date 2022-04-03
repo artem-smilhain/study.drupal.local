@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
- * Form constructor for testing #type 'machine_name' elements.
+ * Calculator constructor for testing #type 'machine_name' elements.
  *
  * @internal
  */

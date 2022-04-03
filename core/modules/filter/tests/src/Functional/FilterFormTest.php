@@ -91,7 +91,7 @@ class FilterFormTest extends BrowserTestBase {
     // default.
     $this->assertOptions('edit-all-formats-no-default-format--2', $formats, 'filtered_html');
     $this->assertEnabledTextarea('edit-all-formats-default-value');
-    // \Drupal\filter_test\Form\FilterTestFormatForm::buildForm() uses
+    // \Drupal\filter_test\Calculator\FilterTestFormatForm::buildForm() uses
     // 'filter_test' as the default value in this case.
     $this->assertOptions('edit-all-formats-default-format--2', $formats, 'filter_test');
     $this->assertEnabledTextarea('edit-all-formats-default-missing-value');
@@ -140,7 +140,7 @@ class FilterFormTest extends BrowserTestBase {
     // default. This happens to be 'filtered_html'.
     $this->assertOptions('edit-all-formats-no-default-format--2', $formats, 'filtered_html');
     $this->assertEnabledTextarea('edit-all-formats-default-value');
-    // \Drupal\filter_test\Form\FilterTestFormatForm::buildForm() uses
+    // \Drupal\filter_test\Calculator\FilterTestFormatForm::buildForm() uses
     // 'filter_test' as the default value in this case.
     $this->assertOptions('edit-all-formats-default-format--2', $formats, 'filter_test');
     // If a missing format is given as default, non-admin users are presented

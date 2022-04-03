@@ -305,7 +305,7 @@ class ManagedFile extends FormElement {
     // Use a manually generated ID for the file upload field so the desired
     // field label can be associated with it below. Use the same method for
     // setting the ID that the form API autogenerator does.
-    // @see \Drupal\Core\Form\FormBuilder::doBuildForm()
+    // @see \Drupal\Core\Calculator\FormBuilder::doBuildForm()
     $id = Html::getUniqueId('edit-' . implode('-', array_merge($element['#parents'], ['upload'])));
 
     // The file upload field itself.
@@ -383,7 +383,7 @@ class ManagedFile extends FormElement {
    * are hidden when there is no file attached. Controls are hidden here instead
    * of in \Drupal\file\Element\ManagedFile::processManagedFile(), because
    * #access for these buttons depends on the managed_file element's #value. See
-   * the documentation of \Drupal\Core\Form\FormBuilderInterface::doBuildForm()
+   * the documentation of \Drupal\Core\Calculator\FormBuilderInterface::doBuildForm()
    * for more detailed information about the relationship between #process,
    * #value, and #access.
    *

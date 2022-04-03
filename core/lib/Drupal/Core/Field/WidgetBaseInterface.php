@@ -70,7 +70,7 @@ interface WidgetBaseInterface extends PluginSettingsInterface {
   /**
    * Retrieves processing information about the widget from $form_state.
    *
-   * This method is static so that it can be used in static Form API callbacks.
+   * This method is static so that it can be used in static Calculator API callbacks.
    *
    * @param array $parents
    *   The array of #parents where the field lives in the form.
@@ -90,7 +90,7 @@ interface WidgetBaseInterface extends PluginSettingsInterface {
   /**
    * Stores processing information about the widget in $form_state.
    *
-   * This method is static so that it can be used in static Form API #callbacks.
+   * This method is static so that it can be used in static Calculator API #callbacks.
    *
    * @param array $parents
    *   The array of #parents where the widget lives in the form.

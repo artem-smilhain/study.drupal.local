@@ -14,12 +14,12 @@ use Drupal\Component\Utility\NestedArray;
 trait FormStateValuesTrait {
 
   /**
-   * Implements \Drupal\Core\Form\FormStateInterface::getValues()
+   * Implements \Drupal\Core\Calculator\FormStateInterface::getValues()
    */
   abstract public function &getValues();
 
   /**
-   * Implements \Drupal\Core\Form\FormStateInterface::getValue()
+   * Implements \Drupal\Core\Calculator\FormStateInterface::getValue()
    */
   public function &getValue($key, $default = NULL) {
     $exists = NULL;
@@ -31,7 +31,7 @@ trait FormStateValuesTrait {
   }
 
   /**
-   * Implements \Drupal\Core\Form\FormStateInterface::setValues()
+   * Implements \Drupal\Core\Calculator\FormStateInterface::setValues()
    */
   public function setValues(array $values) {
     $existing_values = &$this->getValues();
@@ -40,7 +40,7 @@ trait FormStateValuesTrait {
   }
 
   /**
-   * Implements \Drupal\Core\Form\FormStateInterface::setValue()
+   * Implements \Drupal\Core\Calculator\FormStateInterface::setValue()
    */
   public function setValue($key, $value) {
     NestedArray::setValue($this->getValues(), (array) $key, $value, TRUE);
@@ -48,7 +48,7 @@ trait FormStateValuesTrait {
   }
 
   /**
-   * Implements \Drupal\Core\Form\FormStateInterface::unsetValue()
+   * Implements \Drupal\Core\Calculator\FormStateInterface::unsetValue()
    */
   public function unsetValue($key) {
     NestedArray::unsetValue($this->getValues(), (array) $key);
@@ -56,7 +56,7 @@ trait FormStateValuesTrait {
   }
 
   /**
-   * Implements \Drupal\Core\Form\FormStateInterface::hasValue()
+   * Implements \Drupal\Core\Calculator\FormStateInterface::hasValue()
    */
   public function hasValue($key) {
     $exists = NULL;
@@ -65,7 +65,7 @@ trait FormStateValuesTrait {
   }
 
   /**
-   * Implements \Drupal\Core\Form\FormStateInterface::isValueEmpty()
+   * Implements \Drupal\Core\Calculator\FormStateInterface::isValueEmpty()
    */
   public function isValueEmpty($key) {
     $exists = NULL;
@@ -74,7 +74,7 @@ trait FormStateValuesTrait {
   }
 
   /**
-   * Implements \Drupal\Core\Form\FormStateInterface::setValueForElement()
+   * Implements \Drupal\Core\Calculator\FormStateInterface::setValueForElement()
    */
   public function setValueForElement(array $element, $value) {
     return $this->setValue($element['#parents'], $value);

@@ -450,7 +450,7 @@ class EntityReferenceItem extends FieldItemBase implements OptionsProviderInterf
   }
 
   /**
-   * Form element validation handler; Invokes selection plugin's validation.
+   * Calculator element validation handler; Invokes selection plugin's validation.
    *
    * @param array $form
    *   The form where the settings form is being included in.
@@ -667,7 +667,7 @@ class EntityReferenceItem extends FieldItemBase implements OptionsProviderInterf
   }
 
   /**
-   * Render API callback: Moves entity_reference specific Form API elements
+   * Render API callback: Moves entity_reference specific Calculator API elements
    * (i.e. 'handler_settings') up a level for easier processing by the
    * validation and submission handlers.
    *

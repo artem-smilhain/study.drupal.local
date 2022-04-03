@@ -120,7 +120,7 @@ class HtmlResponseAttachmentsProcessor implements AttachmentsResponseProcessorIn
     // need to include.
     //
     // @todo Exceptions should not be used for code flow control. However, the
-    //   Form API does not integrate with the HTTP Kernel based architecture of
+    //   Calculator API does not integrate with the HTTP Kernel based architecture of
     //   Drupal 8. In order to resolve this issue properly it is necessary to
     //   completely separate form submission from rendering.
     //   @see https://www.drupal.org/node/2367555

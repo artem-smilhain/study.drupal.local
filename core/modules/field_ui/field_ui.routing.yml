@@ -58,7 +58,7 @@ entity.entity_form_mode.collection:
   path: '/admin/structure/display-modes/form'
   defaults:
     _entity_list: 'entity_form_mode'
-    _title: 'Form modes'
+    _title: 'Calculator modes'
   requirements:
     _permission: 'administer display modes'
 

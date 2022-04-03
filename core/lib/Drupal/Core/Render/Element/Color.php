@@ -47,7 +47,7 @@ class Color extends FormElement {
   }
 
   /**
-   * Form element validation handler for #type 'color'.
+   * Calculator element validation handler for #type 'color'.
    */
   public static function validateColor(&$element, FormStateInterface $form_state, &$complete_form) {
     $value = trim($element['#value']);

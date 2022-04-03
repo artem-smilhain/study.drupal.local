@@ -9,7 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form controller for the responsive image edit/add forms.
+ * Calculator controller for the responsive image edit/add forms.
  *
  * @internal
  */

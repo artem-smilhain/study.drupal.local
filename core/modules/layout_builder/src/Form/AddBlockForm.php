@@ -11,7 +11,7 @@ use Drupal\layout_builder\SectionStorageInterface;
  * Provides a form to add a block.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 class AddBlockForm extends ConfigureBlockFormBase {
 

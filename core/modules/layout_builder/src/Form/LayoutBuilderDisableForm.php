@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Disables Layout Builder for a given default.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 class LayoutBuilderDisableForm extends ConfirmFormBase {
 

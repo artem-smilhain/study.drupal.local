@@ -38,7 +38,7 @@ use Drupal\user\EntityOwnerTrait;
  *       "add" = "Drupal\media\MediaForm",
  *       "edit" = "Drupal\media\MediaForm",
  *       "delete" = "Drupal\Core\Entity\ContentEntityDeleteForm",
- *       "delete-multiple-confirm" = "Drupal\Core\Entity\Form\DeleteMultipleForm",
+ *       "delete-multiple-confirm" = "Drupal\Core\Entity\Calculator\DeleteMultipleForm",
  *     },
  *     "views_data" = "Drupal\media\MediaViewsData",
  *     "route_provider" = {

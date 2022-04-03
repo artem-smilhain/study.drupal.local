@@ -1,6 +1,6 @@
 name: 'FormAPI Test'
 type: module
-description: 'Support module for Form API tests.'
+description: 'Support module for Calculator API tests.'
 package: Testing
 # version: VERSION
 dependencies:

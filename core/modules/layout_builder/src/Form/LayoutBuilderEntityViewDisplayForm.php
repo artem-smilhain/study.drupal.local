@@ -14,7 +14,7 @@ use Drupal\layout_builder\SectionStorageInterface;
  * Edit form for the LayoutBuilderEntityViewDisplay entity type.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 class LayoutBuilderEntityViewDisplayForm extends EntityViewDisplayEditForm {
 

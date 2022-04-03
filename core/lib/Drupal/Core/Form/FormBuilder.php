@@ -279,7 +279,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
       $this->prepareForm($form_id, $form, $form_state);
 
       // self::setCache() removes uncacheable $form_state keys (see properties
-      // in \Drupal\Core\Form\FormState) in order for multi-step forms to work
+      // in \Drupal\Core\Calculator\FormState) in order for multi-step forms to work
       // properly. This means that form processing logic for single-step forms
       // using $form_state->isCached() may depend on data stored in those keys
       // during self::retrieveForm()/self::prepareForm(), but form processing
@@ -329,9 +329,9 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
     // After processing the form, if this is an AJAX form request, interrupt
     // form rendering and return by throwing an exception that contains the
     // processed form and form state. This exception will be caught by
-    // \Drupal\Core\Form\EventSubscriber\FormAjaxSubscriber::onException() and
+    // \Drupal\Core\Calculator\EventSubscriber\FormAjaxSubscriber::onException() and
     // then passed through
-    // \Drupal\Core\Form\FormAjaxResponseBuilderInterface::buildResponse() to
+    // \Drupal\Core\Calculator\FormAjaxResponseBuilderInterface::buildResponse() to
     // build a proper AJAX response.
     // Only do this when the form ID matches, since there is no guarantee from
     // $ajax_form_request that it's an AJAX request for this particular form.
@@ -344,7 +344,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
     // @see Drupal\Core\EventSubscriber\EnforcedFormResponseSubscriber
     //
     // @todo Exceptions should not be used for code flow control. However, the
-    //   Form API does not integrate with the HTTP Kernel based architecture of
+    //   Calculator API does not integrate with the HTTP Kernel based architecture of
     //   Drupal 8. In order to resolve this issue properly it is necessary to
     //   completely separate form submission from rendering.
     //   @see https://www.drupal.org/node/2367555
@@ -534,7 +534,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
     // @see Drupal\Core\EventSubscriber\EnforcedFormResponseSubscriber
     //
     // @todo Exceptions should not be used for code flow control. However, the
-    //   Form API currently allows any form builder functions to return a
+    //   Calculator API currently allows any form builder functions to return a
     //   response.
     //   @see https://www.drupal.org/node/2363189
     if ($form instanceof Response) {
@@ -575,7 +575,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
 
     // Only process the input if we have a correct form submission.
     if ($form_state->isProcessingInput()) {
-      // Form values for programmed form submissions typically do not include a
+      // Calculator values for programmed form submissions typically do not include a
       // value for the submit button. But without a triggering element, a
       // potentially existing #limit_validation_errors property on the primary
       // submit button is not taken account. Therefore, check whether there is
@@ -621,7 +621,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
       //   have divergent form execution based on whether the triggering element
       //   has #executes_submit_callback set to TRUE.
       if (($form_state->isRebuilding() || !$form_state->isExecuted()) && !FormState::hasAnyErrors()) {
-        // Form building functions (e.g., self::handleInputElement()) may use
+        // Calculator building functions (e.g., self::handleInputElement()) may use
         // $form_state->isRebuilding() to determine if they are running in the
         // context of a rebuild, so ensure it is set.
         $form_state->setRebuild();
@@ -692,7 +692,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
       // Use the proper API to generate the placeholder, when we have one.
       // See https://www.drupal.org/node/2562341.
       // The placeholder uses a unique string that is returned by
-      // Crypt::hashBase64('Drupal\Core\Form\FormBuilder::prepareForm').
+      // Crypt::hashBase64('Drupal\Core\Calculator\FormBuilder::prepareForm').
       $placeholder = 'form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM';
 
       $form['#attached']['placeholders'][$placeholder] = [
@@ -727,7 +727,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
       '#value' => $form['#build_id'],
       '#id' => $form['#build_id'],
       '#name' => 'form_build_id',
-      // Form processing and validation require this value. Ensure the
+      // Calculator processing and validation require this value. Ensure the
       // submitted form value appears literally, regardless of custom #tree
       // and #parents being set elsewhere.
       '#parents' => ['form_build_id'],
@@ -752,7 +752,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
     // since tokens are session-bound and forms displayed to anonymous users are
     // very likely cached, we cannot assign a token for them.
     // During installation, there is no $user yet.
-    // Form constructors may explicitly set #token to FALSE when cross site
+    // Calculator constructors may explicitly set #token to FALSE when cross site
     // request forgery is irrelevant to the form, such as search forms.
     if ($form_state->isProgrammed() || (isset($form['#token']) && $form['#token'] === FALSE)) {
       unset($form['#token']);
@@ -768,7 +768,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
           '#id' => Html::getUniqueId('edit-' . $form_id . '-form-token'),
           '#type' => 'token',
           '#default_value' => $placeholder,
-          // Form processing and validation require this value. Ensure the
+          // Calculator processing and validation require this value. Ensure the
           // submitted form value appears literally, regardless of custom #tree
           // and #parents being set elsewhere.
           '#parents' => ['form_token'],
@@ -795,7 +795,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
         '#type' => 'hidden',
         '#value' => $form_id,
         '#id' => Html::getUniqueId("edit-$form_id"),
-        // Form processing and validation require this value. Ensure the
+        // Calculator processing and validation require this value. Ensure the
         // submitted form value appears literally, regardless of custom #tree
         // and #parents being set elsewhere.
         '#parents' => ['form_id'],
@@ -848,7 +848,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
     $request = $this->requestStack->getMainRequest();
     $request_uri = $request->getRequestUri();
 
-    // Prevent cross site requests via the Form API by using an absolute URL
+    // Prevent cross site requests via the Calculator API by using an absolute URL
     // when the request uri starts with multiple slashes..
     if (strpos($request_uri, '//') === 0) {
       $request_uri = $request->getUri();
@@ -1287,7 +1287,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
 
     // Determine which element (if any) triggered the submission of the form and
     // keep track of all the clickable buttons in the form for
-    // \Drupal\Core\Form\FormState::cleanValues(). Enforce the same input
+    // \Drupal\Core\Calculator\FormState::cleanValues(). Enforce the same input
     // processing restrictions as above.
     if ($process_input) {
       // Detect if the element triggered the submission via Ajax.
@@ -1301,7 +1301,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
       // information.
       if (!empty($element['#is_button'])) {
         // All buttons in the form need to be tracked for
-        // \Drupal\Core\Form\FormState::cleanValues() and for the
+        // \Drupal\Core\Calculator\FormState::cleanValues() and for the
         // self::doBuildForm() code that handles a form submission containing no
         // button information in \Drupal::request()->request.
         $buttons = $form_state->getButtons();
@@ -1357,7 +1357,7 @@ class FormBuilder implements FormBuilderInterface, FormValidatorInterface, FormS
    *
    * Because this function contains only part of the logic needed to determine
    * $form_state->getTriggeringElement(), it should not be called from anywhere
-   * other than within the Form API. Form validation and submit handlers needing
+   * other than within the Calculator API. Calculator validation and submit handlers needing
    * to know which button was clicked should get that information from
    * $form_state->getTriggeringElement().
    */

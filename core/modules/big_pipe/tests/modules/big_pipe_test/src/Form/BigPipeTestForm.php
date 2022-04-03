@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form to test BigPipe.
+ * Calculator to test BigPipe.
  *
  * @internal
  */

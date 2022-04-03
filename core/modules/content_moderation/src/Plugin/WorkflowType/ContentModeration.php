@@ -26,8 +26,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *     "published",
  *   },
  *   forms = {
- *     "configure" = "\Drupal\content_moderation\Form\ContentModerationConfigureForm",
- *     "state" = "\Drupal\content_moderation\Form\ContentModerationStateForm"
+ *     "configure" = "\Drupal\content_moderation\Calculator\ContentModerationConfigureForm",
+ *     "state" = "\Drupal\content_moderation\Calculator\ContentModerationStateForm"
  *   },
  * )
  */

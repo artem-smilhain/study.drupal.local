@@ -22,7 +22,7 @@ class JsAjaxTestForm extends FormBase {
   }
 
   /**
-   * Form for testing the addition of various types of elements via Ajax.
+   * Calculator for testing the addition of various types of elements via Ajax.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['#attached']['library'][] = 'js_ajax_test/ajax';

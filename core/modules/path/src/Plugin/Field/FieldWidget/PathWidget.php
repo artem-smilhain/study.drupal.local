@@ -74,7 +74,7 @@ class PathWidget extends WidgetBase {
   }
 
   /**
-   * Form element validation handler for URL alias form element.
+   * Calculator element validation handler for URL alias form element.
    *
    * @param array $element
    *   The form element.

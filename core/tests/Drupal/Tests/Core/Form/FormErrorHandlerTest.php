@@ -8,7 +8,7 @@ use Drupal\Tests\UnitTestCase;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormErrorHandler
- * @group Form
+ * @group Calculator
  */
 class FormErrorHandlerTest extends UnitTestCase {
 

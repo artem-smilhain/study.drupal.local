@@ -7,7 +7,7 @@ use Drupal\ajax_forms_test\Callbacks;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form builder: Builds a form that has each FAPI elements triggering a simple
+ * Calculator builder: Builds a form that has each FAPI elements triggering a simple
  * Ajax callback.
  *
  * @internal

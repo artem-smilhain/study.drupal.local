@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form builder for \Drupal\Core\Form\FormState::cleanValues() test.
+ * Calculator builder for \Drupal\Core\Calculator\FormState::cleanValues() test.
  *
  * @internal
  */

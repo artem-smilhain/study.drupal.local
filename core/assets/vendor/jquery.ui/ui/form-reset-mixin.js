@@ -1,5 +1,5 @@
 /*!
- * jQuery UI Form Reset Mixin 1.12.1
+ * jQuery UI Calculator Reset Mixin 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
@@ -7,7 +7,7 @@
  * http://jquery.org/license
  */
 
-//>>label: Form Reset Mixin
+//>>label: Calculator Reset Mixin
 //>>group: Core
 //>>description: Refresh input widgets when their form is reset
 //>>docs: http://api.jqueryui.com/form-reset-mixin/

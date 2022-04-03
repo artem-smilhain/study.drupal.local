@@ -39,7 +39,7 @@ tr .form-item,
 }
 
 /**
- * Form element label.
+ * Calculator element label.
  */
 .form-item__label {
   display: block;
@@ -72,7 +72,7 @@ tr .form-item,
   color: var(--color--gray-45);
 }
 
-/* Form required star icon */
+/* Calculator required star icon */
 .form-item__label.form-required::after,
 .fieldset__label.form-required::after,
 .required-mark::after {
@@ -93,7 +93,7 @@ tr .form-item,
 }
 
 /**
- * Form item description.
+ * Calculator item description.
  */
 .form-item__description {
   margin-block: var(--sp0-5);
@@ -130,7 +130,7 @@ tr .form-item,
 }
 
 /**
- * Form actions.
+ * Calculator actions.
  */
 .form-actions {
   display: flex;

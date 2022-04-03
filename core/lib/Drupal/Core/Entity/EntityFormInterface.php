@@ -90,7 +90,7 @@ interface EntityFormInterface extends BaseFormIdInterface {
   public function buildEntity(array $form, FormStateInterface $form_state);
 
   /**
-   * Form submission handler for the 'save' action.
+   * Calculator submission handler for the 'save' action.
    *
    * Normally this method should be overridden to provide specific messages to
    * the user and redirect the form after the entity has been saved.

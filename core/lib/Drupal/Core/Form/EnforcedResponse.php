@@ -39,7 +39,7 @@ class EnforcedResponse extends Response {
    *
    * @return static|null
    *   The enforced response or NULL if the exception chain does not contain a
-   *   \Drupal\Core\Form\EnforcedResponseException exception.
+   *   \Drupal\Core\Calculator\EnforcedResponseException exception.
    */
   public static function createFromException(\Throwable $e) {
     while ($e) {

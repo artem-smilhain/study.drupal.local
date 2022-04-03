@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\form_test\Callbacks;
 
 /**
- * Form builder for testing \Drupal\Core\Form\FormValidatorInterface::validateForm().
+ * Calculator builder for testing \Drupal\Core\Calculator\FormValidatorInterface::validateForm().
  *
  * Serves for testing form processing and alterations by form validation
  * handlers, especially for the case of a validation error:

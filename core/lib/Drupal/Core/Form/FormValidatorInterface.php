@@ -30,7 +30,7 @@ interface FormValidatorInterface {
    *   theming, and hook_form_alter functions.
    * @param $form
    *   An associative array containing the structure of the form, which is
-   *   passed by reference. Form validation handlers are able to alter the form
+   *   passed by reference. Calculator validation handlers are able to alter the form
    *   structure (like #process and #after_build callbacks during form building)
    *   in case of a validation error. If a validation handler alters the form
    *   structure, it is responsible for validating the values of changed form

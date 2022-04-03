@@ -175,14 +175,14 @@ abstract class ViewsFormBase extends FormBase implements ViewsFormInterface {
   /**
    * Wrapper for handling AJAX forms.
    *
-   * Wrapper around \Drupal\Core\Form\FormBuilderInterface::buildForm() to
+   * Wrapper around \Drupal\Core\Calculator\FormBuilderInterface::buildForm() to
    * handle some AJAX stuff automatically.
    * This makes some assumptions about the client.
    *
    * @param \Drupal\Core\Form\FormInterface|string $form_class
    *   The value must be one of the following:
-   *   - The name of a class that implements \Drupal\Core\Form\FormInterface.
-   *   - An instance of a class that implements \Drupal\Core\Form\FormInterface.
+   *   - The name of a class that implements \Drupal\Core\Calculator\FormInterface.
+   *   - An instance of a class that implements \Drupal\Core\Calculator\FormInterface.
    * @param \Drupal\Core\Form\FormStateInterface $form_state
    *   The current state of the form.
    *

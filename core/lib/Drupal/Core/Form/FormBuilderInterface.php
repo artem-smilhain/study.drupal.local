@@ -14,7 +14,7 @@ interface FormBuilderInterface {
    * \Drupal\Core\EventSubscriber\MainContentViewSubscriber::WRAPPER_FORMAT,
    * because that one is set for all AJAX submissions, including ones with
    * dedicated routes for which self::buildForm() should not exit early via a
-   * \Drupal\Core\Form\FormAjaxException.
+   * \Drupal\Core\Calculator\FormAjaxException.
    *
    * @todo Re-evaluate the need for this constant after
    *   https://www.drupal.org/node/2502785 and
@@ -44,8 +44,8 @@ interface FormBuilderInterface {
    *
    * @param \Drupal\Core\Form\FormInterface|string $form_arg
    *   The value must be one of the following:
-   *   - The name of a class that implements \Drupal\Core\Form\FormInterface.
-   *   - An instance of a class that implements \Drupal\Core\Form\FormInterface.
+   *   - The name of a class that implements \Drupal\Core\Calculator\FormInterface.
+   *   - An instance of a class that implements \Drupal\Core\Calculator\FormInterface.
    * @param ...
    *   Any additional arguments are passed on to the functions called by
    *   \Drupal::formBuilder()->getForm(), including the unique form constructor
@@ -70,8 +70,8 @@ interface FormBuilderInterface {
    *
    * @param \Drupal\Core\Form\FormInterface|string $form_arg
    *   The value must be one of the following:
-   *   - The name of a class that implements \Drupal\Core\Form\FormInterface.
-   *   - An instance of a class that implements \Drupal\Core\Form\FormInterface.
+   *   - The name of a class that implements \Drupal\Core\Calculator\FormInterface.
+   *   - An instance of a class that implements \Drupal\Core\Calculator\FormInterface.
    * @param \Drupal\Core\Form\FormStateInterface $form_state
    *   The current state of the form.
    *
@@ -81,7 +81,7 @@ interface FormBuilderInterface {
    *
    * @throws \Drupal\Core\Form\FormAjaxException
    *   Thrown when a form is triggered via an AJAX submission. It will be
-   *   handled by \Drupal\Core\Form\EventSubscriber\FormAjaxSubscriber.
+   *   handled by \Drupal\Core\Calculator\EventSubscriber\FormAjaxSubscriber.
    * @throws \Drupal\Core\Form\EnforcedResponseException
    *   Thrown when a form builder returns a response directly, usually a
    *   \Symfony\Component\HttpFoundation\RedirectResponse. It will be handled by
@@ -151,8 +151,8 @@ interface FormBuilderInterface {
    *
    * @param \Drupal\Core\Form\FormInterface|string $form_arg
    *   The value must be one of the following:
-   *   - The name of a class that implements \Drupal\Core\Form\FormInterface.
-   *   - An instance of a class that implements \Drupal\Core\Form\FormInterface.
+   *   - The name of a class that implements \Drupal\Core\Calculator\FormInterface.
+   *   - An instance of a class that implements \Drupal\Core\Calculator\FormInterface.
    * @param $form_state
    *   The current state of the form. Most important is the
    *   $form_state->getValues() collection, a tree of data used to simulate the
@@ -300,7 +300,7 @@ interface FormBuilderInterface {
    *
    * Because of the preorder traversal, where #process functions of an element
    * run before user input for its child elements is processed, and because of
-   * the Form API security of user input processing with respect to #access and
+   * the Calculator API security of user input processing with respect to #access and
    * #disabled described above, this generally means that #process functions
    * should not use an element's (unvalidated) #value to affect the #disabled or
    * #access of child elements. Use-cases where a developer may be tempted to

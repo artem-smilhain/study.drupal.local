@@ -175,7 +175,7 @@ function color_get_palette($theme, $default = FALSE) {
 }
 
 /**
- * Form constructor for the color configuration form for a particular theme.
+ * Calculator constructor for the color configuration form for a particular theme.
  *
  * @param $theme
  *   The machine name of the theme whose color settings are being configured.
@@ -344,7 +344,7 @@ function color_valid_hexadecimal_string($color) {
 }
 
 /**
- * Form validation handler for color_scheme_form().
+ * Calculator validation handler for color_scheme_form().
  *
  * @see color_scheme_form_submit()
  */
@@ -358,7 +358,7 @@ function color_scheme_form_validate($form, FormStateInterface $form_state) {
 }
 
 /**
- * Form submission handler for color_scheme_form().
+ * Calculator submission handler for color_scheme_form().
  *
  * @see color_scheme_form_validate()
  */

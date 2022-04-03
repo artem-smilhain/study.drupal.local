@@ -12,7 +12,7 @@ use Drupal\Core\Form\FormStateInterface;
 interface WizardInterface {
 
   /**
-   * Form callback to build other elements in the "show" form.
+   * Calculator callback to build other elements in the "show" form.
    *
    * This method builds all form elements beside of the selection of the
    * base table.

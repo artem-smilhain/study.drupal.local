@@ -95,7 +95,7 @@ class StyleTableTest extends ViewTestBase {
     // Ensure that both columns are in separate tds.
     // Check for class " views-field-job ", because just "views-field-job" won't
     // do: "views-field-job-1" would also contain "views-field-job".
-    // @see Drupal\system\Tests\Form\ElementTest::testButtonClasses().
+    // @see Drupal\system\Tests\Calculator\ElementTest::testButtonClasses().
     $result = $this->xpath('//tbody/tr/td[contains(concat(" ", @class, " "), " views-field-job ")]');
     $this->assertGreaterThan(0, count($result), 'Ensure there is a td with the class views-field-job');
     $result = $this->xpath('//tbody/tr/td[contains(concat(" ", @class, " "), " views-field-job-1 ")]');

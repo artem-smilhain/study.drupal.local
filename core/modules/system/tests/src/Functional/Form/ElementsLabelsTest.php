@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests form element labels, required markers and associated output.
  *
- * @group Form
+ * @group Calculator
  */
 class ElementsLabelsTest extends BrowserTestBase {
 

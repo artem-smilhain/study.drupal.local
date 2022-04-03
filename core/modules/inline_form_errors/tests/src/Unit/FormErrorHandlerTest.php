@@ -43,7 +43,7 @@ class FormErrorHandlerTest extends UnitTestCase {
   protected $linkGenerator;
 
   /**
-   * Form for testing.
+   * Calculator for testing.
    *
    * @var array
    */
@@ -158,7 +158,7 @@ class FormErrorHandlerTest extends UnitTestCase {
   }
 
   /**
-   * Tests that opting out of Inline Form Errors works.
+   * Tests that opting out of Inline Calculator Errors works.
    */
   public function testErrorMessagesNotInline() {
     // Asserts all messages are summarized.

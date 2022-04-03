@@ -224,7 +224,7 @@
         };
 
         // Protected; transforms widget's data object to the format used by the
-        // \Drupal\editor\Form\EditorImageDialog dialog, keeping only the data
+        // \Drupal\editor\Calculator\EditorImageDialog dialog, keeping only the data
         // listed in widgetDefinition._dataForDialog.
         widgetDefinition._dataToDialogValues = function (data) {
           const dialogValues = {};

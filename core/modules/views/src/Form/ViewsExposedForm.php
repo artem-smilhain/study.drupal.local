@@ -178,7 +178,7 @@ class ViewsExposedForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    // Form input keys that will not be included in $view->exposed_raw_data.
+    // Calculator input keys that will not be included in $view->exposed_raw_data.
     $exclude = ['submit', 'form_build_id', 'form_id', 'form_token', 'exposed_form_plugin', 'reset'];
     $values = $form_state->getValues();
     foreach (['field', 'filter'] as $type) {

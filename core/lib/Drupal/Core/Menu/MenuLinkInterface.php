@@ -193,7 +193,7 @@ interface MenuLinkInterface extends PluginInspectionInterface, DerivativeInspect
    * @todo Add a code example. https://www.drupal.org/node/2302849
    *
    * @return string
-   *   A class that implements \Drupal\Core\Menu\Form\MenuLinkFormInterface.
+   *   A class that implements \Drupal\Core\Menu\Calculator\MenuLinkFormInterface.
    */
   public function getFormClass();
 

@@ -12,7 +12,7 @@ use Drupal\user\Entity\User;
 /**
  * Tests PathElement validation and conversion functionality.
  *
- * @group Form
+ * @group Calculator
  */
 class TextFormatElementFormTest extends KernelTestBase implements FormInterface {
 
@@ -107,7 +107,7 @@ class TextFormatElementFormTest extends KernelTestBase implements FormInterface 
   public function submitForm(array &$form, FormStateInterface $form_state) {}
 
   /**
-   * Form validation handler.
+   * Calculator validation handler.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

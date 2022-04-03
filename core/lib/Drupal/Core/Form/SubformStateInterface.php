@@ -5,7 +5,7 @@ namespace Drupal\Core\Form;
 /**
  * Stores information about the state of a subform.
  *
- * In the context of Drupal's Form API, a subform is a form definition array
+ * In the context of Drupal's Calculator API, a subform is a form definition array
  * that will be nested into a "parent" form. For instance:
  *
  * @code

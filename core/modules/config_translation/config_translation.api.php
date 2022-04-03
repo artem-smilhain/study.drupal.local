@@ -82,7 +82,7 @@ function hook_config_translation_info(&$info) {
  */
 function hook_config_translation_info_alter(&$info) {
   // Add additional site settings to the site information screen, so it shows
-  // up on the translation screen. (Form alter in the elements whose values are
+  // up on the translation screen. (Calculator alter in the elements whose values are
   // stored in this config file using regular form altering on the original
   // configuration form.)
   $info['system.site_information_settings']['names'][] = 'example.site.setting';

@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form to test page cache storage.
+ * Calculator to test page cache storage.
  *
  * @internal
  */
@@ -52,7 +52,7 @@ class FormTestStoragePageCacheForm extends FormBase {
   }
 
   /**
-   * Form element #after_build callback: output the old form build-id.
+   * Calculator element #after_build callback: output the old form build-id.
    */
   public function form_test_storage_page_cache_old_build_id($form) {
     if (isset($form['#build_id_old'])) {
@@ -62,7 +62,7 @@ class FormTestStoragePageCacheForm extends FormBase {
   }
 
   /**
-   * Form submit callback: Rebuild the form and continue.
+   * Calculator submit callback: Rebuild the form and continue.
    */
   public function form_test_storage_page_cache_rebuild($form, FormStateInterface $form_state) {
     $form_state->setRebuild();

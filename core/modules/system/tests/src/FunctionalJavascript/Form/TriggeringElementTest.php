@@ -7,7 +7,7 @@ use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 /**
  * Tests that FAPI correctly determines the triggering element.
  *
- * @group Form
+ * @group Calculator
  */
 class TriggeringElementTest extends WebDriverTestBase {
 

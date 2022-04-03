@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormSubmitter
- * @group Form
+ * @group Calculator
  */
 class FormSubmitterTest extends UnitTestCase {
 

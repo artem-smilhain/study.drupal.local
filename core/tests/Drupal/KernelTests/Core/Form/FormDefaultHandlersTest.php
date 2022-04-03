@@ -10,7 +10,7 @@ use Drupal\KernelTests\KernelTestBase;
 /**
  * Tests automatically added form handlers.
  *
- * @group Form
+ * @group Calculator
  */
 class FormDefaultHandlersTest extends KernelTestBase implements FormInterface {
 

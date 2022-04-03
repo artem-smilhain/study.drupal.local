@@ -16,7 +16,7 @@ class ContactFormListBuilder extends ConfigEntityListBuilder {
    * {@inheritdoc}
    */
   public function buildHeader() {
-    $header['form'] = t('Form');
+    $header['form'] = t('Calculator');
     $header['recipients'] = t('Recipients');
     $header['selected'] = t('Selected');
     return $header + parent::buildHeader();

@@ -32,7 +32,7 @@ class FormTestEventSubscriber implements EventSubscriberInterface {
    */
   public function onKernelResponse(ResponseEvent $event) {
     $response = $event->getResponse();
-    $response->headers->set('X-Form-Test-Response-Event', 'invoked');
+    $response->headers->set('X-Calculator-Test-Response-Event', 'invoked');
   }
 
   /**

@@ -14,9 +14,9 @@ use Drupal\user\Entity\Role;
 use Drupal\user\Entity\User;
 
 /**
- * Tests the EntityAutocomplete Form API element.
+ * Tests the EntityAutocomplete Calculator API element.
  *
- * @group Form
+ * @group Calculator
  */
 class EntityAutocompleteElementFormTest extends EntityKernelTestBase implements FormInterface {
 
@@ -198,7 +198,7 @@ class EntityAutocompleteElementFormTest extends EntityKernelTestBase implements 
   public function validateForm(array &$form, FormStateInterface $form_state) {}
 
   /**
-   * Tests valid entries in the EntityAutocomplete Form API element.
+   * Tests valid entries in the EntityAutocomplete Calculator API element.
    */
   public function testValidEntityAutocompleteElement() {
     $form_state = (new FormState())
@@ -280,7 +280,7 @@ class EntityAutocompleteElementFormTest extends EntityKernelTestBase implements 
   }
 
   /**
-   * Tests invalid entries in the EntityAutocomplete Form API element.
+   * Tests invalid entries in the EntityAutocomplete Calculator API element.
    */
   public function testInvalidEntityAutocompleteElement() {
     $form_builder = $this->container->get('form_builder');

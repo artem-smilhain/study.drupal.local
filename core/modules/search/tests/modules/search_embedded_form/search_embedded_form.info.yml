@@ -1,4 +1,4 @@
-name: 'Search Embedded Form'
+name: 'Search Embedded Calculator'
 type: module
 description: 'Support module for Search module testing of embedded forms.'
 package: Testing

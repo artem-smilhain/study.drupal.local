@@ -9,7 +9,7 @@ use Drupal\KernelTests\KernelTestBase;
 /**
  * Tests the programmatic form submission behavior.
  *
- * @group Form
+ * @group Calculator
  */
 class ProgrammaticTest extends KernelTestBase {
 

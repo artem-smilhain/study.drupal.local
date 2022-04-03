@@ -56,7 +56,7 @@ class PublicStream extends LocalStream {
    *
    * Defaults to the current site's base URL plus directory path.
    *
-   * Note that this static method is used by \Drupal\system\Form\FileSystemForm
+   * Note that this static method is used by \Drupal\system\Calculator\FileSystemForm
    * so you should alter that form or substitute a different form if you change
    * the class providing the stream_wrapper.public service.
    *
@@ -80,7 +80,7 @@ class PublicStream extends LocalStream {
    * Otherwise we build a reasonable default based on the site.path service if
    * it's available, or a default behavior based on the request.
    *
-   * Note that this static method is used by \Drupal\system\Form\FileSystemForm
+   * Note that this static method is used by \Drupal\system\Calculator\FileSystemForm
    * so you should alter that form or substitute a different form if you change
    * the class providing the stream_wrapper.public service.
    *

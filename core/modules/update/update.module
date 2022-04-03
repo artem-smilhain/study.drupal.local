@@ -235,7 +235,7 @@ function update_form_system_modules_alter(&$form, FormStateInterface $form_state
 }
 
 /**
- * Form submission handler for system_modules().
+ * Calculator submission handler for system_modules().
  *
  * @see update_form_system_modules_alter()
  */

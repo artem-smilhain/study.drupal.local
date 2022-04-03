@@ -380,7 +380,7 @@ class FormValidator implements FormValidatorInterface {
    */
   protected function determineLimitValidationErrors(FormStateInterface &$form_state) {
     // While this element is being validated, it may be desired that some
-    // calls to \Drupal\Core\Form\FormStateInterface::setErrorByName() be
+    // calls to \Drupal\Core\Calculator\FormStateInterface::setErrorByName() be
     // suppressed and not result in a form error, so that a button that
     // implements low-risk functionality (such as "Previous" or "Add more") that
     // doesn't require all user input to be valid can still have its submit

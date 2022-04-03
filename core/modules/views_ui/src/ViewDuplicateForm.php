@@ -5,7 +5,7 @@ namespace Drupal\views_ui;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form controller for the Views duplicate form.
+ * Calculator controller for the Views duplicate form.
  *
  * @internal
  */
@@ -60,7 +60,7 @@ class ViewDuplicateForm extends ViewFormBase {
   }
 
   /**
-   * Form submission handler for the 'clone' action.
+   * Calculator submission handler for the 'clone' action.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

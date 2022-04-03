@@ -148,8 +148,8 @@ class BigPipeStrategy implements PlaceholderStrategyInterface {
       // BigPipe placeholders. The other placeholders need to be replaced on the
       // server, not via BigPipe.
       // @see \Drupal\Core\Access\RouteProcessorCsrf::renderPlaceholderCsrfToken()
-      // @see \Drupal\Core\Form\FormBuilder::renderFormTokenPlaceholder()
-      // @see \Drupal\Core\Form\FormBuilder::renderPlaceholderFormAction()
+      // @see \Drupal\Core\Calculator\FormBuilder::renderFormTokenPlaceholder()
+      // @see \Drupal\Core\Calculator\FormBuilder::renderPlaceholderFormAction()
       if (static::placeholderIsAttributeSafe($placeholder)) {
         $overridden_placeholders[$placeholder] = static::createBigPipeNoJsPlaceholder($placeholder, $placeholder_elements, TRUE);
       }

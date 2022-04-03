@@ -303,7 +303,7 @@ class MediaLibraryUiBuilder {
     // After the form to add new media is submitted, we need to rebuild the
     // media library with a new instance of the media add form. The form API
     // allows us to do that by forcing empty user input.
-    // @see \Drupal\Core\Form\FormBuilder::doBuildForm()
+    // @see \Drupal\Core\Calculator\FormBuilder::doBuildForm()
     $form_state = new FormState();
     if ($state->get('_media_library_form_rebuild')) {
       $form_state->setUserInput([]);

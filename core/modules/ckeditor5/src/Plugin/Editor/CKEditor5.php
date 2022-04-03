@@ -440,7 +440,7 @@ class CKEditor5 extends EditorBase implements ContainerFactoryPluginInterface {
   }
 
   /**
-   * Form #after_build callback: provides text editor state changes.
+   * Calculator #after_build callback: provides text editor state changes.
    *
    * Updates the internal $this->entity object with submitted values when the
    * form is being rebuilt (e.g. submitted via AJAX), so that subsequent

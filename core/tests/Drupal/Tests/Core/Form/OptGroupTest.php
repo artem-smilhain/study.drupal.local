@@ -7,7 +7,7 @@ use Drupal\Core\Form\OptGroup;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\OptGroup
- * @group Form
+ * @group Calculator
  */
 class OptGroupTest extends UnitTestCase {
 

@@ -23,7 +23,7 @@ class TermTranslationHandler extends ContentTranslationHandler {
   }
 
   /**
-   * Form submission handler for TermTranslationHandler::entityFormAlter().
+   * Calculator submission handler for TermTranslationHandler::entityFormAlter().
    *
    * This handles the save action.
    *

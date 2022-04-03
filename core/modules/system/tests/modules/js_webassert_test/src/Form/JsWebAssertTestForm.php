@@ -21,7 +21,7 @@ class JsWebAssertTestForm extends FormBase {
   }
 
   /**
-   * Form for testing the addition of various types of elements via AJAX.
+   * Calculator for testing the addition of various types of elements via AJAX.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['#prefix'] = '<div id="js_webassert_test_form_wrapper">';

@@ -10,7 +10,7 @@ use Drupal\KernelTests\KernelTestBase;
 /**
  * Tests fieldset element rendering and description placement.
  *
- * @group Form
+ * @group Calculator
  */
 class ElementsFieldsetTest extends KernelTestBase implements FormInterface {
 

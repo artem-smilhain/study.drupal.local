@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests form processing and alteration via form validation handlers.
  *
- * @group Form
+ * @group Calculator
  */
 class ValidationTest extends BrowserTestBase {
 
@@ -58,7 +58,7 @@ class ValidationTest extends BrowserTestBase {
 
     // Verify that value for inaccessible form element persists.
     $this->submitForm([], 'Save');
-    $this->assertSession()->fieldValueNotEquals('name', 'Form element was hidden.');
+    $this->assertSession()->fieldValueNotEquals('name', 'Calculator element was hidden.');
     $this->assertSession()->pageTextContains('Name value: element_validate_access');
 
     // Verify that #validate handlers don't run if the CSRF token is invalid.

@@ -13,7 +13,7 @@ use Drupal\Core\TempStore\PrivateTempStoreFactory;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form handler for the node edit forms.
+ * Calculator handler for the node edit forms.
  *
  * @internal
  */
@@ -235,7 +235,7 @@ class NodeForm extends ContentEntityForm {
   }
 
   /**
-   * Form submission handler for the 'preview' action.
+   * Calculator submission handler for the 'preview' action.
    *
    * @param $form
    *   An associative array containing the structure of the form.

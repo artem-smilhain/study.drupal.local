@@ -141,7 +141,7 @@ class Message extends ContentEntityBase implements MessageInterface {
     /** @var \Drupal\Core\Field\BaseFieldDefinition[] $fields */
     $fields = parent::baseFieldDefinitions($entity_type);
 
-    $fields['contact_form']->setLabel(t('Form ID'))
+    $fields['contact_form']->setLabel(t('Calculator ID'))
       ->setDescription(t('The ID of the associated form.'));
 
     $fields['uuid']->setDescription(t('The message UUID.'));

@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormStateDecoratorBase
  *
- * @group Form
+ * @group Calculator
  */
 class FormStateDecoratorBaseTest extends UnitTestCase {
 
@@ -183,7 +183,7 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    * @dataProvider providerSingleBooleanArgument
    *
    * @param bool $executed
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::isExecuted()'s
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::isExecuted()'s
    *   return value.
    */
   public function testIsExecuted($executed) {
@@ -597,7 +597,7 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    *
    * @param bool $submitted
    *   Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::isSubmitted()'s return
+   *   \Drupal\Core\Calculator\FormStateInterface::isSubmitted()'s return
    *   value.
    */
   public function testIsSubmitted($submitted) {
@@ -643,11 +643,11 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    *
    * @param string $key
    *   Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::setTemporaryValue()'s $key
+   *   \Drupal\Core\Calculator\FormStateInterface::setTemporaryValue()'s $key
    *   argument.
    * @param mixed $value
    *   Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::setTemporaryValue()'s $value
+   *   \Drupal\Core\Calculator\FormStateInterface::setTemporaryValue()'s $value
    *   argument.
    */
   public function testSetTemporaryValue($key, $value) {
@@ -674,11 +674,11 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    *
    * @param string $key
    *   Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::getTemporaryValue()'s $key
+   *   \Drupal\Core\Calculator\FormStateInterface::getTemporaryValue()'s $key
    *   argument.
    * @param mixed $value
    *   (optional) Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::getTemporaryValue()'s return
+   *   \Drupal\Core\Calculator\FormStateInterface::getTemporaryValue()'s return
    *   value.
    */
   public function testGetTemporaryValue($key, $value = NULL) {
@@ -712,11 +712,11 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    *
    * @param bool $exists
    *   Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::hasTemporaryValue()'s return
+   *   \Drupal\Core\Calculator\FormStateInterface::hasTemporaryValue()'s return
    *   value.
    * @param string $key
    *   Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::hasTemporaryValue()'s $key
+   *   \Drupal\Core\Calculator\FormStateInterface::hasTemporaryValue()'s $key
    *   argument.
    */
   public function testHasTemporaryValue($exists, $key) {
@@ -807,7 +807,7 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    *
    * @param bool $complete
    *   Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::setValidationComplete()'s $complete
+   *   \Drupal\Core\Calculator\FormStateInterface::setValidationComplete()'s $complete
    *   argument.
    */
   public function testSetValidationComplete($complete) {
@@ -824,7 +824,7 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    *
    * @param bool $complete
    *   Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::isValidationComplete()'s return
+   *   \Drupal\Core\Calculator\FormStateInterface::isValidationComplete()'s return
    *   value.
    */
   public function testIsValidationComplete($complete) {
@@ -841,16 +841,16 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    * @dataProvider providerLoadInclude
    *
    * @param string|false $expected
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::loadInclude()'s
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::loadInclude()'s
    *   return value.
    * @param string $module
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::loadInclude()'s
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::loadInclude()'s
    *   $module argument.
    * @param string $type
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::loadInclude()'s
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::loadInclude()'s
    *   $type argument.
    * @param string|null $name
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::loadInclude()'s
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::loadInclude()'s
    *   $name argument.
    */
   public function testLoadInclude($expected, $module, $type, $name) {
@@ -932,10 +932,10 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    * @dataProvider providerSet
    *
    * @param string $key
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::set()'s $key
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::set()'s $key
    *   argument.
    * @param mixed $value
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::set()'s $value
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::set()'s $value
    *   argument.
    */
   public function testSet($key, $value) {
@@ -961,11 +961,11 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    * @dataProvider providerGet
    *
    * @param string $key
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::get()'s $key
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::get()'s $key
    *   argument.
    * @param mixed $value
    *   (optional) Any valid value for
-   *   \Drupal\Core\Form\FormStateInterface::get()'s return value.
+   *   \Drupal\Core\Calculator\FormStateInterface::get()'s return value.
    */
   public function testGet($key, $value = NULL) {
 
@@ -998,10 +998,10 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    * @dataProvider providerHas
    *
    * @param bool $exists
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::has()'s return
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::has()'s return
    *   value.
    * @param string $key
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::has()'s $key
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::has()'s $key
    *   argument.
    */
   public function testHas($exists, $key) {
@@ -1282,7 +1282,7 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    * @dataProvider providerGetRedirect
    *
    * @param bool $expected
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::getRedirect()'s
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::getRedirect()'s
    *   return value.
    */
   public function testGetRedirect($expected) {
@@ -1379,7 +1379,7 @@ class FormStateDecoratorBaseTest extends UnitTestCase {
    * @dataProvider providerSingleBooleanArgument
    *
    * @param bool $rebuild
-   *   Any valid value for \Drupal\Core\Form\FormStateInterface::setRebuild()'s
+   *   Any valid value for \Drupal\Core\Calculator\FormStateInterface::setRebuild()'s
    *   $rebuild argument.
    */
   public function testSetRebuild($rebuild) {

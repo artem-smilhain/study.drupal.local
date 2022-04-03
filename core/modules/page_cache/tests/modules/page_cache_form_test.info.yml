@@ -1,4 +1,4 @@
-name: 'Page Cache Form Test'
+name: 'Page Cache Calculator Test'
 type: module
 description: 'Support module for the Page Cache module tests.'
 package: Testing

@@ -8,7 +8,7 @@ use Drupal\Core\Security\TrustedCallbackInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
- * Form to test input forgery.
+ * Calculator to test input forgery.
  *
  * @internal
  */

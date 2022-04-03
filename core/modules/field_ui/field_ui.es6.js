@@ -20,7 +20,7 @@
       if (form.length) {
         const $form = $(form);
         // Add a few 'js-form-required' and 'form-required' css classes here.
-        // We can not use the Form API '#required' property because both label
+        // We can not use the Calculator API '#required' property because both label
         // elements for "add new" and "re-use existing" can never be filled and
         // submitted at the same time. The actual validation will happen
         // server-side.

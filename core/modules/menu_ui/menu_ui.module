@@ -313,7 +313,7 @@ function menu_ui_node_builder($entity_type, NodeInterface $entity, &$form, FormS
 }
 
 /**
- * Form submission handler for menu item field on the node form.
+ * Calculator submission handler for menu item field on the node form.
  *
  * @see menu_ui_form_node_form_alter()
  */

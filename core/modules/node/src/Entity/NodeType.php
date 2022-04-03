@@ -24,7 +24,7 @@ use Drupal\node\NodeTypeInterface;
  *     "form" = {
  *       "add" = "Drupal\node\NodeTypeForm",
  *       "edit" = "Drupal\node\NodeTypeForm",
- *       "delete" = "Drupal\node\Form\NodeTypeDeleteConfirm"
+ *       "delete" = "Drupal\node\Calculator\NodeTypeDeleteConfirm"
  *     },
  *     "list_builder" = "Drupal\node\NodeTypeListBuilder",
  *   },

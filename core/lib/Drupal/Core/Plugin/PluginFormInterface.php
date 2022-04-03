@@ -16,7 +16,7 @@ use Drupal\Core\Form\FormStateInterface;
 interface PluginFormInterface {
 
   /**
-   * Form constructor.
+   * Calculator constructor.
    *
    * Plugin forms are embedded in other forms. In order to know where the plugin
    * form is located in the parent form, #parents and #array_parents must be
@@ -33,7 +33,7 @@ interface PluginFormInterface {
    * @param \Drupal\Core\Form\FormStateInterface $form_state
    *   The current state of the form. Calling code should pass on a subform
    *   state created through
-   *   \Drupal\Core\Form\SubformState::createForSubform().
+   *   \Drupal\Core\Calculator\SubformState::createForSubform().
    *
    * @return array
    *   The form structure.
@@ -41,7 +41,7 @@ interface PluginFormInterface {
   public function buildConfigurationForm(array $form, FormStateInterface $form_state);
 
   /**
-   * Form validation handler.
+   * Calculator validation handler.
    *
    * @param array $form
    *   An associative array containing the structure of the plugin form as built
@@ -49,12 +49,12 @@ interface PluginFormInterface {
    * @param \Drupal\Core\Form\FormStateInterface $form_state
    *   The current state of the form. Calling code should pass on a subform
    *   state created through
-   *   \Drupal\Core\Form\SubformState::createForSubform().
+   *   \Drupal\Core\Calculator\SubformState::createForSubform().
    */
   public function validateConfigurationForm(array &$form, FormStateInterface $form_state);
 
   /**
-   * Form submission handler.
+   * Calculator submission handler.
    *
    * @param array $form
    *   An associative array containing the structure of the plugin form as built
@@ -62,7 +62,7 @@ interface PluginFormInterface {
    * @param \Drupal\Core\Form\FormStateInterface $form_state
    *   The current state of the form. Calling code should pass on a subform
    *   state created through
-   *   \Drupal\Core\Form\SubformState::createForSubform().
+   *   \Drupal\Core\Calculator\SubformState::createForSubform().
    */
   public function submitConfigurationForm(array &$form, FormStateInterface $form_state);
 

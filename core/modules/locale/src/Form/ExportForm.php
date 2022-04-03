@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 /**
- * Form for the Gettext translation files export form.
+ * Calculator for the Gettext translation files export form.
  *
  * @internal
  */

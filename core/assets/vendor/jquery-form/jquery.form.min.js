@@ -1,5 +1,5 @@
 /*!
- * jQuery Form Plugin
+ * jQuery Calculator Plugin
  * version: 4.3.0
  * Requires jQuery v1.7.2 or later
  * Project repository: https://github.com/jquery-form/form

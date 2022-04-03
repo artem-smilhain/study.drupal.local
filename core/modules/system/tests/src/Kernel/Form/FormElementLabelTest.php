@@ -8,7 +8,7 @@ use Symfony\Component\CssSelector\CssSelectorConverter;
 /**
  * Tests for form_element_label theme hook.
  *
- * @group Form
+ * @group Calculator
  */
 class FormElementLabelTest extends KernelTestBase {
 

@@ -44,7 +44,7 @@ interface FormSubmitterInterface {
    * destination should be, based on the $form_state and the 'destination'
    * query string in the request URL, and redirects the user there.
    *
-   * The result of \Drupal\Core\Form|FormStateInterface::getRedirect()
+   * The result of \Drupal\Core\Calculator|FormStateInterface::getRedirect()
    * determines where to redirect the user. See the possible return values
    * listed there. If the result is FALSE, then the user will not be redirected.
    *

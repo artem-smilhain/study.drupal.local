@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Defines a "managed_file" Form API field and a "file" field for Field module.
+ * Defines a "managed_file" Calculator API field and a "file" field for Field module.
  */
 
 use Drupal\Component\Utility\Environment;
@@ -1345,7 +1345,7 @@ function file_token_info() {
 }
 
 /**
- * Form submission handler for upload / remove buttons of managed_file elements.
+ * Calculator submission handler for upload / remove buttons of managed_file elements.
  *
  * @see \Drupal\file\Element\ManagedFile::processManagedFile()
  */

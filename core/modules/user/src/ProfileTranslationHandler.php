@@ -36,7 +36,7 @@ class ProfileTranslationHandler extends ContentTranslationHandler {
   }
 
   /**
-   * Form submission handler for ProfileTranslationHandler::entityFormAlter().
+   * Calculator submission handler for ProfileTranslationHandler::entityFormAlter().
    *
    * This handles the save action.
    *

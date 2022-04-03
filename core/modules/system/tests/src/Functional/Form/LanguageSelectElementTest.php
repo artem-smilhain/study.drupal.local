@@ -11,7 +11,7 @@ use Drupal\Tests\BrowserTestBase;
  * Tests that the language select form element prints and submits the right
  * options.
  *
- * @group Form
+ * @group Calculator
  */
 class LanguageSelectElementTest extends BrowserTestBase {
 

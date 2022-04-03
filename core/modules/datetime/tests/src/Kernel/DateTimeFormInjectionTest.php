@@ -51,7 +51,7 @@ class DateTimeFormInjectionTest extends KernelTestBase implements FormInterface 
    * Process callback.
    *
    * @param array $element
-   *   Form element.
+   *   Calculator element.
    *
    * @return array
    *   Processed element.

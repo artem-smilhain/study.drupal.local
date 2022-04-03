@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\image\ImageStyleInterface;
 
 /**
- * Form for deleting an image effect.
+ * Calculator for deleting an image effect.
  *
  * @internal
  */

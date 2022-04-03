@@ -197,7 +197,7 @@ class FileItem extends EntityReferenceItem {
   }
 
   /**
-   * Form API callback.
+   * Calculator API callback.
    *
    * Removes slashes from the beginning and end of the destination value and
    * ensures that the file directory path is not included at the beginning of the
@@ -213,7 +213,7 @@ class FileItem extends EntityReferenceItem {
   }
 
   /**
-   * Form API callback.
+   * Calculator API callback.
    *
    * This function is assigned as an #element_validate callback in
    * fieldSettingsForm().
@@ -248,7 +248,7 @@ class FileItem extends EntityReferenceItem {
   }
 
   /**
-   * Form API callback.
+   * Calculator API callback.
    *
    * Ensures that a size has been entered and that it can be parsed by
    * \Drupal\Component\Utility\Bytes::toNumber().

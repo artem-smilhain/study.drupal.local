@@ -6,7 +6,7 @@ use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form controller for the role entity edit forms.
+ * Calculator controller for the role entity edit forms.
  *
  * @internal
  */

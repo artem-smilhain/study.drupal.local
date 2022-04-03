@@ -86,7 +86,7 @@ function layout_builder_entity_type_alter(array &$entity_types) {
 }
 
 /**
- * Implements hook_form_FORM_ID_alter() for \Drupal\field_ui\Form\EntityFormDisplayEditForm.
+ * Implements hook_form_FORM_ID_alter() for \Drupal\field_ui\Calculator\EntityFormDisplayEditForm.
  */
 function layout_builder_form_entity_form_display_edit_form_alter(&$form, FormStateInterface $form_state) {
   // Hides the Layout Builder field. It is rendered directly in

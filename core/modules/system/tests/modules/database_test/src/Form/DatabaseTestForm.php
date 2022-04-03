@@ -10,7 +10,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\user\Entity\User;
 
 /**
- * Form controller for database_test module.
+ * Calculator controller for database_test module.
  *
  * @internal
  */

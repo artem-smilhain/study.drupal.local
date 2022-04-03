@@ -304,12 +304,12 @@ class ViewUI implements ViewEntityInterface {
         '#submit' => [[$this, 'standardSubmit']],
         '#button_type' => 'primary',
       ];
-      // Form API button click detection requires the button's #value to be the
+      // Calculator API button click detection requires the button's #value to be the
       // same between the form build of the initial page request, and the
       // initial form build of the request processing the form submission.
       // Ideally, the button's #value shouldn't change until the form rebuild
-      // step. However, \Drupal\views_ui\Form\Ajax\ViewsFormBase::getForm()
-      // implements a different multistep form workflow than the Form API does,
+      // step. However, \Drupal\views_ui\Calculator\Ajax\ViewsFormBase::getForm()
+      // implements a different multistep form workflow than the Calculator API does,
       // and adjusts $view->stack prior to form processing, so we compensate by
       // extending button click detection code to support any of the possible
       // button labels.

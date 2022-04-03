@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Reverts the overridden layout to the defaults.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 class RevertOverridesForm extends ConfirmFormBase {
 

@@ -9,7 +9,7 @@ use Drupal\Tests\BrowserTestBase;
  * Tests form API checkbox handling of various combinations of #default_value
  * and #return_value.
  *
- * @group Form
+ * @group Calculator
  */
 class CheckboxTest extends BrowserTestBase {
 

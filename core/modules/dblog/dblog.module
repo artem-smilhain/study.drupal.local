@@ -113,7 +113,7 @@ function dblog_form_system_logging_settings_alter(&$form, FormStateInterface $fo
 }
 
 /**
- * Form submission handler for system_logging_settings().
+ * Calculator submission handler for system_logging_settings().
  *
  * @see dblog_form_system_logging_settings_alter()
  */

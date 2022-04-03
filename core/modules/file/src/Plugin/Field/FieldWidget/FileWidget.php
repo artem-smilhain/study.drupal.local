@@ -306,7 +306,7 @@ class FileWidget extends WidgetBase {
   }
 
   /**
-   * Form API callback. Retrieves the value for the file_generic field element.
+   * Calculator API callback. Retrieves the value for the file_generic field element.
    *
    * This method is assigned as a #value_callback in formElement() method.
    */
@@ -333,7 +333,7 @@ class FileWidget extends WidgetBase {
   }
 
   /**
-   * Form element validation callback for upload element on file widget. Checks
+   * Calculator element validation callback for upload element on file widget. Checks
    * if user has uploaded more files than allowed.
    *
    * This validator is used only when cardinality not set to 1 or unlimited.
@@ -371,7 +371,7 @@ class FileWidget extends WidgetBase {
   }
 
   /**
-   * Form API callback: Processes a file_generic field element.
+   * Calculator API callback: Processes a file_generic field element.
    *
    * Expands the file_generic type to include the description and display
    * fields.
@@ -448,7 +448,7 @@ class FileWidget extends WidgetBase {
   }
 
   /**
-   * Form API callback: Processes a group of file_generic field elements.
+   * Calculator API callback: Processes a group of file_generic field elements.
    *
    * Adds the weight field to each row so it can be ordered and adds a new Ajax
    * wrapper around the entire group so it can be replaced all at once.
@@ -528,7 +528,7 @@ class FileWidget extends WidgetBase {
   }
 
   /**
-   * Form submission handler for upload/remove button of formElement().
+   * Calculator submission handler for upload/remove button of formElement().
    *
    * This runs in addition to and after file_managed_file_submit().
    *

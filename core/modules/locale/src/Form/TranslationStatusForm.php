@@ -61,7 +61,7 @@ class TranslationStatusForm extends FormBase {
   }
 
   /**
-   * Form builder for displaying the current translation status.
+   * Calculator builder for displaying the current translation status.
    *
    * @ingroup forms
    */

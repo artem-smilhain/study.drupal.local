@@ -1,6 +1,6 @@
 /**
  * @file
- * Form-based in-place editor. Works for any field type.
+ * Calculator-based in-place editor. Works for any field type.
  */
 
 (function ($, Drupal, _) {
@@ -245,7 +245,7 @@
         };
 
         // The quickeditFieldForm AJAX command is called upon attempting to save
-        // the form; Form API will mark which form items have errors, if any. This
+        // the form; Calculator API will mark which form items have errors, if any. This
         // command is invoked only if validation errors exist and then it runs
         // before editFieldFormValidationErrors().
         formSaveAjax.commands.quickeditFieldForm = function (

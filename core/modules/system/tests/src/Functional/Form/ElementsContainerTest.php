@@ -7,7 +7,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests the container form element for expected behavior.
  *
- * @group Form
+ * @group Calculator
  */
 class ElementsContainerTest extends BrowserTestBase {
 

@@ -83,7 +83,7 @@ class BasicAuth implements AuthenticationProviderInterface, AuthenticationProvid
     $username = $request->headers->get('PHP_AUTH_USER');
     $password = $request->headers->get('PHP_AUTH_PW');
     // Flood protection: this is very similar to the user login form code.
-    // @see \Drupal\user\Form\UserLoginForm::validateAuthentication()
+    // @see \Drupal\user\Calculator\UserLoginForm::validateAuthentication()
     // Do not allow any login from the current user's IP if the limit has been
     // reached. Default is 50 failed attempts allowed in one hour. This is
     // independent of the per-user limit to catch attempts from one IP to log

@@ -7,7 +7,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests access control for form elements.
  *
- * @group Form
+ * @group Calculator
  */
 class ElementsAccessTest extends BrowserTestBase {
 

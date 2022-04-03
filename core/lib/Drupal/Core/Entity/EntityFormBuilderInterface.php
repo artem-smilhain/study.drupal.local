@@ -5,7 +5,7 @@ namespace Drupal\Core\Entity;
 /**
  * Builds entity forms.
  *
- * This is like \Drupal\Core\Form\FormBuilderInterface but instead of looking
+ * This is like \Drupal\Core\Calculator\FormBuilderInterface but instead of looking
  * up the form class by class name, it looks up the form class based on the
  * entity type and operation.
  */
@@ -32,7 +32,7 @@ interface EntityFormBuilderInterface {
    *   @code
    *   handlers = {
    *     "form" = {
-   *       "delete" = "Drupal\node\Form\NodeDeleteForm",
+   *       "delete" = "Drupal\node\Calculator\NodeDeleteForm",
    *   @endcode
    *   Alternatively, the form class can be set from hook_entity_type_build().
    * @param array $form_state_additions

@@ -6,7 +6,7 @@ use Drupal\Tests\UnitTestCase;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\ConfigFormBaseTrait
- * @group Form
+ * @group Calculator
  */
 class ConfigFormBaseTraitTest extends UnitTestCase {
 

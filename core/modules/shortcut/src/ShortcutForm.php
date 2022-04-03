@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
 
 /**
- * Form handler for the shortcut entity forms.
+ * Calculator handler for the shortcut entity forms.
  *
  * @internal
  */

@@ -184,7 +184,7 @@ class MediaEmbed extends FilterBase implements ContainerFactoryPluginInterface, 
   }
 
   /**
-   * Form element validation handler.
+   * Calculator element validation handler.
    *
    * @param array $element
    *   The allowed_view_modes form element.

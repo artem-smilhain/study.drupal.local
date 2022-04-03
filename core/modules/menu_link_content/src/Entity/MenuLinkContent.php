@@ -30,8 +30,8 @@ use Drupal\menu_link_content\MenuLinkContentInterface;
  *     "storage_schema" = "Drupal\menu_link_content\MenuLinkContentStorageSchema",
  *     "access" = "Drupal\menu_link_content\MenuLinkContentAccessControlHandler",
  *     "form" = {
- *       "default" = "Drupal\menu_link_content\Form\MenuLinkContentForm",
- *       "delete" = "Drupal\menu_link_content\Form\MenuLinkContentDeleteForm"
+ *       "default" = "Drupal\menu_link_content\Calculator\MenuLinkContentForm",
+ *       "delete" = "Drupal\menu_link_content\Calculator\MenuLinkContentDeleteForm"
  *     }
  *   },
  *   admin_permission = "administer menu",

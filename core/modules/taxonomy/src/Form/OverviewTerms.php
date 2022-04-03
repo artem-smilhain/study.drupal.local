@@ -116,7 +116,7 @@ class OverviewTerms extends FormBase {
   }
 
   /**
-   * Form constructor.
+   * Calculator constructor.
    *
    * Display a tree of all the terms in a vocabulary, with options to edit
    * each one. The form is made drag and drop by the theme function.
@@ -490,7 +490,7 @@ class OverviewTerms extends FormBase {
   }
 
   /**
-   * Form submission handler.
+   * Calculator submission handler.
    *
    * Rather than using a textfield or weight field, this form depends entirely
    * upon the order of form elements on the page to determine new weights.

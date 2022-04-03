@@ -9,7 +9,7 @@ use Drupal\views\Plugin\ViewsPluginManager;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form controller for the Views add form.
+ * Calculator controller for the Views add form.
  *
  * @internal
  */
@@ -202,7 +202,7 @@ class ViewAddForm extends ViewFormBase {
   }
 
   /**
-   * Form submission handler for the 'cancel' action.
+   * Calculator submission handler for the 'cancel' action.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

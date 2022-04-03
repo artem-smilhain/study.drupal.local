@@ -74,7 +74,7 @@ class EntityDeleteMultipleAccessCheck implements AccessInterface {
     foreach ($entities as $entity) {
       // As long as the user has access to delete one entity allow access to the
       // delete form. Access will be checked again in
-      // Drupal\Core\Entity\Form\DeleteMultipleForm::submit() in case it has
+      // Drupal\Core\Entity\Calculator\DeleteMultipleForm::submit() in case it has
       // changed in the meantime.
       if ($entity->access('delete', $account)) {
         return AccessResult::allowed();

@@ -18,7 +18,7 @@ use Drupal\user\Plugin\LanguageNegotiation\LanguageNegotiationUserAdmin;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form controller for the user account forms.
+ * Calculator controller for the user account forms.
  */
 abstract class AccountForm extends ContentEntityForm implements TrustedCallbackInterface {
 

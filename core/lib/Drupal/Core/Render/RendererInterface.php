@@ -164,7 +164,7 @@ interface RendererInterface {
    *     the defaults for this type of element, defined by an element plugin,
    *     are merged into the array. #defaults_loaded is set by functions that
    *     process render arrays and call the element info service before passing
-   *     the array to Renderer::render(), such as form_builder() in the Form
+   *     the array to Renderer::render(), such as form_builder() in the Calculator
    *     API.
    *   - If this element has #create_placeholder set to TRUE, and it has a
    *     #lazy_builder callback, then the element is replaced with another
@@ -219,7 +219,7 @@ interface RendererInterface {
    *       prepended to #children.
    *   - If this element has #states defined then JavaScript state information
    *     is added to this element's #attached attribute by
-   *     \Drupal\Core\Form\FormHelper::processStates().
+   *     \Drupal\Core\Calculator\FormHelper::processStates().
    *   - If this element has #attached defined then any required libraries,
    *     JavaScript, CSS, or other custom data are added to the current page by
    *     \Drupal\Core\Render\AttachmentsResponseProcessorInterface::processAttachments().

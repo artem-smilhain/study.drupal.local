@@ -30,7 +30,7 @@ abstract class FormController {
   protected $formBuilder;
 
   /**
-   * Constructs a new \Drupal\Core\Controller\FormController object.
+   * Constructs a new \Drupal\Core\Controller\EmployeeForm object.
    *
    * @param \Symfony\Component\HttpKernel\Controller\ArgumentResolverInterface $argument_resolver
    *   The argument resolver.
@@ -82,7 +82,7 @@ abstract class FormController {
    * One example of a route definition is given below.
    * @code
    *   defaults:
-   *     _form: Drupal\example\Form\ExampleForm
+   *     _form: Drupal\example\Calculator\ExampleForm
    * @endcode
    *
    * @param \Drupal\Core\Routing\RouteMatchInterface $route_match

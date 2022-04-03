@@ -12,7 +12,7 @@ use Drupal\Tests\UnitTestCase;
 /**
  * @coversDefaultClass \Drupal\Core\Form\SubformState
  *
- * @group Form
+ * @group Calculator
  */
 class SubformStateTest extends UnitTestCase {
 

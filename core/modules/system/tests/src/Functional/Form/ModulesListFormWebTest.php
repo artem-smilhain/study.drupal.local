@@ -6,9 +6,9 @@ use Drupal\Core\Serialization\Yaml;
 use Drupal\Tests\BrowserTestBase;
 
 /**
- * Tests \Drupal\system\Form\ModulesListForm.
+ * Tests \Drupal\system\Calculator\ModulesListForm.
  *
- * @group Form
+ * @group Calculator
  */
 class ModulesListFormWebTest extends BrowserTestBase {
 

@@ -66,7 +66,7 @@ class SearchEmbedFormTest extends BrowserTestBase {
     $this->submitForm(['name' => 'John'], 'Send away');
     $this->assertSession()->pageTextContains('Test form was submitted');
     $count = \Drupal::state()->get('search_embedded_form.submit_count');
-    $this->assertEquals($this->submitCount + 1, $count, 'Form submission count is correct');
+    $this->assertEquals($this->submitCount + 1, $count, 'Calculator submission count is correct');
     $this->submitCount = $count;
 
     // Now verify that we can see and submit the form from the search results.
@@ -75,7 +75,7 @@ class SearchEmbedFormTest extends BrowserTestBase {
     $this->submitForm(['name' => 'John'], 'Send away');
     $this->assertSession()->pageTextContains('Test form was submitted');
     $count = \Drupal::state()->get('search_embedded_form.submit_count');
-    $this->assertEquals($this->submitCount + 1, $count, 'Form submission count is correct');
+    $this->assertEquals($this->submitCount + 1, $count, 'Calculator submission count is correct');
     $this->submitCount = $count;
 
     // Now verify that if we submit the search form, it doesn't count as
@@ -84,7 +84,7 @@ class SearchEmbedFormTest extends BrowserTestBase {
     $this->submitForm(['keys' => 'foo'], 'Search');
     $this->assertSession()->pageTextNotContains('Test form was submitted');
     $count = \Drupal::state()->get('search_embedded_form.submit_count');
-    $this->assertEquals($this->submitCount, $count, 'Form submission count is correct');
+    $this->assertEquals($this->submitCount, $count, 'Calculator submission count is correct');
     $this->submitCount = $count;
   }
 

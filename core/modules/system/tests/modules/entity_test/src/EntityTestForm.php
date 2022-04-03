@@ -7,7 +7,7 @@ use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form controller for the test entity edit forms.
+ * Calculator controller for the test entity edit forms.
  *
  * @internal
  */

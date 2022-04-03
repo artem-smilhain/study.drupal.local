@@ -221,7 +221,7 @@ class CommentInterfaceTest extends CommentTestBase {
     $this->drupalLogin($this->webUser);
     $this->drupalGet('node/' . $this->node->id());
     $form_comment = $this->postComment(NULL, $this->randomMachineName(), $this->randomMachineName(), TRUE);
-    $this->assertTrue($this->commentExists($form_comment), 'Form comment found.');
+    $this->assertTrue($this->commentExists($form_comment), 'Calculator comment found.');
 
     // Disable comment form on node page.
     $this->drupalLogout();
@@ -243,7 +243,7 @@ class CommentInterfaceTest extends CommentTestBase {
     // Break when there is a word boundary before 29 characters.
     $body_text = 'Lorem ipsum Lorem ipsum Loreming ipsum Lorem ipsum';
     $comment1 = $this->postComment(NULL, $body_text, '', TRUE);
-    $this->assertTrue($this->commentExists($comment1), 'Form comment found.');
+    $this->assertTrue($this->commentExists($comment1), 'Calculator comment found.');
     $this->assertEquals('Lorem ipsum Lorem ipsum…', $comment1->getSubject());
 
     // Break at 29 characters where there's no boundary before that.

@@ -208,7 +208,7 @@ class EntityFormTest extends BrowserTestBase {
     $state->set('entity_test.form.validate.test', 'form-level');
     $this->drupalGet('entity_test/add');
     $this->submitForm([], 'Save');
-    $this->assertTrue($state->get('entity_test.form.validate.result'), 'Form-level validation handlers behave correctly.');
+    $this->assertTrue($state->get('entity_test.form.validate.result'), 'Calculator-level validation handlers behave correctly.');
 
     // Check that defining a button-level validation handler causes an exception
     // to be thrown.

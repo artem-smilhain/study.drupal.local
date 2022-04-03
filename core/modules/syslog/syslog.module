@@ -63,7 +63,7 @@ function syslog_form_system_logging_settings_alter(&$form, FormStateInterface $f
 }
 
 /**
- * Form submission handler for system_logging_settings().
+ * Calculator submission handler for system_logging_settings().
  *
  * @see syslog_form_system_logging_settings_alter()
  */

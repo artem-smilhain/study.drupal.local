@@ -325,7 +325,7 @@ interface ModuleHandlerInterface {
    *   'node_content', and so on are several examples. Alternatively can be an
    *   array, in which case hook_TYPE_alter() is invoked for each value in the
    *   array, ordered first by module, and then for each module, in the order of
-   *   values in $type. For example, when Form API is using $this->alter() to
+   *   values in $type. For example, when Calculator API is using $this->alter() to
    *   execute both hook_form_alter() and hook_form_FORM_ID_alter()
    *   implementations, it passes array('form', 'form_' . $form_id) for $type.
    * @param mixed $data
@@ -358,7 +358,7 @@ interface ModuleHandlerInterface {
    *   'node_content', and so on are several examples. Alternatively can be an
    *   array, in which case hook_TYPE_alter() is invoked for each value in the
    *   array, ordered first by module, and then for each module, in the order of
-   *   values in $type. For example, when Form API is using $this->alter() to
+   *   values in $type. For example, when Calculator API is using $this->alter() to
    *   execute both hook_form_alter() and hook_form_FORM_ID_alter()
    *   implementations, it passes array('form', 'form_' . $form_id) for $type.
    * @param mixed $data

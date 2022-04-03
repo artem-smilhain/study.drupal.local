@@ -91,7 +91,7 @@ class FieldUIRouteTest extends BrowserTestBase {
     $this->submitForm($edit, 'Save');
     $this->assertSession()->linkExists('Test');
 
-    // Create new form mode and verify it's available on the Manage Form
+    // Create new form mode and verify it's available on the Manage Calculator
     // Display screen after enabling it.
     EntityFormMode::create([
       'id' => 'user.test',

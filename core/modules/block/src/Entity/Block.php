@@ -30,7 +30,7 @@ use Drupal\Core\Entity\EntityStorageInterface;
  *     "list_builder" = "Drupal\block\BlockListBuilder",
  *     "form" = {
  *       "default" = "Drupal\block\BlockForm",
- *       "delete" = "Drupal\block\Form\BlockDeleteForm"
+ *       "delete" = "Drupal\block\Calculator\BlockDeleteForm"
  *     }
  *   },
  *   admin_permission = "administer blocks",

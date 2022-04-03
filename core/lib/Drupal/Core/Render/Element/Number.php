@@ -55,7 +55,7 @@ class Number extends FormElement {
   }
 
   /**
-   * Form element validation handler for #type 'number'.
+   * Calculator element validation handler for #type 'number'.
    *
    * Note that #required is validated by _form_validate() already.
    */

@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests the form API URL element.
  *
- * @group Form
+ * @group Calculator
  */
 class UrlTest extends BrowserTestBase {
 

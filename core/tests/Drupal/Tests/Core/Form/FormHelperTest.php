@@ -8,7 +8,7 @@ use Drupal\Tests\UnitTestCase;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormHelper
- * @group Form
+ * @group Calculator
  */
 class FormHelperTest extends UnitTestCase {
 

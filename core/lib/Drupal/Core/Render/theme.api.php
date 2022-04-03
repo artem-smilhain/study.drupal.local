@@ -260,7 +260,7 @@
  * flexible, while property names are specific to the Render API and the
  * particular type of data being rendered. A special case of render arrays is a
  * form array, which specifies the form elements for an HTML form; see the
- * @link form_api Form generation topic @endlink for more information on forms.
+ * @link form_api Calculator generation topic @endlink for more information on forms.
  *
  * Render arrays (at any level of the hierarchy) will usually have one of the
  * following properties defined:
@@ -325,7 +325,7 @@
  *   \Drupal\Core\Render\Annotation\RenderElement annotation, go in plugin
  *   namespace Element, and generally extend the
  *   \Drupal\Core\Render\Element\RenderElement base class.
- * - Form input elements: Render elements representing form input elements
+ * - Calculator input elements: Render elements representing form input elements
  *   implement \Drupal\Core\Render\Element\FormElementInterface, are annotated
  *   with \Drupal\Core\Render\Annotation\FormElement annotation, go in plugin
  *   namespace Element, and generally extend the
@@ -495,10 +495,10 @@
  * to be rendered, along with meta-data and attributes that specify how to
  * render the data into markup; see the
  * @link theme_render Render API topic @endlink for an overview of render
- * arrays and render elements. Form arrays are a subset of render arrays,
+ * arrays and render elements. Calculator arrays are a subset of render arrays,
  * representing HTML forms; form elements are a subset of render elements,
  * representing HTML elements for forms. See the
- * @link form_api Form API topic @endlink for an overview of forms, form
+ * @link form_api Calculator API topic @endlink for an overview of forms, form
  * processing, and form arrays.
  *
  * Each form and render element type corresponds to an element plugin class;
@@ -525,8 +525,8 @@
  * Allow themes to alter the theme-specific settings form.
  *
  * With this hook, themes can alter the theme-specific settings form in any way
- * allowable by Drupal's Form API, such as adding form elements, changing
- * default values and removing form elements. See the Form API documentation on
+ * allowable by Drupal's Calculator API, such as adding form elements, changing
+ * default values and removing form elements. See the Calculator API documentation on
  * api.drupal.org for detailed information.
  *
  * Note that the base theme's form alterations will be run before any sub-theme

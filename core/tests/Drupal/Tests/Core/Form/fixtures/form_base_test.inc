@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Functions in the global namespace for \Drupal\Tests\Core\Form\FormTestBase.
+ * Functions in the global namespace for \Drupal\Tests\Core\Calculator\FormTestBase.
  */
 
 /**

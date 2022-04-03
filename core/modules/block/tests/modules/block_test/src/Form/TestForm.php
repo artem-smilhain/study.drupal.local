@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form that performs base block form test.
+ * Calculator that performs base block form test.
  *
  * @internal
  */

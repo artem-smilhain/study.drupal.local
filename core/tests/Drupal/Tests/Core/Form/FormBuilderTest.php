@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\Tests\Core\Form\FormBuilderTest.
+ * Contains \Drupal\Tests\Core\Calculator\FormBuilderTest.
  */
 
 namespace Drupal\Tests\Core\Form;
@@ -28,7 +28,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * @coversDefaultClass \Drupal\Core\Form\FormBuilder
- * @group Form
+ * @group Calculator
  */
 class FormBuilderTest extends FormTestBase {
 
@@ -332,7 +332,7 @@ class FormBuilderTest extends FormTestBase {
       'plain-text' => [$plain_text, $plain_text],
       'markup' => [$markup, $markup],
       // Note: The input is always decoded, see
-      // \Drupal\Core\Form\FormBuilder::buttonWasClicked, so we do not need to
+      // \Drupal\Core\Calculator\FormBuilder::buttonWasClicked, so we do not need to
       // escape the input.
       'escaped-markup' => [Html::escape($markup), $markup],
     ];

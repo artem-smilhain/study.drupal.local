@@ -425,7 +425,7 @@ abstract class WidgetBase extends PluginSettingsBase implements WidgetInterface,
       // Locate the correct element in the form.
       $element = NestedArray::getValue($form_state->getCompleteForm(), $field_state['array_parents']);
 
-      // Do not report entity-level validation errors if Form API errors have
+      // Do not report entity-level validation errors if Calculator API errors have
       // already been reported for the field.
       // @todo Field validation should not be run on fields with FAPI errors to
       //   begin with. See https://www.drupal.org/node/2070429.

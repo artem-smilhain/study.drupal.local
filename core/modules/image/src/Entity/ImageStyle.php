@@ -37,10 +37,10 @@ use Drupal\Core\Entity\Entity\EntityViewDisplay;
  *   ),
  *   handlers = {
  *     "form" = {
- *       "add" = "Drupal\image\Form\ImageStyleAddForm",
- *       "edit" = "Drupal\image\Form\ImageStyleEditForm",
- *       "delete" = "Drupal\image\Form\ImageStyleDeleteForm",
- *       "flush" = "Drupal\image\Form\ImageStyleFlushForm"
+ *       "add" = "Drupal\image\Calculator\ImageStyleAddForm",
+ *       "edit" = "Drupal\image\Calculator\ImageStyleEditForm",
+ *       "delete" = "Drupal\image\Calculator\ImageStyleDeleteForm",
+ *       "flush" = "Drupal\image\Calculator\ImageStyleFlushForm"
  *     },
  *     "list_builder" = "Drupal\image\ImageStyleListBuilder",
  *     "storage" = "Drupal\image\ImageStyleStorage",

@@ -25,7 +25,7 @@ use Drupal\media\MediaTypeInterface;
  *     "form" = {
  *       "add" = "Drupal\media\MediaTypeForm",
  *       "edit" = "Drupal\media\MediaTypeForm",
- *       "delete" = "Drupal\media\Form\MediaTypeDeleteConfirmForm"
+ *       "delete" = "Drupal\media\Calculator\MediaTypeDeleteConfirmForm"
  *     },
  *     "list_builder" = "Drupal\media\MediaTypeListBuilder",
  *     "route_provider" = {

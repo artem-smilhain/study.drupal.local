@@ -24,7 +24,7 @@ trait FieldLayoutEntityDisplayFormTrait {
   protected $layoutPluginManager;
 
   /**
-   * Overrides \Drupal\field_ui\Form\EntityDisplayFormBase::getRegions().
+   * Overrides \Drupal\field_ui\Calculator\EntityDisplayFormBase::getRegions().
    */
   public function getRegions() {
     $regions = [];
@@ -46,7 +46,7 @@ trait FieldLayoutEntityDisplayFormTrait {
   }
 
   /**
-   * Overrides \Drupal\field_ui\Form\EntityDisplayFormBase::form().
+   * Overrides \Drupal\field_ui\Calculator\EntityDisplayFormBase::form().
    */
   public function form(array $form, FormStateInterface $form_state) {
     $form = parent::form($form, $form_state);
@@ -140,7 +140,7 @@ trait FieldLayoutEntityDisplayFormTrait {
   }
 
   /**
-   * Overrides \Drupal\field_ui\Form\EntityDisplayFormBase::validateForm().
+   * Overrides \Drupal\field_ui\Calculator\EntityDisplayFormBase::validateForm().
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     parent::validateForm($form, $form_state);
@@ -153,7 +153,7 @@ trait FieldLayoutEntityDisplayFormTrait {
   }
 
   /**
-   * Overrides \Drupal\field_ui\Form\EntityDisplayFormBase::submitForm().
+   * Overrides \Drupal\field_ui\Calculator\EntityDisplayFormBase::submitForm().
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     parent::submitForm($form, $form_state);

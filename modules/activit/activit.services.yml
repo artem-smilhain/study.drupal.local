@@ -1,0 +1,4 @@
+services:
+  example.mail_handler:
+    class: Drupal\activit\Mail\MailHandler
+    arguments: ['@plugin.manager.mail', '@language_manager', '@language.default', '@string_translation']

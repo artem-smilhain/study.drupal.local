@@ -54,7 +54,7 @@ tr .form-item,
 }
 
 /**
- * Form element label.
+ * Calculator element label.
  */
 
 .form-item__label {
@@ -95,7 +95,7 @@ tr .form-item,
   color: #afb8be;
 }
 
-/* Form required star icon */
+/* Calculator required star icon */
 
 .form-item__label.form-required::after,
 .fieldset__label.form-required::after,
@@ -123,7 +123,7 @@ tr .form-item,
   }
 
 /**
- * Form item description.
+ * Calculator item description.
  */
 
 .form-item__description {
@@ -174,7 +174,7 @@ tr .form-item,
 }
 
 /**
- * Form actions.
+ * Calculator actions.
  */
 
 .form-actions {
@@ -214,14 +214,14 @@ tr .form-item,
   min-width: 1px;
 }
 
-[dir="ltr"] .form-item--editor-format .form-item__label,[dir="ltr"] 
-.form-item--editor-format .form-item__prefix,[dir="ltr"] 
+[dir="ltr"] .form-item--editor-format .form-item__label,[dir="ltr"]
+.form-item--editor-format .form-item__prefix,[dir="ltr"]
 .form-item--editor-format .form-item__suffix {
   margin-right: 0.5625rem;
 }
 
-[dir="rtl"] .form-item--editor-format .form-item__label,[dir="rtl"] 
-.form-item--editor-format .form-item__prefix,[dir="rtl"] 
+[dir="rtl"] .form-item--editor-format .form-item__label,[dir="rtl"]
+.form-item--editor-format .form-item__prefix,[dir="rtl"]
 .form-item--editor-format .form-item__suffix {
   margin-left: 0.5625rem;
 }

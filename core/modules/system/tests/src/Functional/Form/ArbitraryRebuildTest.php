@@ -9,7 +9,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests altering forms to be rebuilt so there are multiple steps.
  *
- * @group Form
+ * @group Calculator
  */
 class ArbitraryRebuildTest extends BrowserTestBase {
 
@@ -61,7 +61,7 @@ class ArbitraryRebuildTest extends BrowserTestBase {
     ];
     $this->drupalGet('user/register');
     $this->submitForm($edit, 'Rebuild');
-    $this->assertSession()->pageTextContains('Form rebuilt.');
+    $this->assertSession()->pageTextContains('Calculator rebuilt.');
     $this->assertSession()->fieldValueEquals('name', 'foo');
     $this->assertSession()->fieldValueEquals('mail', 'bar@example.com');
   }

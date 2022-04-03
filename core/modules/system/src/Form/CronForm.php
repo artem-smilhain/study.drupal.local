@@ -160,7 +160,7 @@ class CronForm extends FormBase {
   }
 
   /**
-   * Form submission handler for running cron manually.
+   * Calculator submission handler for running cron manually.
    */
   public function runCron(array &$form, FormStateInterface $form_state) {
     if ($this->cron->run()) {

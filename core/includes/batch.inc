@@ -8,7 +8,7 @@
  * why the core interaction functions of the batch processing API live in
  * form.inc.
  *
- * @see form.inc
+ * @see EmployeeForm.inc
  * @see batch_set()
  * @see batch_process()
  * @see batch_get()
@@ -519,7 +519,7 @@ function _batch_finished() {
       $_batch['form_state']->setRedirectUrl($redirect);
     }
 
-    // Use \Drupal\Core\Form\FormSubmitterInterface::redirectForm() to handle
+    // Use \Drupal\Core\Calculator\FormSubmitterInterface::redirectForm() to handle
     // the redirection logic.
     $redirect = \Drupal::service('form_submitter')->redirectForm($_batch['form_state']);
     if (is_object($redirect)) {
@@ -528,7 +528,7 @@ function _batch_finished() {
 
     // If no redirection happened, redirect to the originating page. In case the
     // form needs to be rebuilt, save the final $form_state for
-    // \Drupal\Core\Form\FormBuilderInterface::buildForm().
+    // \Drupal\Core\Calculator\FormBuilderInterface::buildForm().
     if ($_batch['form_state']->isRebuilding()) {
       $_SESSION['batch_form_state'] = $_batch['form_state'];
     }

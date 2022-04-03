@@ -8,7 +8,7 @@ use Drupal\Core\Link;
 use Drupal\Core\Url;
 
 /**
- * Form handler for the aggregator feed edit forms.
+ * Calculator handler for the aggregator feed edit forms.
  *
  * @internal
  */

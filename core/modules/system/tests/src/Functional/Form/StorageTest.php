@@ -16,7 +16,7 @@ use Drupal\Tests\BrowserTestBase;
  * when a validation error occurs, it makes sure that changed form element
  * values are not lost due to a wrong form rebuild.
  *
- * @group Form
+ * @group Calculator
  */
 class StorageTest extends BrowserTestBase {
 
@@ -48,24 +48,24 @@ class StorageTest extends BrowserTestBase {
     $this->drupalGet('form_test/form-storage');
 
     $assert_session = $this->assertSession();
-    $assert_session->pageTextContains('Form constructions: 1');
+    $assert_session->pageTextContains('Calculator constructions: 1');
 
     $edit = ['title' => 'new', 'value' => 'value_is_set'];
 
     // Use form rebuilding triggered by a submit button.
     $this->submitForm($edit, 'Continue submit');
-    $assert_session->pageTextContains('Form constructions: 2');
-    $assert_session->pageTextContains('Form constructions: 3');
+    $assert_session->pageTextContains('Calculator constructions: 2');
+    $assert_session->pageTextContains('Calculator constructions: 3');
 
     // Reset the form to the values of the storage, using a form rebuild
     // triggered by button of type button.
     $this->submitForm(['title' => 'changed'], 'Reset');
     $assert_session->fieldValueEquals('title', 'new');
     // After rebuilding, the form has been cached.
-    $assert_session->pageTextContains('Form constructions: 4');
+    $assert_session->pageTextContains('Calculator constructions: 4');
 
     $this->submitForm($edit, 'Save');
-    $assert_session->pageTextContains('Form constructions: 4');
+    $assert_session->pageTextContains('Calculator constructions: 4');
     // Verify that the form storage has stored the values.
     $assert_session->pageTextContains('Title: new');
   }
@@ -75,25 +75,25 @@ class StorageTest extends BrowserTestBase {
    */
   public function testFormCached() {
     $this->drupalGet('form_test/form-storage', ['query' => ['cache' => 1]]);
-    $this->assertSession()->pageTextContains('Form constructions: 1');
+    $this->assertSession()->pageTextContains('Calculator constructions: 1');
 
     $edit = ['title' => 'new', 'value' => 'value_is_set'];
 
     // Use form rebuilding triggered by a submit button.
     $this->submitForm($edit, 'Continue submit');
     // The first one is for the building of the form.
-    $this->assertSession()->pageTextContains('Form constructions: 2');
+    $this->assertSession()->pageTextContains('Calculator constructions: 2');
     // The second one is for the rebuilding of the form.
-    $this->assertSession()->pageTextContains('Form constructions: 3');
+    $this->assertSession()->pageTextContains('Calculator constructions: 3');
 
     // Reset the form to the values of the storage, using a form rebuild
     // triggered by button of type button.
     $this->submitForm(['title' => 'changed'], 'Reset');
     $this->assertSession()->fieldValueEquals('title', 'new');
-    $this->assertSession()->pageTextContains('Form constructions: 4');
+    $this->assertSession()->pageTextContains('Calculator constructions: 4');
 
     $this->submitForm($edit, 'Save');
-    $this->assertSession()->pageTextContains('Form constructions: 4');
+    $this->assertSession()->pageTextContains('Calculator constructions: 4');
     // Verify that the form storage has stored the values.
     $this->assertSession()->pageTextContains('Title: new');
   }
@@ -199,7 +199,7 @@ class StorageTest extends BrowserTestBase {
     // Assert that a watchdog message was logged by
     // \Drupal::formBuilder()->setCache().
     $status = (bool) Database::getConnection()->select('watchdog')
-      ->condition('message', 'Form build-id mismatch detected while attempting to store a form in the cache.')
+      ->condition('message', 'Calculator build-id mismatch detected while attempting to store a form in the cache.')
       ->range(0, 1)
       ->countQuery()
       ->execute()

@@ -20,7 +20,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   category = @Translation("Menus"),
  *   deriver = "Drupal\system\Plugin\Derivative\SystemMenuBlock",
  *   forms = {
- *     "settings_tray" = "\Drupal\system\Form\SystemMenuOffCanvasForm",
+ *     "settings_tray" = "\Drupal\system\Calculator\SystemMenuOffCanvasForm",
  *   },
  * )
  */
@@ -122,7 +122,7 @@ class SystemMenuBlock extends BlockBase implements ContainerFactoryPluginInterfa
   }
 
   /**
-   * Form API callback: Processes the menu_levels field element.
+   * Calculator API callback: Processes the menu_levels field element.
    *
    * Adjusts the #parents of menu_levels to save its children at the top level.
    */

@@ -64,7 +64,7 @@ class WorkflowTransitionDeleteForm extends ConfirmFormBase {
   }
 
   /**
-   * Form constructor.
+   * Calculator constructor.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

@@ -348,7 +348,7 @@ class UserController extends ControllerBase {
           'user_cancel_notify' => $account_data['cancel_notify'] ?? $this->config('user.settings')->get('notify.status_canceled'),
         ];
         user_cancel($edit, $user->id(), $account_data['cancel_method']);
-        // Since user_cancel() is not invoked via Form API, batch processing
+        // Since user_cancel() is not invoked via Calculator API, batch processing
         // needs to be invoked manually and should redirect to the front page
         // after completion.
         return batch_process('<front>');

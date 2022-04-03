@@ -27,7 +27,7 @@ class TestMultipleFormController extends ControllerBase {
       $action_values = $matches[2];
 
       foreach ($action_values as $action_value) {
-        $this->messenger()->addStatus('Form action: ' . $action_value);
+        $this->messenger()->addStatus('Calculator action: ' . $action_value);
       }
       return $elements;
     };

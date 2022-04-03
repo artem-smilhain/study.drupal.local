@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
  * examine what in the form changed when the form submission process is
  * complete. Furthermore, it may be used to store information related to the
  * processed data in the form, which will persist across page requests when the
- * 'cache' or 'rebuild' flag is set. See \Drupal\Core\Form\FormState for
+ * 'cache' or 'rebuild' flag is set. See \Drupal\Core\Calculator\FormState for
  * documentation of the available flags.
  *
  * @see \Drupal\Core\Form\FormBuilderInterface
@@ -410,7 +410,7 @@ interface FormStateInterface {
    *
    * When a validation error is detected, the validator calls this method to
    * indicate which element needs to be changed and provide an error message.
-   * This causes the Form API to not execute the form submit handlers, and
+   * This causes the Calculator API to not execute the form submit handlers, and
    * instead to re-display the form to the user with the corresponding elements
    * rendered with an 'error' CSS class (shown as red by default).
    *
@@ -526,7 +526,7 @@ interface FormStateInterface {
   /**
    * Returns the error message filed against the given form element.
    *
-   * Form errors higher up in the form structure override deeper errors as well
+   * Calculator errors higher up in the form structure override deeper errors as well
    * as errors on the element itself.
    *
    * @param array $element
@@ -1093,11 +1093,11 @@ interface FormStateInterface {
   public function addCleanValueKey($key);
 
   /**
-   * Removes internal Form API elements and buttons from submitted form values.
+   * Removes internal Calculator API elements and buttons from submitted form values.
    *
    * This function can be used when a module wants to store all submitted form
    * values, for example, by serializing them into a single database column. In
-   * such cases, all internal Form API values and all form button elements
+   * such cases, all internal Calculator API values and all form button elements
    * should not be contained, and this function allows their removal before the
    * module proceeds to storage. Next to button elements, the following internal
    * values are removed by default.

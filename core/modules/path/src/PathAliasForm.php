@@ -6,7 +6,7 @@ use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form handler for the path alias edit forms.
+ * Calculator handler for the path alias edit forms.
  *
  * @internal
  */

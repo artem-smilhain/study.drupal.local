@@ -331,13 +331,13 @@ class ManageDisplayTest extends WebDriverTestBase {
     /** @var \Drupal\Core\Entity\Display\EntityFormDisplayInterface $display */
     $display = $form_storage->loadUnchanged('node.' . $this->type . '.default');
     $this->assertEquals('foo', $display->getRenderer('field_test')->getThirdPartySetting('field_third_party_test', 'field_test_widget_third_party_settings_form'));
-    $this->assertContains('field_third_party_test', $display->calculateDependencies()->getDependencies()['module'], 'Form display does not have a dependency on field_third_party_test module.');
+    $this->assertContains('field_third_party_test', $display->calculateDependencies()->getDependencies()['module'], 'Calculator display does not have a dependency on field_third_party_test module.');
 
     // Creates a new field that can not be used with the multiple formatter.
     // Reference: Drupal\field_test\Plugin\Field\FieldWidget\TestFieldWidgetMultiple::isApplicable().
     $this->fieldUIAddNewField($manage_fields, 'onewidgetfield', 'One Widget Field');
 
-    // Go to the Manage Form Display.
+    // Go to the Manage Calculator Display.
     $this->drupalGet($manage_display);
 
     $field_onewidgetfield_type = $page->findField('fields[field_onewidgetfield][type]');

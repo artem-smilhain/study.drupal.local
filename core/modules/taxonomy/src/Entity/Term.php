@@ -32,7 +32,7 @@ use Drupal\user\StatusItem;
  *     "views_data" = "Drupal\taxonomy\TermViewsData",
  *     "form" = {
  *       "default" = "Drupal\taxonomy\TermForm",
- *       "delete" = "Drupal\taxonomy\Form\TermDeleteForm"
+ *       "delete" = "Drupal\taxonomy\Calculator\TermDeleteForm"
  *     },
  *     "translation" = "Drupal\taxonomy\TermTranslationHandler"
  *   },

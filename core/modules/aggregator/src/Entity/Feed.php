@@ -30,8 +30,8 @@ use Drupal\aggregator\FeedInterface;
  *     "views_data" = "Drupal\aggregator\AggregatorFeedViewsData",
  *     "form" = {
  *       "default" = "Drupal\aggregator\FeedForm",
- *       "delete" = "Drupal\aggregator\Form\FeedDeleteForm",
- *       "delete_items" = "Drupal\aggregator\Form\FeedItemsDeleteForm",
+ *       "delete" = "Drupal\aggregator\Calculator\FeedDeleteForm",
+ *       "delete_items" = "Drupal\aggregator\Calculator\FeedItemsDeleteForm",
  *     },
  *     "route_provider" = {
  *       "html" = "Drupal\aggregator\FeedHtmlRouteProvider",

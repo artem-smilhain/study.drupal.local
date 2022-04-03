@@ -128,17 +128,17 @@ class DialogTest extends WebDriverTestBase {
     // Use a link to close the panel opened by button 2.
     $this->getSession()->getPage()->clickLink('Link 4 (close non-modal if open)');
 
-    // Form modal.
+    // Calculator modal.
     $this->clickLink('Link 5 (form)');
     // Two links have been clicked in succession - This time wait for a change
     // in the title as the previous closing dialog may temporarily be open.
-    $form_dialog_title = $this->assertSession()->waitForElementVisible('css', "span.ui-dialog-title:contains('Ajax Form contents')");
+    $form_dialog_title = $this->assertSession()->waitForElementVisible('css', "span.ui-dialog-title:contains('Ajax Calculator contents')");
     $this->assertNotNull($form_dialog_title, 'Dialog form has the expected title.');
     // Locate the newly opened dialog.
     $form_dialog = $this->getSession()->getPage()->find('css', 'div.ui-dialog');
-    $this->assertNotNull($form_dialog, 'Form dialog is visible');
+    $this->assertNotNull($form_dialog, 'Calculator dialog is visible');
 
-    $form_contents = $form_dialog->find('css', "p:contains('Ajax Form contents description.')");
+    $form_contents = $form_dialog->find('css', "p:contains('Ajax Calculator contents description.')");
     $this->assertNotNull($form_contents, 'For has the expected text.');
     $do_it = $form_dialog->findButton('Do it');
     $this->assertNotNull($do_it, 'The dialog has a "Do it" button.');
@@ -180,7 +180,7 @@ class DialogTest extends WebDriverTestBase {
 
     $this->clickLink('Link 6 (entity form)');
     $dialog_add = $this->assertSession()->waitForElementVisible('css', 'div.ui-dialog');
-    $this->assertNotNull($dialog_add, 'Form dialog is visible');
+    $this->assertNotNull($dialog_add, 'Calculator dialog is visible');
 
     $form_add = $dialog_add->find('css', 'form.contact-form-add-form');
     $this->assertNotNull($form_add, 'Modal dialog JSON contains entity form.');

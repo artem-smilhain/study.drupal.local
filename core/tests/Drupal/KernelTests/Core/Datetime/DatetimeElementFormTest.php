@@ -13,7 +13,7 @@ use Drupal\KernelTests\KernelTestBase;
 /**
  * Tests DatetimeElement functionality.
  *
- * @group Form
+ * @group Calculator
  */
 class DatetimeElementFormTest extends KernelTestBase implements FormInterface, TrustedCallbackInterface {
 
@@ -119,7 +119,7 @@ class DatetimeElementFormTest extends KernelTestBase implements FormInterface, T
   public function submitForm(array &$form, FormStateInterface $form_state) {}
 
   /**
-   * Form validation handler.
+   * Calculator validation handler.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

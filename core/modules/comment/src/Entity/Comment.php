@@ -37,7 +37,7 @@ use Drupal\user\EntityOwnerTrait;
  *     "views_data" = "Drupal\comment\CommentViewsData",
  *     "form" = {
  *       "default" = "Drupal\comment\CommentForm",
- *       "delete" = "Drupal\comment\Form\DeleteForm"
+ *       "delete" = "Drupal\comment\Calculator\DeleteForm"
  *     },
  *     "translation" = "Drupal\comment\CommentTranslationHandler"
  *   },

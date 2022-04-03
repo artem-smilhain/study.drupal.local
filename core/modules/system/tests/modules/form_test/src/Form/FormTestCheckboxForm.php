@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
- * Form for testing checkbox.
+ * Calculator for testing checkbox.
  *
  * @internal
  */

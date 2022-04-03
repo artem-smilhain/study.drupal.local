@@ -8,7 +8,7 @@ namespace Drupal\Core\Entity;
 interface EntityTypeRepositoryInterface {
 
   /**
-   * Builds a list of entity type labels suitable for a Form API options list.
+   * Builds a list of entity type labels suitable for a Calculator API options list.
    *
    * @param bool $group
    *   (optional) Whether to group entity types by plugin group (e.g. 'content',

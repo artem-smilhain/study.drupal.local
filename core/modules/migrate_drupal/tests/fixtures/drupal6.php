@@ -11843,7 +11843,7 @@ $connection->insert('locales_source')
   'lid' => '91',
   'location' => 'includes/content.admin.inc:263;295',
   'textgroup' => 'default',
-  'source' => 'Form element to edit the data.',
+  'source' => 'Calculator element to edit the data.',
   'version' => 'none',
 ))
 ->values(array(
@@ -13383,7 +13383,7 @@ $connection->insert('locales_source')
   'lid' => '311',
   'location' => 'modules/fieldgroup/fieldgroup.module:124',
   'textgroup' => 'default',
-  'source' => 'Form settings',
+  'source' => 'Calculator settings',
   'version' => 'none',
 ))
 ->values(array(
@@ -16071,7 +16071,7 @@ $connection->insert('locales_source')
   'lid' => '697',
   'location' => '/?q=fr/admin/settings/site-information',
   'textgroup' => 'default',
-  'source' => 'CCK Email Contact Form Settings',
+  'source' => 'CCK Email Contact Calculator Settings',
   'version' => '6.38-dev',
 ))
 ->values(array(
@@ -19165,7 +19165,7 @@ $connection->insert('locales_source')
   'lid' => '1139',
   'location' => '/?q=fr/admin/user/profile/edit/11',
   'textgroup' => 'default',
-  'source' => 'Form name',
+  'source' => 'Calculator name',
   'version' => '6.38-dev',
 ))
 ->values(array(
@@ -19263,7 +19263,7 @@ $connection->insert('locales_source')
   'lid' => '1153',
   'location' => '/?q=fr/admin/user/profile/edit/11',
   'textgroup' => 'default',
-  'source' => 'Form will auto-complete while user is typing.',
+  'source' => 'Calculator will auto-complete while user is typing.',
   'version' => '6.38-dev',
 ))
 ->values(array(
@@ -31857,7 +31857,7 @@ $connection->insert('menu_links')
   'plid' => '179',
   'link_path' => 'admin/build/block/list/js',
   'router_path' => 'admin/build/block/list/js',
-  'link_title' => 'JavaScript List Form',
+  'link_title' => 'JavaScript List Calculator',
   'options' => 'a:0:{}',
   'module' => 'system',
   'hidden' => '-1',
@@ -32586,7 +32586,7 @@ $connection->insert('menu_links')
   'plid' => '167',
   'link_path' => 'admin/settings/email',
   'router_path' => 'admin/settings/email',
-  'link_title' => 'CCK Email Contact Form Settings',
+  'link_title' => 'CCK Email Contact Calculator Settings',
   'options' => 'a:1:{s:10:"attributes";a:1:{s:5:"title";s:57:"Administer flood control settings for email contact forms";}}',
   'module' => 'system',
   'hidden' => '0',
@@ -32613,7 +32613,7 @@ $connection->insert('menu_links')
   'plid' => '0',
   'link_path' => 'email/%/%',
   'router_path' => 'email/%/%',
-  'link_title' => 'Email Contact Form',
+  'link_title' => 'Email Contact Calculator',
   'options' => 'a:0:{}',
   'module' => 'system',
   'hidden' => '-1',
@@ -35443,7 +35443,7 @@ $connection->insert('menu_router')
   'number_parts' => '5',
   'tab_parent' => '',
   'tab_root' => 'admin/build/block/list/js',
-  'title' => 'JavaScript List Form',
+  'title' => 'JavaScript List Calculator',
   'title_callback' => 't',
   'title_arguments' => '',
   'type' => '4',
@@ -41471,7 +41471,7 @@ $connection->insert('menu_router')
   'number_parts' => '3',
   'tab_parent' => '',
   'tab_root' => 'admin/settings/email',
-  'title' => 'CCK Email Contact Form Settings',
+  'title' => 'CCK Email Contact Calculator Settings',
   'title_callback' => 't',
   'title_arguments' => '',
   'type' => '6',
@@ -43209,7 +43209,7 @@ $connection->insert('menu_router')
   'number_parts' => '3',
   'tab_parent' => '',
   'tab_root' => 'email/%/%',
-  'title' => 'Email Contact Form',
+  'title' => 'Email Contact Calculator',
   'title_callback' => 't',
   'title_arguments' => '',
   'type' => '4',

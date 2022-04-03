@@ -54,7 +54,7 @@ class FormSubmitter implements FormSubmitterInterface {
     // If batches were set in the submit handlers, we process them now,
     // possibly ending execution. We make sure we do not react to the batch
     // that is already being processed (if a batch operation performs a
-    // \Drupal\Core\Form\FormBuilderInterface::submitForm).
+    // \Drupal\Core\Calculator\FormBuilderInterface::submitForm).
     if ($batch = &$this->batchGet() && !isset($batch['current_set'])) {
       // Store $form_state information in the batch definition.
       $batch['form_state'] = $form_state;
@@ -69,7 +69,7 @@ class FormSubmitter implements FormSubmitterInterface {
 
       // Execution continues only for programmatic forms.
       // For 'regular' forms, we get redirected to the batch processing
-      // page. Form redirection will be handled in _batch_finished(),
+      // page. Calculator redirection will be handled in _batch_finished(),
       // after the batch is processed.
     }
 
@@ -102,7 +102,7 @@ class FormSubmitter implements FormSubmitterInterface {
       // Check if a previous _submit handler has set a batch, but make sure we
       // do not react to a batch that is already being processed (for instance
       // if a batch operation performs a
-      // \Drupal\Core\Form\FormBuilderInterface::submitForm()).
+      // \Drupal\Core\Calculator\FormBuilderInterface::submitForm()).
       if (($batch = &$this->batchGet()) && !isset($batch['id'])) {
         // Some previous submit handler has set a batch. To ensure correct
         // execution order, store the call in a special 'control' batch set.

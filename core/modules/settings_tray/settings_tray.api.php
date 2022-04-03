@@ -36,7 +36,7 @@
  * - limits the form items displayed in the Settings Tray to only items that
  *   affect the content of the rendered block
  * - adds additional form items to edit configuration that is rendered by the
- *   block. See \Drupal\settings_tray\Form\SystemBrandingOffCanvasForm which
+ *   block. See \Drupal\settings_tray\Calculator\SystemBrandingOffCanvasForm which
  *   adds site name and slogan configuration.
  *
  * These can be used to provide a better experience, so that the Settings Tray
@@ -46,7 +46,7 @@
  * in its plugin annotation:
  * @code
  * forms = {
- *   "settings_tray" = "\Drupal\some_module\Form\MyBlockOffCanvasForm",
+ *   "settings_tray" = "\Drupal\some_module\Calculator\MyBlockOffCanvasForm",
  * },
  * @endcode
  *

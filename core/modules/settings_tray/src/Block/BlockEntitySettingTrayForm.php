@@ -129,7 +129,7 @@ class BlockEntitySettingTrayForm extends BlockForm {
     $form['#attached']['library'][] = 'core/drupal.dialog.ajax';
 
     // static::ajaxSubmit() requires data-drupal-selector to be the same between
-    // the various Ajax requests. A bug in \Drupal\Core\Form\FormBuilder
+    // the various Ajax requests. A bug in \Drupal\Core\Calculator\FormBuilder
     // prevents that from happening unless $form['#id'] is also the same.
     // Normally, #id is set to a unique HTML ID via Html::getUniqueId(), but
     // here we bypass that in order to work around the data-drupal-selector bug.

@@ -7,7 +7,7 @@ use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 /**
  * Tests the tableselect form element for expected behavior.
  *
- * @group Form
+ * @group Calculator
  */
 class ElementsTableSelectTest extends WebDriverTestBase {
 

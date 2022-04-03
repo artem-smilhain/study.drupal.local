@@ -6,18 +6,59 @@
 #  requirements:
 #    _permission: 'access content'
 
-activit.hello: #добавить новый модуль
+#hello world
+activit.hello:
   path: '/hello'
   defaults:
     _title: 'Hello! It works!'
     _controller: '\Drupal\activit\Controller\ActivitController::build'
   requirements:
     _permission: 'access content'
-
-activit.form: #ajax калькулятор
+#ajax калькулятор
+activit.calculator:
   path: '/calculator'
   defaults:
     _title: 'Calculator'
-    _form: '\Drupal\activit\Form\SimpleForm'
+    _form: '\Drupal\activit\CalculatorController\CalculatorController'
   requirements:
     _permission: 'access content'
+#добавление сотрудника
+activit.createEmployee:
+  path: '/create-employee'
+  defaults:
+    _title: 'Create Employee'
+    _form: '\Drupal\activit\Form\EmployeeForm'
+    _controller: '\Drupal\activit\Controller\EmployeeController::createEmployee'
+  requirements:
+    _permission: 'access content'
+#добавление сотрудника
+activit.getEmployee:
+  path: '/get-employee'
+  defaults:
+    _title: 'Create Employee'
+    _controller: '\Drupal\activit\Controller\EmployeeController::getEmployee'
+  requirements:
+    _permission: 'access content'
+#редактировать сотрудника
+activit.editEmployee:
+  path: '/edit-employee/{id}'
+  defaults:
+    _title: 'Edit Employee'
+    _form: '\Drupal\activit\Form\EditEmployee'
+  requirements:
+    _permission: 'access content'
+#удалить сотрудника
+activit.deleteEmployee:
+  path: '/delete-employee/{id}'
+  defaults:
+    _controller: '\Drupal\activit\Controller\EmployeeController::deleteEmployee'
+  requirements:
+    _permission: 'access content'
+#
+activit.autocomplete:
+  path: '/city-autocomplete/{field_name}/{count}'
+  defaults:
+    _controller: '\Drupal\activit\Controller\AutocompleteController::handleAutocomplete'
+    _format: json
+  requirements:
+    _access: 'TRUE'

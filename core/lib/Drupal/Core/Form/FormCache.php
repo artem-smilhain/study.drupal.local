@@ -152,7 +152,7 @@ class FormCache implements FormCacheInterface {
       $form_state->setFormState($stored_form_state);
 
       // If the original form is contained in include files, load the files.
-      // @see \Drupal\Core\Form\FormStateInterface::loadInclude()
+      // @see \Drupal\Core\Calculator\FormStateInterface::loadInclude()
       $build_info = $form_state->getBuildInfo();
       $build_info += ['files' => []];
       foreach ($build_info['files'] as $file) {
@@ -180,7 +180,7 @@ class FormCache implements FormCacheInterface {
     // \Drupal::formBuilder()->getCache() and \Drupal::formBuilder()->setCache()
     // from accidentally overwriting immutable form state.
     if (isset($form['#build_id']) && $form['#build_id'] != $form_build_id) {
-      $this->logger->error('Form build-id mismatch detected while attempting to store a form in the cache.');
+      $this->logger->error('Calculator build-id mismatch detected while attempting to store a form in the cache.');
       return;
     }
 

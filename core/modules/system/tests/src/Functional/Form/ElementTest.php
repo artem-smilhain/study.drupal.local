@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests building and processing of core form elements.
  *
- * @group Form
+ * @group Calculator
  */
 class ElementTest extends BrowserTestBase {
 

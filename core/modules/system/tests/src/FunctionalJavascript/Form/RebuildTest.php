@@ -9,9 +9,9 @@ use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 
 /**
- * Tests functionality of \Drupal\Core\Form\FormBuilderInterface::rebuildForm().
+ * Tests functionality of \Drupal\Core\Calculator\FormBuilderInterface::rebuildForm().
  *
- * @group Form
+ * @group Calculator
  * @todo Add tests for other aspects of form rebuilding.
  */
 class RebuildTest extends WebDriverTestBase {

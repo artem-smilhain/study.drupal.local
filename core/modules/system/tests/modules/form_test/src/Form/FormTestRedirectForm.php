@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 
 /**
- * Form builder to detect form redirect.
+ * Calculator builder to detect form redirect.
  *
  * @internal
  */

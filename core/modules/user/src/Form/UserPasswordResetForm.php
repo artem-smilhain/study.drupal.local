@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Url;
 
 /**
- * Form controller for the user password forms.
+ * Calculator controller for the user password forms.
  *
  * Users followed the link in the email, now they can enter a new password.
  *

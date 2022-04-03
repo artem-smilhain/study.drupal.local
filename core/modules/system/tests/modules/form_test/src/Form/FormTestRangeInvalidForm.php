@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form constructor for testing invalid #type 'range' elements.
+ * Calculator constructor for testing invalid #type 'range' elements.
  *
  * @internal
  */

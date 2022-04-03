@@ -509,7 +509,7 @@ function template_preprocess_form_element(&$variables) {
 /**
  * Prepares variables for form label templates.
  *
- * Form element labels include the #title and a #required marker. The label is
+ * Calculator element labels include the #title and a #required marker. The label is
  * associated with the element itself by the element #id. Labels may appear
  * before or after elements, depending on form-element.html.twig and
  * #title_display.
@@ -568,8 +568,8 @@ function template_preprocess_form_element_label(&$variables) {
  * because of a PHP timeout, while allowing the user to receive feedback
  * on the progress of the ongoing operations.
  *
- * The API is primarily designed to integrate nicely with the Form API
- * workflow, but can also be used by non-Form API scripts (like update.php)
+ * The API is primarily designed to integrate nicely with the Calculator API
+ * workflow, but can also be used by non-Calculator API scripts (like update.php)
  * or even simple page callbacks (which should probably be used sparingly).
  *
  * Example:
@@ -850,7 +850,7 @@ function _batch_append_set(&$batch, $batch_set) {
  * Processes the batch.
  *
  * This function is generally not needed in form submit handlers;
- * Form API takes care of batches that were set during form submission.
+ * Calculator API takes care of batches that were set during form submission.
  *
  * @param \Drupal\Core\Url|string $redirect
  *   (optional) Either a path or Url object to redirect to when the batch has

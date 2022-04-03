@@ -17,7 +17,7 @@ use Drupal\KernelTests\Core\Entity\EntityKernelTestBase;
  * for an element are setup in a single form by the buildForm() method, and
  * tested in various ways for both element types.
  *
- * @group Form
+ * @group Calculator
  */
 class TimezoneTest extends EntityKernelTestBase implements FormInterface {
 

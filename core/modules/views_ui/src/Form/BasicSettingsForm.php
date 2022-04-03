@@ -9,7 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form builder for the admin display defaults page.
+ * Calculator builder for the admin display defaults page.
  *
  * @internal
  */
@@ -23,7 +23,7 @@ class BasicSettingsForm extends ConfigFormBase {
   protected $themeHandler;
 
   /**
-   * Constructs a \Drupal\views_ui\Form\BasicSettingsForm object.
+   * Constructs a \Drupal\views_ui\Calculator\BasicSettingsForm object.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The factory for configuration objects.

@@ -52,7 +52,7 @@ class PrivateStream extends LocalStream {
   /**
    * Returns the base path for private://.
    *
-   * Note that this static method is used by \Drupal\system\Form\FileSystemForm
+   * Note that this static method is used by \Drupal\system\Calculator\FileSystemForm
    * so you should alter that form or substitute a different form if you change
    * the class providing the stream_wrapper.private service.
    *

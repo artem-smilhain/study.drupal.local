@@ -8,7 +8,7 @@ id: contact_message.olivero_test_contact_form.field_multiple_value_form_field
 field_name: field_multiple_value_form_field
 entity_type: contact_message
 bundle: olivero_test_contact_form
-label: 'Multiple Value Form Field'
+label: 'Multiple Value Calculator Field'
 description: ''
 required: true
 translatable: false

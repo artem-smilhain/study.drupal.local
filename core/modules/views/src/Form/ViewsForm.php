@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
  *
  * This class only dispatches logic to the form for the current step. The form
  * is always assumed to be multistep, even if it has only one step (which by
- * default is \Drupal\views\Form\ViewsFormMainForm). That way it is actually
+ * default is \Drupal\views\Calculator\ViewsFormMainForm). That way it is actually
  * possible for modules to have a multistep form if they need to.
  */
 class ViewsForm implements FormInterface, ContainerInjectionInterface {

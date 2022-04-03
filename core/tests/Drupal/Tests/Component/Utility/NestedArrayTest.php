@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
 class NestedArrayTest extends TestCase {
 
   /**
-   * Form array to check.
+   * Calculator array to check.
    *
    * @var array
    */

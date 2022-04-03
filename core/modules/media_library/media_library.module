@@ -304,7 +304,7 @@ function media_library_form_alter(array &$form, FormStateInterface $form_state, 
 }
 
 /**
- * Form #after_build callback for media_library view's exposed filters form.
+ * Calculator #after_build callback for media_library view's exposed filters form.
  */
 function _media_library_views_form_media_library_after_build(array $form, FormStateInterface $form_state) {
   // Remove .form-actions from the view's exposed filter actions. This prevents

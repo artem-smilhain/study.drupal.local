@@ -30,7 +30,7 @@ trait EntityDeleteFormTrait {
   /**
    * Gets the logger for a specific channel.
    *
-   * Provided by \Drupal\Core\Form\FormBase.
+   * Provided by \Drupal\Core\Calculator\FormBase.
    *
    * @param string $channel
    *   The name of the channel.

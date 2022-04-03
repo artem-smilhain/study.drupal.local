@@ -23,7 +23,7 @@ use Drupal\block_content\BlockContentTypeInterface;
  *       "default" = "Drupal\block_content\BlockContentTypeForm",
  *       "add" = "Drupal\block_content\BlockContentTypeForm",
  *       "edit" = "Drupal\block_content\BlockContentTypeForm",
- *       "delete" = "Drupal\block_content\Form\BlockContentTypeDeleteForm"
+ *       "delete" = "Drupal\block_content\Calculator\BlockContentTypeDeleteForm"
  *     },
  *     "route_provider" = {
  *       "html" = "Drupal\Core\Entity\Routing\AdminHtmlRouteProvider"

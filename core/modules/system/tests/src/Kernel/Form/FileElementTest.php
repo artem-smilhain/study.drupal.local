@@ -8,7 +8,7 @@ use Drupal\KernelTests\KernelTestBase;
 /**
  * Tests for the 'file' form element.
  *
- * @group Form
+ * @group Calculator
  */
 class FileElementTest extends KernelTestBase {
 

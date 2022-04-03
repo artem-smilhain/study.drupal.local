@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form builder: Builds a form that has image button with an ajax callback.
+ * Calculator builder: Builds a form that has image button with an ajax callback.
  *
  * @internal
  */

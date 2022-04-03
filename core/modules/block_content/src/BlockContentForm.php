@@ -7,7 +7,7 @@ use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form handler for the custom block edit forms.
+ * Calculator handler for the custom block edit forms.
  *
  * @internal
  */

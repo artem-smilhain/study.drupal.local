@@ -8,9 +8,9 @@ use Drupal\Tests\BrowserTestBase;
 
 /**
  * Tests proper removal of submitted form values using
- * \Drupal\Core\Form\FormState::cleanValues().
+ * \Drupal\Core\Calculator\FormState::cleanValues().
  *
- * @group Form
+ * @group Calculator
  */
 class StateValuesCleanTest extends BrowserTestBase {
 
@@ -27,7 +27,7 @@ class StateValuesCleanTest extends BrowserTestBase {
   protected $defaultTheme = 'stark';
 
   /**
-   * Tests \Drupal\Core\Form\FormState::cleanValues().
+   * Tests \Drupal\Core\Calculator\FormState::cleanValues().
    */
   public function testFormStateValuesClean() {
     $this->drupalGet('form_test/form-state-values-clean');
@@ -40,7 +40,7 @@ class StateValuesCleanTest extends BrowserTestBase {
       'baz' => ['beer' => 2000],
     ];
 
-    // Verify that all internal Form API elements were removed.
+    // Verify that all internal Calculator API elements were removed.
     $this->assertFalse(isset($values['form_id']), new FormattableMarkup('%element was removed.', ['%element' => 'form_id']));
     $this->assertFalse(isset($values['form_token']), new FormattableMarkup('%element was removed.', ['%element' => 'form_token']));
     $this->assertFalse(isset($values['form_build_id']), new FormattableMarkup('%element was removed.', ['%element' => 'form_build_id']));

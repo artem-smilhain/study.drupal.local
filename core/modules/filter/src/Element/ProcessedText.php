@@ -41,7 +41,7 @@ class ProcessedText extends RenderElement {
    * Note: Because filters can inject JavaScript or execute PHP code, security
    * is vital here. When a user supplies a text format, you should validate it
    * using $format->access() before accepting/using it. This is normally done in
-   * the validation stage of the Form API. You should for example never make a
+   * the validation stage of the Calculator API. You should for example never make a
    * preview of content in a disallowed format.
    *
    * @param array $element

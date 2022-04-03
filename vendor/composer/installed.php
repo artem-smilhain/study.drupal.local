@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '5a989dfced3ebd1b6a6d0d1fe5a4a8dab887c97a',
+        'reference' => '72753f25171477c187eb9858978013005f19a858',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -20,12 +20,12 @@
             'dev_requirement' => false,
         ),
         'chi-teck/drupal-code-generator' => array(
-            'pretty_version' => '2.5.1',
-            'version' => '2.5.1.0',
+            'pretty_version' => '2.5.2',
+            'version' => '2.5.2.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../chi-teck/drupal-code-generator',
             'aliases' => array(),
-            'reference' => 'cd3912e25e20bb12b6dce8d522793f3abd71ab8c',
+            'reference' => '90f6a8790a71f05d3f4168bae67b73fec6c34294',
             'dev_requirement' => false,
         ),
         'composer/installers' => array(
@@ -643,7 +643,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '5a989dfced3ebd1b6a6d0d1fe5a4a8dab887c97a',
+            'reference' => '72753f25171477c187eb9858978013005f19a858',
             'dev_requirement' => false,
         ),
         'drupal/link' => array(
@@ -891,6 +891,15 @@
             'replaced' => array(
                 0 => '9.3.9',
             ),
+        ),
+        'drupal/webform' => array(
+            'pretty_version' => '6.1.3',
+            'version' => '6.1.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/webform',
+            'aliases' => array(),
+            'reference' => '6.1.3',
+            'dev_requirement' => false,
         ),
         'drupal/workflows' => array(
             'dev_requirement' => false,

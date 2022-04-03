@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\views\Views;
 
 /**
- * Form builder for the advanced admin settings page.
+ * Calculator builder for the advanced admin settings page.
  *
  * @internal
  */

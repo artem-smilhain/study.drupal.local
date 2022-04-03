@@ -71,7 +71,7 @@ class BlockFormInBlockTest extends BrowserTestBase {
     $this->drupalGet('test-multiple-forms');
 
     $placeholder = 'form_action_' . Crypt::hashBase64('Drupal\Core\Form\FormBuilder::prepareForm');
-    $this->assertSession()->pageTextContains('Form action: ' . $placeholder);
+    $this->assertSession()->pageTextContains('Calculator action: ' . $placeholder);
   }
 
 }

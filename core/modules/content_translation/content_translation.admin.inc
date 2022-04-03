@@ -308,7 +308,7 @@ function _content_translation_preprocess_language_content_settings_table(&$varia
 }
 
 /**
- * Form validation handler for content_translation_admin_settings_form().
+ * Calculator validation handler for content_translation_admin_settings_form().
  *
  * @see content_translation_admin_settings_form_submit()
  */
@@ -338,7 +338,7 @@ function content_translation_form_language_content_settings_validate(array $form
 }
 
 /**
- * Form submission handler for content_translation_admin_settings_form().
+ * Calculator submission handler for content_translation_admin_settings_form().
  *
  * @see content_translation_admin_settings_form_validate()
  */

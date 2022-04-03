@@ -8,7 +8,7 @@
   margin: 0;
 }
 
-/* Form elements. */
+/* Calculator elements. */
 form {
   margin: 0;
   padding: 0;
@@ -172,7 +172,7 @@ input.form-submit:focus {
   padding-top: 10px;
 }
 
-/* Node Form */
+/* Node Calculator */
 #edit-body {
   margin-bottom: 2em;
 }
@@ -196,7 +196,7 @@ input.form-submit:focus {
   padding-top: 0;
 }
 
-/* Contact Form */
+/* Contact Calculator */
 .contact-form #edit-name {
   width: 75%;
   border-radius: 4px;
@@ -314,12 +314,12 @@ input.form-submit:focus {
   margin-left: 0.6em;
 }
 
-/* Form error styles. */
+/* Calculator error styles. */
 .form-item textarea.error + .cke {
   border: 2px solid red;
 }
 
-/* Form error message styles. */
+/* Calculator error message styles. */
 .form-item--error-message {
   color: #e32700;
 }

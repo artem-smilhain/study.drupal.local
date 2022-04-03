@@ -10,7 +10,7 @@ use Drupal\node\Entity\NodeType;
 use Drupal\Tests\BrowserTestBase;
 
 /**
- * Tests file upload scenario's with Inline Form Errors.
+ * Tests file upload scenario's with Inline Calculator Errors.
  *
  * @group inline_form_errors
  */

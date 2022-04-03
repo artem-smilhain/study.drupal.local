@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 
 /**
- * Form for rebuilding permissions.
+ * Calculator for rebuilding permissions.
  *
  * @internal
  */

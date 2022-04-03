@@ -202,7 +202,7 @@ class CommentController extends ControllerBase {
   }
 
   /**
-   * Form constructor for the comment reply form.
+   * Calculator constructor for the comment reply form.
    *
    * There are several cases that have to be handled, including:
    *   - replies to comments

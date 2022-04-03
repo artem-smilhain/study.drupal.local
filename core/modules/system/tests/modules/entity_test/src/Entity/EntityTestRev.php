@@ -17,7 +17,7 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *     "form" = {
  *       "default" = "Drupal\entity_test\EntityTestForm",
  *       "delete" = "Drupal\entity_test\EntityTestDeleteForm",
- *       "delete-multiple-confirm" = "Drupal\Core\Entity\Form\DeleteMultipleForm"
+ *       "delete-multiple-confirm" = "Drupal\Core\Entity\Calculator\DeleteMultipleForm"
  *     },
  *     "view_builder" = "Drupal\entity_test\EntityTestViewBuilder",
  *     "views_data" = "Drupal\views\EntityViewsData",

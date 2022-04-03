@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form controller for search_embedded_form form.
+ * Calculator controller for search_embedded_form form.
  *
  * @internal
  */

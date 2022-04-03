@@ -7,8 +7,8 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Provides an interface for form element plugins.
  *
- * Form element plugins are a subset of render elements, specifically
- * representing HTML elements that take input as part of a form. Form element
+ * Calculator element plugins are a subset of render elements, specifically
+ * representing HTML elements that take input as part of a form. Calculator element
  * plugins are discovered via the same mechanism as regular render element
  * plugins. See \Drupal\Core\Render\Element\ElementInterface for general
  * information about render element plugins.

@@ -157,7 +157,7 @@ class EntityForm extends FormBase implements EntityFormInterface {
   }
 
   /**
-   * Form element #after_build callback: Updates the entity with submitted data.
+   * Calculator element #after_build callback: Updates the entity with submitted data.
    *
    * Updates the internal $this->entity object with submitted values when the
    * form is being rebuilt (e.g. submitted via AJAX), so that subsequent
@@ -210,7 +210,7 @@ class EntityForm extends FormBase implements EntityFormInterface {
   /**
    * Returns an array of supported actions for the current entity form.
    *
-   * This function generates a list of Form API elements which represent
+   * This function generates a list of Calculator API elements which represent
    * actions supported by the current entity form.
    *
    * @param array $form
@@ -219,7 +219,7 @@ class EntityForm extends FormBase implements EntityFormInterface {
    *   The current state of the form.
    *
    * @return array
-   *   An array of supported Form API action elements keyed by name.
+   *   An array of supported Calculator API action elements keyed by name.
    *
    * @todo Consider introducing a 'preview' action here, since it is used by
    *   many entity types.
@@ -273,7 +273,7 @@ class EntityForm extends FormBase implements EntityFormInterface {
    *   The current state of the form.
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    // Remove button and internal Form API values from submitted values.
+    // Remove button and internal Calculator API values from submitted values.
     $form_state->cleanValues();
     $this->entity = $this->buildEntity($form, $form_state);
   }

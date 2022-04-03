@@ -352,7 +352,7 @@ class CommentForm extends ContentEntityForm {
   }
 
   /**
-   * Form submission handler for the 'preview' action.
+   * Calculator submission handler for the 'preview' action.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

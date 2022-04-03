@@ -28,7 +28,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Creates a form to create media entities from uploaded files.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 class FileUploadForm extends AddFormBase {
 
@@ -234,7 +234,7 @@ class FileUploadForm extends AddFormBase {
     // Limit the validation errors to make sure
     // FormValidator::handleErrorsWithLimitedValidation doesn't remove the
     // current selection from the form state.
-    // @see Drupal\Core\Form\FormValidator::handleErrorsWithLimitedValidation()
+    // @see Drupal\Core\Calculator\FormValidator::handleErrorsWithLimitedValidation()
     $element['upload_button']['#limit_validation_errors'] = [
       ['upload'],
       ['current_selection'],

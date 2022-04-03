@@ -6,7 +6,7 @@ use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form to select the administration theme.
+ * Calculator to select the administration theme.
  *
  * @internal
  */

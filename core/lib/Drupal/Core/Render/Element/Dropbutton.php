@@ -27,7 +27,7 @@ namespace Drupal\Core\Render\Element;
  *   '#dropbutton_type' => 'small',
  *   '#links' => array(
  *     'simple_form' => array(
- *       'title' => $this->t('Simple Form'),
+ *       'title' => $this->t('Simple Calculator'),
  *       'url' => Url::fromRoute('fapi_example.simple_form'),
  *     ),
  *     'demo' => array(

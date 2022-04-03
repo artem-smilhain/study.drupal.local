@@ -11,7 +11,7 @@ use Drupal\Core\Block\BlockBase;
  *   id = "settings_tray_test_class",
  *   admin_label = "Settings Tray test block: forms[settings_tray]=class",
  *   forms = {
- *     "settings_tray" = "\Drupal\settings_tray_test\Form\SettingsTrayFormAnnotationIsClassBlockForm",
+ *     "settings_tray" = "\Drupal\settings_tray_test\Calculator\SettingsTrayFormAnnotationIsClassBlockForm",
  *   },
  * )
  */

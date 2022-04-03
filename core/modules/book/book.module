@@ -179,7 +179,7 @@ function book_node_builder($entity_type, NodeInterface $entity, &$form, FormStat
 }
 
 /**
- * Form submission handler for node_form().
+ * Calculator submission handler for node_form().
  *
  * This handler is run when JavaScript is disabled. It triggers the form to
  * rebuild so that the "Parent item" options are changed to reflect the newly
@@ -324,7 +324,7 @@ function book_node_prepare_form(NodeInterface $node, $operation, FormStateInterf
 }
 
 /**
- * Implements hook_form_BASE_FORM_ID_alter() for \Drupal\node\Form\NodeDeleteForm.
+ * Implements hook_form_BASE_FORM_ID_alter() for \Drupal\node\Calculator\NodeDeleteForm.
  *
  * Alters the confirm form for a single node deletion.
  */

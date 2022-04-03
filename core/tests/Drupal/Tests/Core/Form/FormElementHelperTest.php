@@ -9,7 +9,7 @@ use Drupal\Tests\UnitTestCase;
  * Tests the form element helper.
  *
  * @group Drupal
- * @group Form
+ * @group Calculator
  *
  * @coversDefaultClass \Drupal\Core\Form\FormElementHelper
  */

@@ -9,7 +9,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests confirmation forms.
  *
- * @group Form
+ * @group Calculator
  */
 class ConfirmFormTest extends BrowserTestBase {
 

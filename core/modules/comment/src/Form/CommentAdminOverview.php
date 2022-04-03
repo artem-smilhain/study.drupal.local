@@ -94,7 +94,7 @@ class CommentAdminOverview extends FormBase {
   }
 
   /**
-   * Form constructor for the comment overview administration form.
+   * Calculator constructor for the comment overview administration form.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

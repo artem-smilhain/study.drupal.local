@@ -68,7 +68,7 @@ class QuickEditCustomPipelineTest extends BrowserTestBase {
     // Prepare form values for submission. drupalPostAJAX() is not suitable for
     // handling pages with JSON responses, so we need our own solution here.
     $form_tokens_found = preg_match('/\sname="form_token" value="([^"]+)"/', $ajax_commands[0]['data'], $token_match) && preg_match('/\sname="form_build_id" value="([^"]+)"/', $ajax_commands[0]['data'], $build_id_match);
-    $this->assertTrue($form_tokens_found, 'Form tokens found in output.');
+    $this->assertTrue($form_tokens_found, 'Calculator tokens found in output.');
 
     $post = [
       'form_id' => 'quickedit_field_form',
@@ -98,7 +98,7 @@ class QuickEditCustomPipelineTest extends BrowserTestBase {
     $ajax_commands = Json::decode($response->getBody());
     $this->assertCount(1, $ajax_commands, 'The field form HTTP request results in one AJAX command.');
     $this->assertSame('quickeditFieldFormSaved', $ajax_commands[0]['command'], 'The first AJAX command is a quickeditFieldFormSaved command.');
-    $this->assertStringContainsString('Fine thanks.', $ajax_commands[0]['data'], 'Form value saved and printed back.');
+    $this->assertStringContainsString('Fine thanks.', $ajax_commands[0]['data'], 'Calculator value saved and printed back.');
     $this->assertStringContainsString('<div class="quickedit-test-wrapper">', $ajax_commands[0]['data'], 'Custom render pipeline used to render the value.');
     $this->assertSame(['full'], array_keys($ajax_commands[0]['other_view_modes']), 'Field was also rendered in the "full" view mode.');
     $this->assertStringContainsString('Fine thanks.', $ajax_commands[0]['other_view_modes']['full'], '"full" version of field contains the form value.');

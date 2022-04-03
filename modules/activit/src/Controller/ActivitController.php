@@ -13,7 +13,7 @@ class ActivitController extends ControllerBase {
    * Builds the response.
    */
   public function build() {
-
+    //test
     $build['content'] = [
       '#type' => 'item',
       '#markup' => $this->t('It works!'),

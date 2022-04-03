@@ -27,7 +27,7 @@ class FormController implements FormInterface {
   }
 
   /**
-   * Constructs a \Drupal\condition_test\FormController object.
+   * Constructs a \Drupal\condition_test\EmployeeForm object.
    */
   public function __construct() {
     $manager = new ConditionManager(\Drupal::service('container.namespaces'), \Drupal::cache('discovery'), \Drupal::moduleHandler());
@@ -47,7 +47,7 @@ class FormController implements FormInterface {
   }
 
   /**
-   * Implements \Drupal\Core\Form\FormInterface::validateForm().
+   * Implements \Drupal\Core\Calculator\FormInterface::validateForm().
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     $this->condition->validateConfigurationForm($form, $form_state);

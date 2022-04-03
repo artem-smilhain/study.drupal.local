@@ -249,13 +249,13 @@ class FileTransferAuthorizeForm extends FormBase {
   }
 
   /**
-   * Generates the Form API array for a given connection backend's settings.
+   * Generates the Calculator API array for a given connection backend's settings.
    *
    * @param string $backend
    *   The name of the backend (e.g. 'ftp', 'ssh', etc).
    *
    * @return array
-   *   Form API array of connection settings for the given backend.
+   *   Calculator API array of connection settings for the given backend.
    *
    * @see hook_filetransfer_backends()
    */
@@ -283,7 +283,7 @@ class FileTransferAuthorizeForm extends FormBase {
    * children form elements and process those defaults recursively.
    *
    * @param $element
-   *   Reference to the Form API form element we're operating on.
+   *   Reference to the Calculator API form element we're operating on.
    * @param $key
    *   The key for our current form element, if any.
    * @param array $defaults

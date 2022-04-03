@@ -18,7 +18,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Creates a form to create media entities from oEmbed URLs.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 class OEmbedForm extends AddFormBase {
 

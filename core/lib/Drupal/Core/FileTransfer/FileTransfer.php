@@ -388,7 +388,7 @@ abstract class FileTransfer {
    * specific information they need, or override it entirely.
    *
    * @return array
-   *   An array that contains a Form API definition.
+   *   An array that contains a Calculator API definition.
    */
   public function getSettingsForm() {
     $form['username'] = [

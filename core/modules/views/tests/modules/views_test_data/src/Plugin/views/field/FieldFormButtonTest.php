@@ -26,7 +26,7 @@ class FieldFormButtonTest extends FieldPluginBase {
   }
 
   /**
-   * Form constructor for the views form.
+   * Calculator constructor for the views form.
    *
    * @param array $form
    *   An associative array containing the structure of the form.

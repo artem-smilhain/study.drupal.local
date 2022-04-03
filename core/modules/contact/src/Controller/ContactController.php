@@ -91,7 +91,7 @@ class ContactController extends ControllerBase {
   }
 
   /**
-   * Form constructor for the personal contact form.
+   * Calculator constructor for the personal contact form.
    *
    * @param \Drupal\user\UserInterface $user
    *   The account for which a personal contact form should be generated.

@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Provides a form containing the Layout Builder UI for defaults.
  *
  * @internal
- *   Form classes are internal.
+ *   Calculator classes are internal.
  */
 class DefaultsEntityForm extends EntityForm {
 
@@ -89,7 +89,7 @@ class DefaultsEntityForm extends EntityForm {
   }
 
   /**
-   * Form element #process callback.
+   * Calculator element #process callback.
    *
    * Save the layout builder element array parents as a property on the top form
    * element so that they can be used to access the element within the whole
@@ -187,7 +187,7 @@ class DefaultsEntityForm extends EntityForm {
   }
 
   /**
-   * Form submission handler.
+   * Calculator submission handler.
    */
   public function redirectOnSubmit(array $form, FormStateInterface $form_state) {
     $form_state->setRedirectUrl($this->sectionStorage->getLayoutBuilderUrl($form_state->getTriggeringElement()['#redirect']));

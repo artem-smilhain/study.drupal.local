@@ -100,7 +100,7 @@ $is_allowed = authorize_access_allowed($request);
 
 // Build content.
 if ($is_allowed) {
-  // Load both the Form API and Batch API.
+  // Load both the Calculator API and Batch API.
   require_once __DIR__ . '/includes/form.inc';
   require_once __DIR__ . '/includes/batch.inc';
 

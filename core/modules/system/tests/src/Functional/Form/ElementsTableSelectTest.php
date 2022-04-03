@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests the tableselect form element for expected behavior.
  *
- * @group Form
+ * @group Calculator
  */
 class ElementsTableSelectTest extends BrowserTestBase {
 

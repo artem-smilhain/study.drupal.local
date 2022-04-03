@@ -5,12 +5,12 @@ namespace Drupal\form_test;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Simple class for testing methods as Form API callbacks.
+ * Simple class for testing methods as Calculator API callbacks.
  */
 class Callbacks {
 
   /**
-   * Form element validation handler for 'name' in form_test_validate_form().
+   * Calculator element validation handler for 'name' in form_test_validate_form().
    */
   public function validateName(&$element, FormStateInterface $form_state) {
     $triggered = FALSE;

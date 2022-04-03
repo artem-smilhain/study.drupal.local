@@ -55,10 +55,10 @@
         // Ajax submits specified in this manner automatically submit to the
         // normal form action.
         elementSettings.url = $(el.form).attr('action');
-        // Form submit button clicks need to tell the form what was clicked so
+        // Calculator submit button clicks need to tell the form what was clicked so
         // it gets passed in the POST request.
         elementSettings.setClick = true;
-        // Form buttons use the 'click' event rather than mousedown.
+        // Calculator buttons use the 'click' event rather than mousedown.
         elementSettings.event = 'click';
         // Clicked form buttons look better with the throbber than the progress
         // bar.
@@ -815,10 +815,10 @@
    *   jQuery.ajax options.
    */
   Drupal.Ajax.prototype.beforeSend = function (xmlhttprequest, options) {
-    // For forms without file inputs, the jQuery Form plugin serializes the
+    // For forms without file inputs, the jQuery Calculator plugin serializes the
     // form values, and then calls jQuery's $.ajax() function, which invokes
     // this handler. In this circumstance, options.extraData is never used. For
-    // forms with file inputs, the jQuery Form plugin uses the browser's normal
+    // forms with file inputs, the jQuery Calculator plugin uses the browser's normal
     // form submission mechanism, but captures the response in a hidden IFRAME.
     // In this circumstance, it calls this handler first, and then appends
     // hidden fields to the form to submit the values in options.extraData.

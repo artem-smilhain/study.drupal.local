@@ -134,7 +134,7 @@ class LinkWidget extends WidgetBase {
   }
 
   /**
-   * Form element validation handler for the 'uri' element.
+   * Calculator element validation handler for the 'uri' element.
    *
    * Disallows saving inaccessible or untrusted URLs.
    */
@@ -153,7 +153,7 @@ class LinkWidget extends WidgetBase {
   }
 
   /**
-   * Form element validation handler for the 'title' element.
+   * Calculator element validation handler for the 'title' element.
    *
    * Conditionally requires the link title if a URL value was filled in.
    */
@@ -166,7 +166,7 @@ class LinkWidget extends WidgetBase {
   }
 
   /**
-   * Form element validation handler for the 'title' element.
+   * Calculator element validation handler for the 'title' element.
    *
    * Requires the URL value if a link title was filled in.
    */

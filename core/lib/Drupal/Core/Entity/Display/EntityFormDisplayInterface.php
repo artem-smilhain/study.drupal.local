@@ -134,7 +134,7 @@ interface EntityFormDisplayInterface extends EntityDisplayInterface {
    * validation and field validation:
    * - Widget validation steps are specific to a given widget's own form
    *   structure and UI metaphors. They are executed during normal form
-   *   validation, usually through Form API's #element_validate property.
+   *   validation, usually through Calculator API's #element_validate property.
    *   Errors reported at this level are typically those that prevent the
    *   extraction of proper field values from the submitted form input.
    * - If no form / widget errors were reported for the field, field validation

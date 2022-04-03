@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
- * Form constructor to test #default_value settings of radios.
+ * Calculator constructor to test #default_value settings of radios.
  *
  * @internal
  */

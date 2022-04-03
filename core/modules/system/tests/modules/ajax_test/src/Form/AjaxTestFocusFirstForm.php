@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormInterface;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form for testing AJAX FocusFirstCommand.
+ * Calculator for testing AJAX FocusFirstCommand.
  *
  * @internal
  */

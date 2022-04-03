@@ -8,7 +8,7 @@ use Drupal\KernelTests\ConfigFormTestBase;
 /**
  * Tests building a form from an object.
  *
- * @group Form
+ * @group Calculator
  */
 class FormObjectTest extends ConfigFormTestBase {
 

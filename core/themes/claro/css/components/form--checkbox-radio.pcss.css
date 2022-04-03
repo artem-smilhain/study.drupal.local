@@ -6,7 +6,7 @@
 @import "../base/variables.pcss.css";
 
 /**
- * Form item modifiers.
+ * Calculator item modifiers.
  */
 .form-type--boolean {
   margin-left: var(--input--label-spacing); /* LTR */

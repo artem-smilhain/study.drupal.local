@@ -8,7 +8,7 @@ use Drupal\Core\FileTransfer\Local;
  * Provides an object to test the settings form functionality.
  *
  * This class extends \Drupal\Core\FileTransfer\Local to make module install
- * testing via \Drupal\Core\FileTransfer\Form\FileTransferAuthorizeForm and
+ * testing via \Drupal\Core\FileTransfer\Calculator\FileTransferAuthorizeForm and
  * authorize.php possible.
  *
  * @see \Drupal\update\Tests\FileTransferAuthorizeFormTest

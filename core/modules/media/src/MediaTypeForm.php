@@ -16,7 +16,7 @@ use Drupal\media\Entity\MediaType;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Form controller for media type forms.
+ * Calculator controller for media type forms.
  *
  * @internal
  */

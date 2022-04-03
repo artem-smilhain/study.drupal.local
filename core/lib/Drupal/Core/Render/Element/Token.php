@@ -9,7 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * This is generally used to protect against cross-site forgeries. A token
  * element is automatically added to each Drupal form by an implementation of
- * \Drupal\Core\Form\FormBuilderInterface::prepareForm() so you don't generally
+ * \Drupal\Core\Calculator\FormBuilderInterface::prepareForm() so you don't generally
  * have to add one yourself.
  *
  * @FormElement("token")

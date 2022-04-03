@@ -140,7 +140,7 @@ class MenuForm extends EntityForm {
 
     // Add menu links administration form for existing menus.
     if (!$menu->isNew() || $menu->isLocked()) {
-      // Form API supports constructing and validating self-contained sections
+      // Calculator API supports constructing and validating self-contained sections
       // within forms, but does not allow handling the form section's submission
       // equally separated yet. Therefore, we use a $form_state key to point to
       // the parents of the form section.
@@ -203,7 +203,7 @@ class MenuForm extends EntityForm {
   }
 
   /**
-   * Form constructor to edit an entire menu tree at once.
+   * Calculator constructor to edit an entire menu tree at once.
    *
    * Shows for one menu the menu links accessible to the current user and
    * relevant operations.
@@ -494,7 +494,7 @@ class MenuForm extends EntityForm {
    * underneath them. Saving items in the incorrect order can break the tree.
    */
   protected function submitOverviewForm(array $complete_form, FormStateInterface $form_state) {
-    // Form API supports constructing and validating self-contained sections
+    // Calculator API supports constructing and validating self-contained sections
     // within forms, but does not allow to handle the form section's submission
     // equally separated yet. Therefore, we use a $form_state key to point to
     // the parents of the form section.

@@ -60,7 +60,7 @@
  *   - _controller: A callable, usually a method on a page controller class
  *     (see @ref sec_controller below for details).
  *   - _form: A form controller class. See the
- *     @link form_api Form API topic @endlink for more information about
+ *     @link form_api Calculator API topic @endlink for more information about
  *     form controllers.
  *   - _entity_form: A form for editing an entity. See the
  *     @link entity_api Entity API topic @endlink for more information.

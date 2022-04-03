@@ -67,7 +67,7 @@ class Email extends FormElement {
   }
 
   /**
-   * Form element validation handler for #type 'email'.
+   * Calculator element validation handler for #type 'email'.
    *
    * Note that #maxlength and #required is validated by _form_validate() already.
    */

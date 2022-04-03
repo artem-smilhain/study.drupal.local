@@ -17,7 +17,7 @@ ajax_test.ajax_render_types:
 ajax_test.dialog_form:
   path: '/ajax-test/dialog-form'
   defaults:
-    _title: 'Ajax Form contents'
+    _title: 'Ajax Calculator contents'
     _form: '\Drupal\ajax_test\Form\AjaxTestForm'
   requirements:
     _access: 'TRUE'
@@ -81,7 +81,7 @@ ajax_test.render_error:
 ajax_test.message_form:
   path: '/ajax-test/message'
   defaults:
-    _title: 'Ajax Message Form'
+    _title: 'Ajax Message Calculator'
     _form: '\Drupal\ajax_test\Form\AjaxTestMessageCommandForm'
   requirements:
     _access: 'TRUE'
@@ -89,7 +89,7 @@ ajax_test.message_form:
 ajax_test.focus_first_form:
   path: '/ajax-test/focus-first'
   defaults:
-    _title: 'Ajax Focus First Form'
+    _title: 'Ajax Focus First Calculator'
     _form: '\Drupal\ajax_test\Form\AjaxTestFocusFirstForm'
   requirements:
     _access: 'TRUE'
